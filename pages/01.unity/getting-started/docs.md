@@ -1,5 +1,6 @@
 ---
 title: 'Getting Started'
+media_order: getting-started-create-new-project.png
 visible: true
 ---
 
@@ -7,8 +8,7 @@ This article explains how to use the plugin to create an interactive game projec
 
 * Open the **Mixer** menu and select **Interactive Studio**.
 * Create a new project and name it "HelloWorld". Then click **Save**.
-
-![](https://github.com/mixer/interactive-unity-plugin/raw/master/documentation/media/images/getting-started-create-new-project.png)
+![](getting-started-create-new-project.png)
 
 * Click the **Build** tab at the top of the **Interactive Studio Editor** as shown in the screenshot below:
 
