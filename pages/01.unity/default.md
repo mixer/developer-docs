@@ -2,14 +2,11 @@
 title: Unity
 published: true
 ---
-
-### Chapter Number
-
 # Unity
 
 The Mixer Unity plugin helps you add features to your game that let the audience interact with people streaming your game!
 
-## Getting started**   
+## Getting started
 A tutorial to teach you the basics of getting your game integrated with Mixer.   
 [Getting started](https://github.com/mixer/interactive-unity-plugin/wiki/Getting-started)
 
