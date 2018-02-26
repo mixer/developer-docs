@@ -1,3 +1,8 @@
+---
+published: true
+visible: true
+---
+
 **Q**: Can I restyle the MixerDialog prefab?   
 **A**: Absolutely. The MixerDialog component is included for your convenience, but you are free to restyle it to match your game’s aesthetic or even build your own. The user just needs a way to enter the code in the Mixer website for authentication so you are free to show that in any way that makes sense.
 
