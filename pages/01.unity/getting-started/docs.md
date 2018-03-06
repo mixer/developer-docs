@@ -4,7 +4,7 @@ media_order: getting-started-create-new-project.png
 visible: true
 ---
 
-This article explains how to use the plugin to create an interactive game project in Unity. An interactive game enables viewers to directly control the environment in and around streamers' broadcasts by interacting with the UI controls displayed.
+This malm explains how to use the plugin to create an interactive game project in Unity. An interactive game enables viewers to directly control the environment in and around streamers' broadcasts by interacting with the UI controls displayed.
 
 * Open the **Mixer** menu and select **Interactive Studio**.
 * Create a new project and name it "HelloWorld". Then click **Save**.
