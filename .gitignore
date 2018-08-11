@@ -1,0 +1,35 @@
+# Sass
+.sass-cache
+
+# Grav Specific
+data/*
+accounts/
+assets/
+blueprints.yaml
+blueprints
+plugins/*
+themes/*
+trilby.test/
+screenshot.jpg
+config.bak/
+config/
+data/
+localhost/
+CHANGELOG.md
+CODEOFCONDUCT.md
+LICENSE
+.dependencies
+# JS
+themes/mixer-dev/node_modules
+
+# OS Generated
+.DS_Store*
+thumbs.db
+Icon?
+Thumbs.db
+*.swp
+
+# phpstorm
+.idea/*
+
+/config/security.yaml
