@@ -3,7 +3,7 @@ title: Mixer Developer
 body_classes: home
 
 hero:
-    text: "Build the **Next big thing**   \n\nfor the millions of creators, gamers & audiences on Mixer"
+    text: "Build the **Next big thing**   \n\nfor the millions of creators, gamer's & audiences on Mixer"
     buttons:
         primary:
             text: Start Building
@@ -24,29 +24,20 @@ hero:
 
 sections:
     -
-        title: Interactive
+        title: MixPlay
         color: gold-background
         icon: icon-MixerSparks
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat
+        text: Create revolutionary new ways for viewers to engage with streamers through controls & widgets on Mixer
     -
         title: Chat
         color: blue-background
         icon: icon-MixerChatSolid
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat
+        text: Create Bots and connect with Mixer's Community via Chat.
     -
         title: Core API
         color: pink-background
         icon: icon-News
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat              
+        text: Discover and query data about Mixer's Platform such as the Top Games, Who Follows who and Much more.
 ---
 
 # Intro to Mixer Development
