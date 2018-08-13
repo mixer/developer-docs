@@ -1,8 +1,8 @@
 ---
 title: MixPlay
-icon: MixerSparksSolid
-icon_bg: gold
+icon: icon-MixerSparks
+icon_bg: gold-background
 ---
 # MixPlay
 
-Information About MixPlay!
+Discover the **basic** principles
