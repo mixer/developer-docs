@@ -11,9 +11,9 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 
 ## Examples
 
-## Authenticating Successfully
+### Authenticating Successfully
 
-### Request
+#### Request
 
 ```json
 {
@@ -24,7 +24,7 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -38,9 +38,9 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-## Authenticating Anonymously
+### Authenticating Anonymously
 
-### Request
+#### Request
 
 ```json
 {
@@ -51,7 +51,7 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -60,9 +60,9 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-## An Unsuccessful Authentication Attempt
+### An Unsuccessful Authentication Attempt
 
-### Request
+#### Request
 
 ```json
 {
@@ -73,7 +73,7 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -88,11 +88,11 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 }
 ```
 
-## Test Streams
+### Test Streams
 
 Attempting to join a channel currently in Test Stream mode with an invalid or missing access key.
 
-### Request
+#### Request
 
 ```json
 {
@@ -103,7 +103,7 @@ Attempting to join a channel currently in Test Stream mode with an invalid or mi
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {

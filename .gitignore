@@ -33,3 +33,4 @@ Thumbs.db
 .idea/*
 
 /config/security.yaml
+node_modules/

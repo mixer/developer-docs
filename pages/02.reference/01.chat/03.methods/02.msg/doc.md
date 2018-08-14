@@ -2,20 +2,13 @@
 
 Send a chat message to the server. The server will reply with data identical to a [ChatMessage](#chat__events__) event.
 
+## Permissions
+
+To send a chat message you must use a valid OAuth token with the `chat:chat` scope.
+
 ## Arguments
 
 1. The message to send, as a string.
-
-## Examples
-
-# whisper
-
-Send a whisper to another user in the chat.
-
-## Arguments
-
-1. The username of the user that the whisper will be sent to.
-1. The whisper&#39;s message.
 
 ## Examples
 
