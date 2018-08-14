@@ -1,7 +1,7 @@
 ---
 title: MixPlay
-icon: icon-MixerSparks
-icon_bg: gold-background
+icon: MixerSparksSolid
+icon_bg: gold
 ---
 # MixPlay
 
