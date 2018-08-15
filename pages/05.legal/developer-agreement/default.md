@@ -1,5 +1,6 @@
 ---
 title: 'Developer Agreement'
+published: true
 ---
 
 **Last Updated: April 12, 2018**
