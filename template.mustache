@@ -1,0 +1,40 @@
+{{#methods}}
+
+
+# {{method}}
+
+{{description}}
+
+## Permissions
+To  you must use an OAuth token with the `` scope.
+
+## Arguments
+{{#arguments}}
+1. {{.}}
+{{/arguments}}
+
+## Examples
+{{#with example}}
+### Request
+```json
+{{toJSON request}}
+```
+
+### Response
+```json
+{{toJSON response}}
+```
+{{/with}}
+{{#examples}}
+#### {{description}}
+
+#### Request
+
+{{{request}}}
+
+#### Response
+
+{{{response}}}
+
+{{/examples}}
+{{/methods}}

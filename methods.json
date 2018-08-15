@@ -1,0 +1,406 @@
+{
+  "methods": [
+    {
+      "description": "Authenticate as an active user in a specified channel. Arguments are `channelId`, `userId`, `key`. \n\n You can connect anonymously by supplying just the `channnelId` as an argument, but if you do this you will not be able to send messages or participate in chat. This can be useful for creating chat overlays.",
+      "arguments": [
+        "The **channel ID** of the channel you are joining.",
+        "The **user ID** of the user you are connecting as. This can be omitted if you are connecting anonymously.",
+        "The **authorization key** retrieved from a request to our REST API, as explained in the [Connection](#chat__connection) section. This can be omitted if you are connecting anonymously.",
+        "(The **test stream access key** used to join the channel. This final argument is completely optional, and should only be provided if you wish to join a channel actively in a Test Stream.)"
+      ],
+      "examples": [
+        {
+          "description": "Authenticating as a User successfully.",
+          "data": {
+            "request": {
+              "type": "method",
+              "method": "auth",
+              "arguments": [12345, 54321, "key"],
+              "id": 0
+            },
+            "response": {
+              "type": "reply",
+              "error": null,
+              "id": 0,
+              "data": { "authenticated": true, "roles": ["Owner"] }
+            }
+          }
+        },
+        {
+          "description": "Authenticating anonymously.",
+          "data": {
+            "request": {
+              "type": "method",
+              "method": "auth",
+              "arguments": [12345],
+              "id": 0
+            },
+            "response": {
+              "type": "reply",
+              "error": null,
+              "id": 0,
+              "data": { "authenticated": false, "roles": [] }
+            }
+          }
+        },
+        {
+          "description": "An unsuccessful authentication attempt.",
+          "data": {
+            "request": {
+              "type": "method",
+              "method": "auth",
+              "arguments": [12345, 12345, "Not an AuthKey"],
+              "id": 0
+            },
+            "response": {
+              "type": "reply",
+              "error": {
+                "code": 1,
+                "message": "UNOTFOUND",
+                "stacktrace": "",
+                "data": {}
+              },
+              "id": 0
+            }
+          }
+        },
+        {
+          "description": "Attempting to join a channel currently in Test Stream mode with an invalid or missing access key.",
+          "data": {
+            "request": {
+              "type": "method",
+              "method": "auth",
+              "arguments": [12345, 12345, "authkey"],
+              "id": 0
+            },
+            "response": {
+              "type": "reply",
+              "error": {
+                "code": 1,
+                "message": "UACCESS",
+                "stacktrace": "",
+                "data": {}
+              },
+              "id": 0
+            }
+          }
+        }
+      ],
+      "method": "auth"
+    },
+    {
+      "description": "Send a chat message to the server. The server will reply with data identical to a [ChatMessage](#chat__events__) event.",
+      "permission": "chat",
+      "arguments": ["The message to send, as a string."],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "msg",
+          "arguments": ["Hello World!"],
+          "id": 2
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 2,
+          "data": {
+            "channel": 12345,
+            "id": "06cba8a0-3a4a-11e6-b410-e9a72fcede64",
+            "user_name": "username",
+            "user_id": 12345,
+            "user_level": 5,
+            "user_avatar": "https://uploads.mixer.com/avatar/ed47s4h5-696.jpg",
+            "user_roles": ["User"],
+            "message": {
+              "message": [
+                {
+                  "type": "text",
+                  "data": "Hello World!",
+                  "text": "Hello World!"
+                }
+              ],
+              "meta": {}
+            }
+          }
+        }
+      },
+      "method": "msg"
+    },
+    {
+      "description": "Send a whisper to another user in the chat.",
+      "permission": "whisper",
+      "arguments": [
+        "The username of the user that the whisper will be sent to.",
+        "The whisper's message."
+      ],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "whisper",
+          "arguments": ["targetUsername", "message"],
+          "id": 5
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 5,
+          "data": {
+            "channel": 12345,
+            "id": "077e31c0-3a34-11e6-89dd-6363b2f3be15",
+            "user_name": "username",
+            "user_id": 12345,
+            "user_roles": ["User"],
+            "user_level": 5,
+            "user_avatar": "https://uploads.mixer.com/avatar/ed47s4h5-696.jpg",
+            "message": {
+              "message": [{ "type": "text", "data": "hi", "text": "hi" }],
+              "meta": { "whisper": true }
+            },
+            "target": "username"
+          }
+        }
+      },
+      "method": "whisper"
+    },
+    {
+      "description": "Cast a vote in the current poll.",
+      "permission": "poll_vote",
+      "arguments": [
+        "The numerical index of the option that the vote is being cast for."
+      ],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "vote:choose",
+          "arguments": [0],
+          "id": 3
+        },
+        "response": { "type": "reply", "error": null, "id": 3, "data": true }
+      },
+      "method": "vote:choose"
+    },
+    {
+      "description": "Start a poll in the channel.",
+      "permission": "poll_start",
+      "arguments": [
+        "The poll's question.",
+        "An array of possible options.",
+        "The duration of the poll, in seconds."
+      ],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "vote:start",
+          "arguments": ["Turkey or Ham?", ["Turkey", "Ham"], 30],
+          "id": 3
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 3,
+          "data": "Poll started."
+        }
+      },
+      "method": "vote:start"
+    },
+    {
+      "description": "Time a user out and purge their chat messages. They cannot send messages until the duration is over. The user being timed out must be in the channel.",
+      "permission": "timeout",
+      "arguments": [
+        "The username of the user who will be timed out.",
+        "The duration for which the user will be unable to send messages. A human-readable duration with units can be provided (such as `30s` or `1m15s`), or providing no unit will result in the value being taken as seconds."
+      ],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "timeout",
+          "arguments": ["username", "30s"],
+          "id": 4
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 4,
+          "data": "username has been timed out for 30s."
+        }
+      },
+      "method": "timeout"
+    },
+    {
+      "description": "Purge a user's messages from that chat without timing them out.",
+      "permission": "purge",
+      "arguments": ["The username of the user to purge."],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "purge",
+          "arguments": ["username"],
+          "id": 5
+        },
+        "response": { "type": "reply", "error": null, "id": 5 }
+      },
+      "method": "purge"
+    },
+    {
+      "description": "Delete a message from chat.",
+      "permission": "remove_message",
+      "arguments": ["The `id` property of the message to delete."],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "deleteMessage",
+          "arguments": ["8e07a0b0-3a2e-11e6-a9ef-0b7037d1fbdd"],
+          "id": 10
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 10,
+          "data": "Message deleted."
+        }
+      },
+      "method": "deleteMessage"
+    },
+    {
+      "description": "Clear all chat messages in the channel.",
+      "permission": "clear_messages",
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "clearMessages",
+          "arguments": [],
+          "id": 11
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 11,
+          "data": "Messages cleared."
+        }
+      },
+      "method": "clearMessages"
+    },
+    {
+      "description": "Request previous messages from this chat from before you joined.",
+      "arguments": [
+        "The number of messages to request. The maximum value is `100`."
+      ],
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "history",
+          "arguments": [1],
+          "id": 1
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 1,
+          "data": [
+            {
+              "channel": 12345,
+              "id": "8e07a0b0-3a2e-11e6-a9ef-0b7037d1fbdd",
+              "user_name": "username",
+              "user_id": 186526,
+              "user_roles": ["User"],
+              "message": {
+                "message": [
+                  {
+                    "type": "text",
+                    "data": "historic message",
+                    "text": "historic message"
+                  }
+                ],
+                "meta": {}
+              }
+            }
+          ]
+        }
+      },
+      "method": "history"
+    },
+    {
+      "description": "Start a giveaway in the channel. After sending this method, the 'HypeBot' user will publicly announce the winner of the giveaway, who will be randomly selected.",
+      "permission": "giveaway_start",
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "giveaway:start",
+          "arguments": [],
+          "id": 11
+        },
+        "response": {
+          "type": "reply",
+          "error": null,
+          "id": 11,
+          "data": "Starting a giveaway"
+        }
+      },
+      "method": "giveaway:start"
+    },
+    {
+      "description": "A ping method. This is used in environments where websocket implementations do not natively support pings.",
+      "example": {
+        "request": {
+          "type": "method",
+          "method": "ping",
+          "arguments": [],
+          "id": 12
+        },
+        "response": { "type": "reply", "error": null, "id": 12 }
+      },
+      "method": "ping"
+    },
+    {
+      "description": "Enable an enhancement to the `ChatMessage` event. This will populate the `meta` property of the event with a hash containing the emoticon text mapped to the base64 PNG representation.",
+      "examples": [
+        {
+          "description": "Tells the chat server that you want emotes to be attached to chat messages.",
+          "data": {
+            "request": {
+              "type": "method",
+              "method": "attachEmotes",
+              "arguments": [],
+              "id": 12
+            },
+            "response": { "type": "reply", "error": null, "id": 12 }
+          }
+        },
+        {
+          "description": "The `ChatMessage` event will now look as follows:",
+          "data": {
+            "request": {},
+            "response": {
+              "type": "event",
+              "event": "ChatMessage",
+              "data": {
+                "channel": 143,
+                "id": "f1e092c0-9c8c-11e6-91dd-55a101b33e4e",
+                "user_name": "Jamy",
+                "user_id": 162,
+                "user_roles": ["Owner"],
+                "message": {
+                  "message": [
+                    {
+                      "type": "emoticon",
+                      "source": "builtin",
+                      "pack": "default",
+                      "coords": { "x": 96, "y": 0, "width": 24, "height": 24 },
+                      "text": ":)"
+                    }
+                  ],
+                  "meta": {
+                    "emoticons": {
+                      ":)": "iVBORw0KGgoAAAANSUhE...AAAElFTkSuQmCC"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "method": "attachEmotes"
+    }
+  ]
+}
