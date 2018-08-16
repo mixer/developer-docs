@@ -1,6 +1,8 @@
 ---
 title: 'Developer Agreement'
 published: true
+routable: true
+visible: true
 ---
 
 **Last Updated: August 14th, 2018**
