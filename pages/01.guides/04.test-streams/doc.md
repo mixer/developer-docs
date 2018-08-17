@@ -1,7 +1,5 @@
 ---
 title: 'Test Streams'
-icon: MixerBan
-icon_bg: red
 ---
 
 # Test Streams
