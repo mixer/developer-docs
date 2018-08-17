@@ -1,5 +1,7 @@
 ---
 title: Applying
+published: true
+visible: true
 ---
 
 # Applying for Test Stream Access
