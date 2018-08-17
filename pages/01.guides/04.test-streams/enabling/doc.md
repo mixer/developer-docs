@@ -12,3 +12,5 @@ Once you've been granted access, to enable test stream mode:
 1. This bar will also contain a link you can share with others to view your stream.
 
 ![](enable.png)
+
+Once you have enabled test streams for an account, it is enabled for every broadcast, across all devices. You don't need to enable test streams for each device you broadcast from. There is one, global setting applied to the account.
