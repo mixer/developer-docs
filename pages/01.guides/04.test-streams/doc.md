@@ -12,6 +12,7 @@ Test Streams is currently released to a limited audience. If you're a Xbox or Mi
 1. Fill out the displayed form and click Send Request
 1. Once the form is filled in it will be reviewed by Mixer staff who will notify you when the feature is enabled.
 
+![](enable.png)
 # Enabling Test Stream Mode
 Once you've been granted access, to enable test stream mode:
 1. Open the settings pane by clicking your profile picture in the upper, right of the mixer.com website.
