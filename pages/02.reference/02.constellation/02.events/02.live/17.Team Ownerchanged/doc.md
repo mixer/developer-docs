@@ -3,8 +3,9 @@
 Sent when a team&#x27;s ownership changes.
 
 ## Payload
-**Type**: [User](REST_LINK/User)
-**Description**:The new team owner.
+|Type|Description|
+|----|-----------|
+|[User](REST_LINK/User)|The new team owner.|
 
 ## Example
 ```json

@@ -3,8 +3,9 @@
 Sent when an invitee accepts their team invitation.
 
 ## Payload
-**Type**: [User](REST_LINK/User)
-**Description**:The user who accepted their invitation.
+|Type|Description|
+|----|-----------|
+|[User](REST_LINK/User)|The user who accepted their invitation.|
 
 ## Example
 ```json

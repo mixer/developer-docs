@@ -3,8 +3,9 @@
 Sent when a costream model is changed (e.g. when a streamer joins/leaves the costream, or when the costream&#x27;s settings have been changed).
 
 ## Payload
-**Type**: [Costream](REST_LINK/Costream)
-**Description**:The full costream model after the costream has been changed.
+|Type|Description|
+|----|-----------|
+|[Costream](REST_LINK/Costream)|The full costream model after the costream has been changed.|
 
 ## Example
 ```json

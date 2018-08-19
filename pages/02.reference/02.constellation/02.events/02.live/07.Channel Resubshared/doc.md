@@ -5,10 +5,10 @@ Sent when a user who has recently resubscribed to the channel chooses to &#x27;s
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|user|User|The user who just subscribed to the channel.|
-|since|IsoDate|The date for when the user first subscribed, from the start of the recurring billing period.|
-|until|IsoDate|The date for when the subscription expires.|
-|totalMonths|uint|The number of months the user has been subscribed since the beginning of time.|
+|user|[User](REST_LINK/User)|The user who just subscribed to the channel.|
+|since|[IsoDate](REST_LINK/IsoDate)|The date for when the user first subscribed, from the start of the recurring billing period.|
+|until|[IsoDate](REST_LINK/IsoDate)|The date for when the subscription expires.|
+|totalMonths|[uint](REST_LINK/uint)|The number of months the user has been subscribed since the beginning of time.|
 
 ## Example
 ```json

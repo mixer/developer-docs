@@ -3,8 +3,9 @@
 Sent when a user leaves a team or rejects its invite.
 
 ## Payload
-**Type**: [Team](REST_LINK/Team)
-**Description**:The team the user left.
+|Type|Description|
+|----|-----------|
+|[Team](REST_LINK/Team)|The team the user left.|
 
 ## Example
 ```json

@@ -3,8 +3,9 @@
 Sent when the user receives a new notification. Notifications of the same type will always follow the same structure. This event requires authentication.
 
 ## Payload
-**Type**: [Notification](REST_LINK/Notification)
-**Description**:The new notification.
+|Type|Description|
+|----|-----------|
+|[Notification](REST_LINK/Notification)|The new notification.|
 
 ## Example
 ```json

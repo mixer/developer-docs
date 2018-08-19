@@ -3,8 +3,9 @@
 Sent when a user is invited to a team.
 
 ## Payload
-**Type**: [Team](REST_LINK/Team)
-**Description**:The team the user was invited to. This includes the team owner&#x27;s user object as &#x60;owner&#x60;.
+|Type|Description|
+|----|-----------|
+|[Team](REST_LINK/Team)|The team the user was invited to. This includes the team owner&#x27;s user object as &#x60;owner&#x60;.|
 
 ## Example
 ```json
