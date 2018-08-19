@@ -1,6 +1,6 @@
 # AttachEmotes
 
-Enable an enhancement to the &#x60;ChatMessage&#x60; event. This will populate the &#x60;meta&#x60; property of the event with a hash containing the emoticon text mapped to the base64 PNG representation.
+Enable an enhancement to the `ChatMessage` event. This will populate the `meta` property of the event with a hash containing the emoticon text mapped to the base64 PNG representation.
 
 ## Example
 

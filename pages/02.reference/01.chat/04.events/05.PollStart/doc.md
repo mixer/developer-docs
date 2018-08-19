@@ -1,6 +1,6 @@
 # PollStart
 
-Initially sent when a new poll is started. Then, over the course of a poll, it is re-sent with information about the poll&#x27;s progress.
+Initially sent when a new poll is started. Then, over the course of a poll, it is re-sent with information about the poll's progress.
 
 ## Examples
 ```json

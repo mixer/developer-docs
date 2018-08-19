@@ -4,7 +4,7 @@ Request previous messages from this chat from before you joined.
 
 ## Arguments
 
-1. The number of messages to request. The maximum value is &#x60;100&#x60;.
+1. The number of messages to request. The maximum value is `100`.
 
 ## Examples
 

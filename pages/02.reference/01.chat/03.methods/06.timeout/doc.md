@@ -9,7 +9,7 @@ To time a user out you must use a valid OAuth token with the `chat:timeout` scop
 ## Arguments
 
 1. The username of the user who will be timed out.
-1. The duration for which the user will be unable to send messages. A human-readable duration with units can be provided (such as &#x60;30s&#x60; or &#x60;1m15s&#x60;), or providing no unit will result in the value being taken as seconds. You can also use the string `clear` to clear a timeout.
+1. The duration for which the user will be unable to send messages. A human-readable duration with units can be provided (such as `30s` or `1m15s`), or providing no unit will result in the value being taken as seconds. You can also use the string `clear` to clear a timeout.
 
 ## Examples
 

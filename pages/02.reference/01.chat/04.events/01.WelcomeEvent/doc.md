@@ -1,6 +1,6 @@
 # WelcomeEvent
 
-Sent by the server once you&#x27;re fully connected to chat.
+Sent by the server once you're fully connected to chat.
 
 ## Examples
 ```json

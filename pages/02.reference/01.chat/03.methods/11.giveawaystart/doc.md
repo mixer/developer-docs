@@ -1,6 +1,6 @@
 # giveaway:start
 
-Start a giveaway in the channel. After sending this method, the &#x27;HypeBot&#x27; user will publicly announce the winner of the giveaway, who will be randomly selected.
+Start a giveaway in the channel. After sending this method, the 'HypeBot' user will publicly announce the winner of the giveaway, who will be randomly selected.
 
 ## Permissions
 

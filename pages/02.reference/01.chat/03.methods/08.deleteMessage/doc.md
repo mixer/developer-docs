@@ -8,7 +8,7 @@ To delete a chat message you must use a valid OAuth token with the `chat:remove_
 
 ## Arguments
 
-1. The &#x60;id&#x60; property of the message to delete.
+1. The `id` property of the message to delete.
 
 ## Examples
 

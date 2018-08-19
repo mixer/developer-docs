@@ -1,6 +1,6 @@
 # ChatMessage
 
-Sent by the server when a client sends a message. It contains multiple message components, such as &#x60;text&#x60;, &#x60;emoticon&#x60;, &#x60;link&#x60;, and &#x60;tag&#x60;. The &#x60;meta&#x60; property of a message contains various attributes which define additional details about where the message comes from.
+Sent by the server when a client sends a message. It contains multiple message components, such as `text`, `emoticon`, `link`, and `tag`. The `meta` property of a message contains various attributes which define additional details about where the message comes from.
 
 ## Examples
 
@@ -70,7 +70,7 @@ A regular channel message seen by all users
 ```
 #### Whisper
 
-A private whisper from one user to another which is only sent to the recipient. The &#x60;meta&#x60; object contains a &#x60;whisper&#x60; attribute which is &#x60;true&#x60;.
+A private whisper from one user to another which is only sent to the recipient. The `meta` object contains a `whisper` attribute which is `true`.
 ```json
 {
   "type": "event",
@@ -103,7 +103,7 @@ A private whisper from one user to another which is only sent to the recipient. 
 ```
 #### Action
 
-When a user uses &#x60;/me&#x60; in chat. The &#x60;meta&#x60; object contains a &#x60;me&#x60; attribute which is &#x60;true&#x60;.
+When a user uses `/me` in chat. The `meta` object contains a `me` attribute which is `true`.
 ```json
 {
   "type": "event",
@@ -135,7 +135,7 @@ When a user uses &#x60;/me&#x60; in chat. The &#x60;meta&#x60; object contains a
 ```
 #### Tag
 
-When a user tags another user with &#x60;@&#x60; e.g. &#x60;@username&#x60;
+When a user tags another user with `@` e.g. `@username`
 ```json
 {
   "channel": 12345,
@@ -162,7 +162,7 @@ When a user tags another user with &#x60;@&#x60; e.g. &#x60;@username&#x60;
 ```
 #### Censored Message
 
-A channel owner can configure their channel&#x27;s &lt;a href&#x3D;&quot;https://aka.ms/mixercatbot&quot; target&#x3D;&quot;_blank&quot;&gt;Catbot auto moderation&lt;/a&gt; settings so that unwanted chat messages are automatically dropped. If a message is sent and that message violates this filter, only channel moderators and the channel owner will receive that message, with the &#x60;censored&#x60; meta property set as shown below. Other users shall not receive the chat message.
+A channel owner can configure their channel's [Catbot auto modaration](https://aka.ms/mixercatbot) settings so that unwanted chat messages are automatically dropped. If a message is sent and that message violates this filter, only channel moderators and the channel owner will receive that message, with the `censored` meta property set as shown below. Other users shall not receive the chat message.
 ```json
 {
   "channel": 12345,
