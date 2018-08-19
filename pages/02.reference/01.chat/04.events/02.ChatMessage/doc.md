@@ -162,7 +162,7 @@ When a user tags another user with `@` e.g. `@username`
 ```
 #### Censored Message
 
-A channel owner can configure their channel's [Catbot auto modaration](https://aka.ms/mixercatbot) settings so that unwanted chat messages are automatically dropped. If a message is sent and that message violates this filter, only channel moderators and the channel owner will receive that message, with the `censored` meta property set as shown below. Other users shall not receive the chat message.
+A channel owner can configure their channel's [Catbot auto moderation](https://aka.ms/mixercatbot) settings so that unwanted chat messages are automatically dropped. If a message is sent and that message violates this filter, only channel moderators and the channel owner will receive that message, with the `censored` meta property set as shown below. Other users shall not receive the chat message.
 ```json
 {
   "channel": 12345,
