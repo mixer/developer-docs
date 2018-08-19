@@ -14,14 +14,14 @@ A livesubscribe reply looks like one of the following:
     ```
 * A reply with an invalid event:
     ```json
-    {"type": "reply", "result": null, "error": {"code": 4106, "message": "Unknown event \\"my silly event\\" "}, "id": 42}
+    {"type": "reply", "result": null, "error": {"code": 4106, "message": "Unknown event \"my silly event\" "}, "id": 42}
     ```
 * A reply for an event you do not have permission to see:
     ```json
-    {"type": "reply", "result": null, "error": {"code": 4107, "message": "You do not have permission to subscribe to \\"user:1:secrets\\""}, "id": 42}')
+    {"type": "reply", "result": null, "error": {"code": 4107, "message": "You do not have permission to subscribe to \"user:1:secrets\""}, "id": 42}')
     ```
 
 * A reply for an event you are already subscribed to:
     ```json
-    {"type": "reply", "result": null, "error": {"code": 4108, "message": "Attempt to duplicate subscription to \\"user:1:update\\""}, "id": 42}')
+    {"type": "reply", "result": null, "error": {"code": 4108, "message": "Attempt to duplicate subscription to \"user:1:update\""}, "id": 42}')
     ```
