@@ -416,7 +416,7 @@ public bool IsRequestValid(IHttpContext context, string secret, string body) {
 [/mixer-tab]
 [mixer-tab title="Go"]
 [raw]```go[/raw]
-```go
+```golang
 func IsRequestValid(r *http.Request, secret, body []byte) bool {
 	mac := hmac.New(sha512.New384, secret)
 	mac.Write(body)
