@@ -14,7 +14,7 @@ You can register an event by calling `POST /hooks` with some details about what 
 
 You'll also need to include your OAuth client ID in the `Client-ID` header, and your secret key in the Authorization header, in the form Secret `somelongstring`. All together, this is what a curl request to subscribe to the Mixer channel's broadcast events would look like:
 
-```curl
+```bash
 curl -XPOST https://mixer.com/api/v1/hooks \
     -H Client-ID:da400f1a81d7efc477920b5d686e95be6f92c88af09c2342 \
     -H Authorization:'Secret c51ff3c4e44e7be32be2f639b28e3569f1775f8530b95a5d972ace2cb9310ab8' \
@@ -77,7 +77,7 @@ def is_request_valid(request, body: str, secret: str):
 ```
 [/mixer-tab]
 [mixer-tab title="C#"]
-```c#
+```cs
 // Using asp.net style requests, you may need to adjust it :)
 public bool IsRequestValid(IHttpContext context, string secret, string body) {
     var hmac = new HMACSHA384(Encoding.UTF8.GetBytes(secret));
