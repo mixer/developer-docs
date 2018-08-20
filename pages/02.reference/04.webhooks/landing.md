@@ -2,7 +2,7 @@
 
 You can set up webhooks to have Mixer call your web service when something interesting happens. You'll need to head to the OAuth Clients page on the dev lab and register a client with a secret key. You'll use this to register webhooks.
 
-!!!! Want a more event-driven approach? Check out Constellation, our websocket-based pubsub service.
+!!! Want a more event-driven approach? Check out Constellation, our websocket-based pubsub service.
 
 ## Registering an Event
 You can register an event by calling `POST /hooks` with some details about what you want to subscribe to:
