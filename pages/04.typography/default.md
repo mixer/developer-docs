@@ -158,14 +158,14 @@ The notices styles are actually provided by the `markdown-notices` plugin but ar
 [mixer-tabs active=1]
 [mixer-tab title="First Tab"]
 
-In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero. 
+In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero.
 
 Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
 
 [/mixer-tab]
 [mixer-tab title="Second Tab"]
 
-In tempor sed sapien **eu porttitor**. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. [Quisque et enim](#) vitae orci placerat tincidunt id ac eros. Fusce et gravida libero. 
+In tempor sed sapien **eu porttitor**. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. [Quisque et enim](#) vitae orci placerat tincidunt id ac eros. Fusce et gravida libero.
 
 Phasellus cursus odio ex, in mattis lorem tincidunt vel. [Donec nibh odio](#), dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
 
@@ -369,4 +369,71 @@ Tab 3 content....
 [mixer-icon icon="LikeSolid" class="x-large mx-2 my-2 valign-middle" /]
 [/raw]
 ```
+
+### Code Highlighting
+
+Uses highlight js for code. Surround blocks in [raw]```[/raw] with the language name for proper highlighting.
+
+see [this page](https://highlightjs.org/static/demo/) for language listings.
+
+[mixer-tabs active=1]
+[mixer-tab title="Node"]
+[raw]```javascript[/raw]
+```javascript
+const crypto = require('crypto');
+
+function isRequestValid(req, secret, body) {
+    const hmac = crypto.createHmac('SHA384', secret);
+    hmac.update(body);
+    const digest = hmac.digest('hex').toUpperCase();
+    return req.headers['poker-signature'] === `sha384=${digest}`;
+}
+```
+[/mixer-tab]
+[mixer-tab title="Python"]
+[raw]```python[/raw]
+```python
+import hmac
+
+# Using Flask-style requests, you may need to adjust it :)
+def is_request_valid(request, body: str, secret: str):
+    hm = hmac.new(bytes(secret, 'utf-8'), digestmod='SHA384')
+    hm.update(bytes(body, 'utf-8'))
+    expected = 'sha384=' + hm.hexdigest().upper())
+    return hmac.compare_digest(request.headers['poker-signature'], expected)
+```
+[/mixer-tab]
+[mixer-tab title="C#"]
+[raw]```cs[/raw]
+```cs
+// Using asp.net style requests, you may need to adjust it :)
+public bool IsRequestValid(IHttpContext context, string secret, string body) {
+    var hmac = new HMACSHA384(Encoding.UTF8.GetBytes(secret));
+    var hash = BitConverter.ToString(hmac.ComputeHash(Encoding.UTF8.GetBytes(body))).Replace("-", string.Empty);
+    return context.HttpContext.Request.Headers["Poker-Signature"].Equals($"sha384={hash}");
+}
+```
+[/mixer-tab]
+[mixer-tab title="Go"]
+[raw]```go[/raw]
+```go
+func IsRequestValid(r *http.Request, secret, body []byte) bool {
+	mac := hmac.New(sha512.New384, secret)
+	mac.Write(body)
+	actual := []byte("sha384=" + strings.ToUpper(hex.EncodeToString(mac.Sum(nil))))
+	return hmac.Equal([]byte(r.Header.Get("Poker-Signature")), actual)
+}
+```
+[/mixer-tab]
+[mixer-tab title="PHP"]
+[raw]```php[/raw]
+```php
+function isRequestValid($secret) {
+  $body = file_get_contents('php://input');
+  $expected = "sha384=" . strtoupper(hash_hmac('sha384', $body, $secret));
+  return hash_equals($expected, $_SERVER['HTTP_POKER_SIGNATURE']);
+}
+```
+[/mixer-tab]
+[/mixer-tabs]
 ---
