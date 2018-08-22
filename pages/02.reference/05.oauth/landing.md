@@ -33,4 +33,4 @@ To use our OAuth implementation you'll just need the URLs which can be > found a
 
 # Reauthorizing an application
 
-If a user is sent to the Authorize endpoint and they have already granted the permissions to the application before, Mixer will automatically skip the approval page for convenience, so the user does not have to approve again. In some cases this might be undesirable, and you can force the user to reapprove the application every time by passing approval_prompt=force in the Authorize endpoint's URL.
+If a user is sent to the Authorize endpoint and they have already granted the permissions to the application before, Mixer will automatically skip the approval page for convenience, so the user does not have to approve again. In some cases this might be undesirable, and you can force the user to reapprove the application every time by passing `approval_prompt=force` in the Authorize endpoint's URL.

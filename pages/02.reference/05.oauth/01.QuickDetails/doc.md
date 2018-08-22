@@ -11,3 +11,7 @@ If you're familiar with OAuth, feel free to dig in! You can register your OAuth 
 | [Access Token](https://tools.ietf.org/html/rfc6749#section-1.4)     | 6 Hours     |
 | [Refresh Token](https://tools.ietf.org/html/rfc6749#section-1.5)    | 1 Year      | This is single use. If used, a new refresh token is issued with the new access token. |
 | [Implicit Token](https://tools.ietf.org/html/rfc6749#section-1.3.2) | 1 Year      | These are only given out by an Implicit Grant                                         |
+
+# Scopes
+
+For a list of scopes see our [scopes page](scopes).
