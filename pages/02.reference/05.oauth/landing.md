@@ -1,6 +1,6 @@
-!!! Familiar with OAuth? Checkout our [Quick Details](#123) page and jump right in.
-
 ## Introduction
+
+!!! Familiar with OAuth? Checkout our [Quick Details](#123) page and jump right in.
 
 If you want to act as another user in chat, access a user's private resources as part of your app, or just want to use Mixer credentials to authenticate your users, it's best to use OAuth so the users' credentials don't need to be stored on your servers.
 
@@ -26,8 +26,7 @@ The [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749) is simple enough, 
 
 ! We **strongly** advise you to use an existing [OAuth client library](http://oauth.net/code/) whenever possible, rather than writing your own implementation. OAuth is hard to securely implement, and the time you spend trying to do so would be better spent building something awesome.
 
-! > "To be clear, OAuth 2.0 at the hand of a developer with deep understanding of web security will likely result is a secure implementation. However, at the hands of most developers – as has been the experience from the past two years – 2.0 is likely to produce insecure implementations."
-
+> To be clear, OAuth 2.0 at the hand of a developer with deep understanding of web security will likely result is a secure implementation. However, at the hands of most developers – as has been the experience from the past two years – 2.0 is likely to produce insecure implementations.
 > Eran Hammer - Creator of [Hapi](https://hapijs.com/)
 
 To use our OAuth implementation you'll just need the URLs which can be > found at the top of this page and your token from the [OAuth Clients page](https://mixer.com/lab/oauth).
@@ -35,7 +34,3 @@ To use our OAuth implementation you'll just need the URLs which can be > found a
 # Reauthorizing an application
 
 If a user is sent to the Authorize endpoint and they have already granted the permissions to the application before, Mixer will automatically skip the approval page for convenience, so the user does not have to approve again. In some cases this might be undesirable, and you can force the user to reapprove the application every time by passing approval_prompt=force in the Authorize endpoint's URL.
-
-# OAuth Scopes
-
-To request access to a users' account you need to use scopes. Scopes limit the amount of access a certain application has to the account. The full list of scopes which can be requested are listed below, and are also listed on the endpoints themselves over on the REST API reference.
