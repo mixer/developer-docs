@@ -5,20 +5,20 @@ title: 'Test Streams'
 # Test Streams
 Test streams allow you to broadcast your content in private. This means if you are working on an unannounced game or just want to try out some new streaming settings then you can use test streams to broadcast without anyone being able to see your content or broadcast.
 
-# Controlling Access
+## Controlling Access
 Whilst in test stream mode there are two ways to grant viewers access to view your test stream.
 
 By Making them a moderator in the channel - Moderators of your channel can see your test streams
 By Sharing out the access key link - At the top of your channel page whilst streaming in test stream mode is a banner which has a link in it. You can give this link out and those with the link will be able to access your test stream. This link resets for every stream.
 
-# Applying for Test Stream Access
+## Applying for Test Stream Access
 Test Streams is currently released to a limited audience. If you're a Xbox or Microsoft Partner please email your Mixer contact they can enable test streaming for you. Otherwise please follow the folling steps:
 1. Visit the Mixer Developer Lab
 1. Click the Test Streams tab
 1. Fill out the displayed form and click Send Request
 1. Once the form is filled in it will be reviewed by Mixer staff who will notify you when the feature is enabled.
 
-# Enabling Test Stream Mode
+## Enabling Test Stream Mode
 Once you've been granted access, to enable test stream mode:
 1. Open the settings pane by clicking your profile picture in the upper, right of the mixer.com website.
 1. Go to Manage Channel in the Setting pane.
@@ -31,7 +31,7 @@ Once you've been granted access, to enable test stream mode:
 Once you have enabled test streams for an account, it is enabled for every broadcast, across all devices. You don't need to enable test streams for each device you broadcast from. There is one, global setting applied to the account.
 
 
-# Best Practices
+## Best Practices
 1. Use the `/clear` chat command at the end of the stream to clear chat.
 2. Keep your access key / link secure. If you need to reset it, restart the broadcast to generate a new one.
 3. Double check your moderators list before using test streaming. If someone is a moderator then they can see your test stream.
