@@ -27,7 +27,7 @@ sections:
         title: MixPlay
         color: gold-background
         icon: icon-MixerSparksSolid
-        text: Create revolutionary new ways for viewers to engage with streamers through controls & widgets on Mixer
+        text: Create revolutionary new ways for viewers to engage with streamers through controls & widgets on Mixer.
         link: guides/mixplay
     -
         title: Chat
