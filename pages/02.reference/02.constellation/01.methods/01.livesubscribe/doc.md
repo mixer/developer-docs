@@ -1,3 +1,7 @@
+---
+title: Live Subscribe
+---
+
  # livesubscribe
 
 A livesubscribe method allows users to subscribe to #[a(href='#events_live_events') liveloading events]. The number of events you can subscribe to is limited; please see #[a(href='#introduction__liveloading_limits') liveloading limits]

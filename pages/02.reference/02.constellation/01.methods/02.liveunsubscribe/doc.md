@@ -1,3 +1,7 @@
+---
+title: Live UnSubscribe
+---
+
 # liveunsubscribe
 
 A liveunsubscribe method can be used to stop listening to previously-subscribed-to events:
