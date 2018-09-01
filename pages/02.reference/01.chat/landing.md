@@ -1,5 +1,5 @@
 ---
-title: ""
+title: Chat
 media_order: ""
 body_classes: ""
 order_by: ""

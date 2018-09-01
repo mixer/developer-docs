@@ -1,3 +1,7 @@
+---
+title: Web Hooks
+---
+
 # Web Hooks
 
 You can set up webhooks to have Mixer call your web service when something interesting happens. You'll need to head to the OAuth Clients page on the dev lab and register a client with a secret key. You'll use this to register webhooks.

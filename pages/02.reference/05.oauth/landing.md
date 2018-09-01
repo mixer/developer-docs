@@ -1,3 +1,7 @@
+---
+title: OAuth
+---
+
 ## Introduction
 
 !!! Familiar with OAuth? Checkout our [Quick Details](#123) page and jump right in.
