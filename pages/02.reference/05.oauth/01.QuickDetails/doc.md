@@ -1,4 +1,7 @@
-# Quick details
+---
+title: Quick Details
+---
+# Quick Details
 
 If you're familiar with OAuth, feel free to dig in! You can register your OAuth application on your [OAuth Clients page](https://mixer.com/lab/oauth). After getting a Client ID there, you can use provide these endpoints to your OAuth client library to dig in:
 

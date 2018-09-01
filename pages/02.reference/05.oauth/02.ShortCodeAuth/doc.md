@@ -1,3 +1,6 @@
+---
+title: Short Code Auth
+---
 # Short Code Authentication
 
 For convenience, Mixer has added an additional alternative authentication method where the user is prompted to enter a temporary code to approve your application.
