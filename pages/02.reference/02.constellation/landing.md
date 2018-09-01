@@ -1,3 +1,7 @@
+---
+title: Constellation
+---
+
 # Constellation
 
 Constellation is a service on Mixer used for many features. The most useful for Developers is liveloading.
