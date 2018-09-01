@@ -18,8 +18,8 @@ links:
         Feedback: 'https://feedback.mixer.com/forums/382521-lazers-and-shiny-things/category/174978-developer-ecosystem'
         Discord: 'https://discord.gg/mixer'
     Legal:
-        Attributions: 'https://dev.mixer.com//legal/attributions'
-        'Developer Agreement': 'https://dev.mixer.com/legal/developer-agreement'
+        Attributions: '/legal/attributions'
+        'Developer Agreement': 'legal/developer-agreement'
         'Privacy Policy': 'https://mixer.com/about/privacy'
         'Terms of Service': 'https://mixer.com/about/tos'
         DMCA/Abuse: 'https://mixer.com/about/dmca'
