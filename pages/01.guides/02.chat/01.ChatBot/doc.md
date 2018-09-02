@@ -1,5 +1,7 @@
-
-# Creating a Simple Chat Bot
+---
+title: Creating a ChatBot
+---
+# Creating a Chat Bot
 
 For this tutorial, we will show you how to create a 'ping-pong' chat bot using either our [Node](https://github.com/mixer/client-node), [Java](https://github.com/mixer/beam-client-java) or [Python](https://github.com/mixer/beam-client-python) libraries to communicate with the Mixer API. We'll also take a look at how you can talk to the API directly with [curl](https://curl.haxx.se/) and [wscat](https://github.com/websockets/wscat).
 
