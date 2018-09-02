@@ -261,7 +261,7 @@ Now that we have a chat connection with authentication working, we can add the r
 ## Project Setup
 Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency.
 
-[mixer-tabs]
+[mixer-tabs active=1]
 [mixer-tab title="Maven"]
 To set up `beam-client-java`, first add the Mixer repo to your `pom.xml` as a repository as follows:
 ```
