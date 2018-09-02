@@ -5,4 +5,5 @@ icon_bg: blue
 ---
 # Chat
 
+Chat allows you to chat!
 
