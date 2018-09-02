@@ -426,12 +426,9 @@ public class Chat {
 ```
 [/mixer-tab]
 
-[mixer-tab title="Terminal"]
-
-[/mixer-tab]
-
 [/mixer-tabs]
+
 ## Where to Go Next?
 
-- Try changing the above code to go to a different channel page?
-- Read our [Chat Reference](https://mixerdev.azurewebsites.net/reference/chat) for information on how to do other cool things in Chat.
+- Try changing the above code to go to a different channel page.
+- Read our [Chat Reference](reference/chat) for information on how to do other cool things in Chat.
