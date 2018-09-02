@@ -258,9 +258,176 @@ Now that we have a chat connection with authentication working, we can add the r
   - Maven
   - Gradle
 
-##Project Setup
-Set up a standard project for your environment and include beam-client-java as a dependency.
+## Project Setup
+Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency.
 
+[mixer-tabs]
+[mixer-tab title="Maven"]
+To set up `beam-client-java`, first add the Mixer repo to your `pom.xml` as a repository as follows:
+```
+<repositories>
+  <repository>
+    <id>beam-snapshots</id>
+    <url>https://maven.mixer.com/content/repositories/snapshots/</url>
+  </repository>
+</repositories>
+And secondly, add this project as a dependency in your pom.xml:
+
+<dependencies>
+  <dependency>
+    <groupId>com.mixer</groupId>
+    <artifactId>api</artifactId>
+    <version>6.0.0-SNAPSHOT</version>
+  </dependency>
+</dependencies>
+```
+[/mixer-tab]
+[mixer-tab title="Gradle"]
+To set up `beam-client-java`, first add the Mixer repo to your `build.gradle` as a repository as follows:
+```
+repositories {
+    maven {
+        name = "beam"
+        url = "https://maven.mixer.com/content/repositories/snapshots"
+    }
+}
+```
+And secondly, add this project as a dependency in your build.gradle:
+```
+dependencies {
+    compile "com.mixer:api:6.0.0-SNAPSHOT"
+}
+```
+[/mixer-tab]
+[/mixer-tabs]
+
+## Writing the Code
+
+Let's start by creating a Main class for our tutorial and importing required libraries. We'll also instantiate a `MixerAPI` object with an implicit OAuth token. The required scopes are `chat:connect chat:chat`.
+
+```java
+import com.mixer.api.MixerAPI;
+import com.mixer.api.resource.MixerUser;
+import com.mixer.api.resource.chat.MixerChat;
+import com.mixer.api.resource.chat.events.IncomingMessageEvent;
+import com.mixer.api.resource.chat.events.UserJoinEvent;
+import com.mixer.api.resource.chat.methods.AuthenticateMessage;
+import com.mixer.api.resource.chat.methods.ChatSendMethod;
+import com.mixer.api.resource.chat.replies.AuthenticationReply;
+import com.mixer.api.resource.chat.replies.ReplyHandler;
+import com.mixer.api.resource.chat.ws.MixerChatConnectable;
+import com.mixer.api.services.impl.ChatService;
+import com.mixer.api.services.impl.UsersService;
+
+import java.util.concurrent.ExecutionException;
+
+public class Chat {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        MixerAPI mixer = new MixerAPI("Click here to get your Client ID!", "Click here to get your Token!");
+    }
+}
+```
+
+Next we need to get a reference to a `MixerChat` object that we can connect to. To do this we'll log in using the details from above, and use the `MixerUser` object to get their `MixerChannel`. We can then pass this to the `ChatService` to get a `MixerChatConnectable` object. This object allows us to connect to chat!
+
+```java
+//...
+MixerUser user = mixer.use(UsersService.class).getCurrent().get();
+MixerChat chat = mixer.use(ChatService.class).findOne(user.channel.id).get();
+MixerChatConnectable chatConnectable = chat.connectable(mixer);
+//...
+```
+
+Now we need to connect and authenticate with an `AuthenticateMessage`. As this is sent asynchronously, we'll need to wait for it to finish before we can send anything to chat. Our `ReplyHandler` takes care of that.
+
+```java
+if (chatConnectable.connect()) {
+    chatConnectable.send(AuthenticateMessage.from(user.channel, user, chat.authkey), new ReplyHandler<AuthenticationReply>() {
+        public void onSuccess(AuthenticationReply reply) {
+            chatConnectable.send(ChatSendMethod.of("Hello World!"));
+        }
+        public void onFailure(Throwable var1) {
+            var1.printStackTrace();
+        }
+    });
+}
+```
+
+With authentication and connection out of the way, we just need to hook up the greet event and the `!ping` command. The greet event is set up by registering an `EventHandler` for the `UserJoinEvent`.
+
+```java
+//...
+chatConnectable.on(UserJoinEvent.class, event -> {
+    chatConnectable.send(ChatSendMethod.of(
+        String.format("Hi %s! I'm pingbot! Write !ping and I will pong back!",
+        event.data.username)));
+});
+//...
+```
+
+The last thing to do is to set up the !ping command. We will listen for `IncomingMessageEvent` and check whether the message we receive starts with `!ping`.
+
+```java
+//...
+chatConnectable.on(IncomingMessageEvent.class, event -> {
+    if (event.data.message.message.get(0).text.startsWith("!ping")) {
+        chatConnectable.send(ChatSendMethod.of(String.format("@%s PONG!",event.data.userName)));
+    }
+});
+//...
+```
+
+Putting everything together into one file, you get a completed ping-pong Java Mixer Bot!
+
+```java
+import com.mixer.api.MixerAPI;
+import com.mixer.api.resource.MixerUser;
+import com.mixer.api.resource.chat.MixerChat;
+import com.mixer.api.resource.chat.events.IncomingMessageEvent;
+import com.mixer.api.resource.chat.events.UserJoinEvent;
+import com.mixer.api.resource.chat.methods.AuthenticateMessage;
+import com.mixer.api.resource.chat.methods.ChatSendMethod;
+import com.mixer.api.resource.chat.replies.AuthenticationReply;
+import com.mixer.api.resource.chat.replies.ReplyHandler;
+import com.mixer.api.resource.chat.ws.MixerChatConnectable;
+import com.mixer.api.services.impl.ChatService;
+import com.mixer.api.services.impl.UsersService;
+
+import java.util.concurrent.ExecutionException;
+
+public class Chat {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        MixerAPI mixer = new MixerAPI("Click here to get your Client ID!", "Click here to get your Token!");
+
+        MixerUser user = mixer.use(UsersService.class).getCurrent().get();
+        MixerChat chat = mixer.use(ChatService.class).findOne(user.channel.id).get();
+        MixerChatConnectable chatConnectable = chat.connectable(mixer);
+
+        if (chatConnectable.connect()) {
+            chatConnectable.send(AuthenticateMessage.from(user.channel, user, chat.authkey), new ReplyHandler<AuthenticationReply>() {
+                public void onSuccess(AuthenticationReply reply) {
+                    chatConnectable.send(ChatSendMethod.of("Hello World!"));
+                }
+                public void onFailure(Throwable var1) {
+                    var1.printStackTrace();
+                }
+            });
+        }
+
+        chatConnectable.on(IncomingMessageEvent.class, event -> {
+            if (event.data.message.message.get(0).text.startsWith("!ping")) {
+                chatConnectable.send(ChatSendMethod.of(String.format("@%s PONG!",event.data.userName)));
+            }
+        });
+
+        chatConnectable.on(UserJoinEvent.class, event -> {
+            chatConnectable.send(ChatSendMethod.of(
+                    String.format("Hi %s! I'm pingbot! Write !ping and I will pong back!",
+                    event.data.username)));
+        });
+    }
+}
+```
 [/mixer-tab]
 
 [mixer-tab title="Terminal"]
