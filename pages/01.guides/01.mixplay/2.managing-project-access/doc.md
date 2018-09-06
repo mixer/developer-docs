@@ -1,5 +1,5 @@
 ---
-title: Managing Project Access
+title: Managing Access
 process:
 	twig: true
 ---
