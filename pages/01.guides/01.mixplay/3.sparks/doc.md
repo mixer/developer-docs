@@ -18,8 +18,7 @@ Currently users cannot buy Sparks with real world money. That may change in the 
 When placing a spark cost on a control it is important to remember to balance the cost against your Game or situation. For example Interactions that potentially impact game balance should be priced higher than those that are less impacting. What might be surprising is that the majority of Mixer users (more than 90%) have between 500 and 1,000. The next largest tranche of users has between 1,001 and 10,000 Sparks, followed by those with more than 10,000 Sparks, but that’s a very small (roughly 1%) of Mixer users.
 
 ## Spark Transactions
-![Diagram of a transaction\'s life cycle](./TransactionLifecycle.svg)
-    p.caption Diagram of a spark transaction's life cycle, showing its transition between states.
+![Diagram of a transaction\'s life cycle](./TransactionLifecycle.svg?classes=caption "Diagram of a spark transaction's life cycle, showing its transition between states.")
 
 When a button with a spark cost is pressed, it creates a transaction. To deduct sparks from a participant, a [Game Client](#the-game-client) must `capture` the transaction. If a transaction remains uncaptured for 5 minutes, it automatically expires, and the cost associated with the transaction is not deducted from the participant's spark balance.
 

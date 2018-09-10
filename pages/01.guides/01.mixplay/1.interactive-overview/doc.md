@@ -12,9 +12,7 @@ Four major components make up an interactive experience:
 1. Interactive Project
 1. Participants
 
-![Diagram showing the structure of an interactive project](./HighLevelOverview.svg)
-
-        p.caption Diagram showing the structure of an interactive project
+![Diagram showing the structure of an interactive project](./HighLevelOverview.svg?classes=caption "Diagram showing the structure of an interactive project")
 
 ### The Game Client
 A Game Client is software code which processes interactive events. It is written by developers who want to create an interactive experience. Game Clients connect to the [Interactive Service](#the-interactive-service) and listen to events and updates sent from the service to take action within their environment, thus affecting the broadcast.
@@ -58,10 +56,7 @@ These elements are:
 - Groups
 - Participants
 
-![Diagram showing the Relationship between elements in the interactive hierarchy.](./InteractiveHierarchy.svg)
-
-    p.caption Diagram showing the relationship between elements in the interactive hierarchy.
-
+![Diagram showing the Relationship between elements in the interactive hierarchy.](./InteractiveHierarchy.svg?classes=caption "Diagram showing the relationship between elements in the interactive hierarchy.")
 
 ## Scenes
 
@@ -97,46 +92,38 @@ A button is a rectangular, interactive control within a scene. [Game Clients](#t
 - `keydown` event is sent when the key (specified via key code on the button) is pressed by a participant
 - `keyup` event is sent when the key (specified via key code on the button) is released by a participant
 
-![Sample button control which costs the participant one spark if they click on it.](./button.png)
-
-    p.caption Sample button control which costs the participant one spark if they click on it.
+![Sample button control which costs the participant one spark if they click on it.](./button.png?classes=caption "Sample button control which costs the participant one spark if they click on it.")
 
 Developers can use buttons to enable participants to vote, cause in-game actions to happen, or control in-game entities.
 
 Buttons are highly customizable. These button properties can be edited from both the Interactive Studio and a Game Client:
 1. Text displayed on the button
-1. Spark cost (For more info about sparks, see [What are sparks?](#what-are-sparks))
-1. Width of the progress bar, which is displayed at the bottom of a button
-1. Disabled state - Buttons which are disabled cannot be interacted with
-1. Cooldown duration - Prevents interaction until it expires
-1. Key code - A keyboard key assignment to a button
-1. Tooltip displayed when hovering over the button
-1. Color of the background on the button
-1. Color of the border on the button
-1. Accent color applied to the cooldown spinner and progress bar
-1. Focus Color applied to the border when focusing
-1. Color of the text display on the button
-1. Size of the text display on the button
+2. Spark cost (For more info about sparks, see [What are sparks?](#what-are-sparks))
+3. Width of the progress bar, which is displayed at the bottom of a button
+4. Disabled state - Buttons which are disabled cannot be interacted with
+5. Cooldown duration - Prevents interaction until it expires
+6. Key code - A keyboard key assignment to a button
+7. Tooltip displayed when hovering over the button
+8. Color of the background on the button
+9. Color of the border on the button
+10. Accent color applied to the cooldown spinner and progress bar
+11. Focus Color applied to the border when focusing
+12. Color of the text display on the button
+13. Size of the text display on the button
 
 ### Joysticks
 
 Joysticks are circular controls positioned within a scene that participants can click and drag. Moving a joystick sends an input event down to the Game Client with the coordinates of the joystick relative to its center. Joystick coordinates range between `-1 and 1`.
 
-![A joystick display to a participant.](./joystick.png)
-    
-    p.caption An idle joystick displayed to a participant. Its coordinates are `0, 0`.
+![A joystick display to a participant.](./joystick.png?classes=caption "An idle joystick displayed to a participant. Its coordinates are `0, 0`.")
 
-![An illustration of the coordinate system for joysticks.](./joystickCoordinates.svg)
-    
-    p.caption An illustration of the coordinate system for joysticks. The top left is `-1, -1` and the bottom right is `1, 1`.
+![An illustration of the coordinate system for joysticks.](./joystickCoordinates.svg?classes=caption "An illustration of the coordinate system for joysticks. The top left is `-1, -1` and the bottom right is `1, 1`.")
 
 ### Labels
 
 Labels are controls which can be used to display instructions and visually group controls together. As an example, a scene with buttons that either hurt or heal the player can have each section clearly labeled respectively above the buttons.
 
-![Sample label control that is bold and italicized.](./label.png)
-    
-    p.caption Sample label control that is bold and italicized.
+![Sample label control that is bold and italicized.](./label.png?classes=caption "Sample label control that is bold and italicized.")
 
 Labels are customizable. These label properties can be edited from both the Interactive Studio and a Game Client:
 1. Text displayed in the label
@@ -154,9 +141,7 @@ Textboxes are controls which can be used to get text input from participants. [G
 - `change` event is sent when the participant types in the textbox (This is not sent if the button has a submit button)
 - `submit` event is sent when the participant submits the textbox
 
-![Sample textbox control asking participants to enter their pet\'s name, costing 10 sparks to submit.](./textbox.png)
-    
-    p.caption Sample textbox control asking participants to enter their pet's name, costing 10 sparks to submit.
+![Sample textbox control asking participants to enter their pet\'s name, costing 10 sparks to submit.](./textbox.png?classes=caption "Sample textbox control asking participants to enter their pet's name, costing 10 sparks to submit.")
 
 Textboxes are customizable. These textbox properties can be edited from both the Interactive Studio and a Game Client:
 
