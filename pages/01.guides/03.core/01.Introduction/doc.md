@@ -6,8 +6,9 @@ The Core API is comprised of two core concepts:
 - REST - Retrieve and update information on Mixer
 - Live Updates (Constellation) - Get Notifications about changes to information on Mixer.
 
-# Rest
-## What is REST?
+## Rest
+
+### What is REST?
 
 If your friend was going to the store and you needed something, you might ask them to "get" something for you. After they get back, they might "put" that item away for you. These are the constructs we use in everyday life, and REST APIs attempt to build on those, but, rather than operating on physical items, you're dealing with objects on the computer.
 
