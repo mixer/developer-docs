@@ -41,7 +41,7 @@ Interactive projects are created and configured in the [Developer Lab](https://m
 
 Go to the [Developer Lab](https://mixer.com/lab/interactive) and click on the #[strong plus] button to create a new project.
 
-![Screenshot showing the location of the create new project button](./studio/createNewProject.png)
+![Screenshot showing the location of the create new project button](./studio/createNewProject.png?classes=caption )
     p.caption Screenshot shows the location of the Create new project button.
 
 You'll then be prompted to enter a name for your project. Enter a suitable name for your project.
@@ -49,6 +49,7 @@ You'll then be prompted to enter a name for your project. Enter a suitable name 
 After creating the project, you can still modify your project using the editor.
 
 ### Configure, build, and publish the project
+
 The project editor contains tabs where each tab is a step in the creation of your project. Use the project editor to configure, build, and publish your project.
 ![studio editor tabs](./studio/editorTabs.png)
 
@@ -96,11 +97,13 @@ Once you are finished building your scenes/controls, press the Save button in th
 ![studio grid](./studio/grid_with_controls.png)
 
 ### Code
+
 The code step is to help you complete the code portion of your project. This is usually done after you have set up the scenes and controls. This is also where you can grab the `Project Version ID` which is displayed in the center of the screen.
 
 You will need to write your own Game Client to connect to the Interactive service. For SDK downloads, documentation, and samples, go to [Choose a SDK](#choosing-an-sdk-environment).
 
 ### Publish
+
 The final step in the studio is Publish. Publish allows you to share your project with everyone on Mixer.
 
 To help you decide whether your Interactive project is ready for publishing, these are some questions to ask:
@@ -113,7 +116,9 @@ To help you decide whether your Interactive project is ready for publishing, the
 If you’ve answered no to any of the questions above, you should #[strong not] publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](#sharing-your-project) your project instead.
 
 #### Understand the Publishing Flow
+
 ![studio publish process](./studio/PublishProcess.svg)
+
 A Project starts off as a draft. In this state, you are free to edit, test, and share it with other users. Many projects don't leave the draft state. It's perfectly ok not to publish your project.
 
 When you've decided to publish your project, go to the Publish tab in the interactive studio. It will perform some checks on the project to ensure that it meets some basic requirements before allowing you to click on the Submit button.
@@ -122,6 +127,7 @@ After a review is conducted, you'll be notified whether your project is accepted
 Once your project is accepted for publishing, we can start discussing the actual launch date; when you would like to make your project available for all Mixer users in the Interactive Store.
 
 ## Where to get help
+
 Have questions? Stuck? We're here to help! We have places you can get help so drop by!
 
 - [Gitter](https://gitter.im/Mixer/developers) - Chat with our team and other developers.
