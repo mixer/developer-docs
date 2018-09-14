@@ -344,4 +344,125 @@ Your rank is at least 284...
 Your rank on Mixer is 285!
 ```
 [/mixer-tab]
+[mixer-tab title="Python"]
+## Prerequisites
+- Python 3
+- pip (Python Package Manager)
+
+## Usage
+Unfortunately we don't have a client library built for Python but, don't worry, the API is still super simple to use with the wonderful [requests](https://github.com/kennethreitz/requests) package. Go ahead and fire of `pip install requests` if you don't already have it installed.
+
+First off, let's import what we need and make a login request to the API.
+
+```python
+import requests
+import sys
+
+s = requests.Session()
+s.headers.update({'Client-ID': 'Click here to get your Client ID!'})
+
+channel_response = s.get('https://mixer.com/api/v1/channels/{}'.format(sys.argv[1]))
+```
+
+We'll get back a HTTP response that includes a bunch of details about the channel. We'll print out how many viewers they have on their channel.
+
+```python
+import requests
+import sys
+
+s = requests.Session()
+s.headers.update({'Client-ID': 'Click here to get your Client ID!'})
+
+channel_response = s.get('https://mixer.com/api/v1/channels/{}'.format(sys.argv[1]))
+
+viewers = channel_response.json()['viewersTotal']
+print("You have {} viewers...".format(viewers))
+You've already got working code that connects and talks to our API. Go ahead, try it! Run python rank.py <your_username> in your terminal.
+
+$ python rank.py connor4312
+You have 595 total viewers...
+Next, let's make a function that loops the channel endpoint in descending order by total viewers, until it gets to a channel that equal to or lower than you're rank. When it finds such a channel, it'll return it.
+
+def channels_with_more_viewers(viewers):
+    rank = 0
+    page = 0
+    while True:
+        channels_response = s.get('https://mixer.com/api/v1/channels', params={
+            'fields': 'viewersTotal',
+            'order': 'viewersTotal:DESC',
+            'page': page
+        })
+
+        for channel in channels_response.json():
+            if channel['viewersTotal'] <= viewers:
+                return rank
+            else:
+                rank += 1
+
+        print("Your rank is at least {}...".format(rank))
+        page += 1
+```
+
+All together now, you can put this together into a single script...
+
+```python
+import requests
+import sys
+
+s = requests.Session()
+s.headers.update({'Client-ID': 'Click here to get your Client ID!'})
+
+def channels_with_more_viewers(viewers):
+    """Returns the number of channels that have more than `viewers` viewers.
+    """
+
+    rank = 0
+    page = 0
+    while True:
+        channels_response = s.get('https://mixer.com/api/v1/channels', params={
+            'fields': 'viewersTotal',
+            'order': 'viewersTotal:DESC',
+            'page': page
+        })
+
+        for channel in channels_response.json():
+            if channel['viewersTotal'] <= viewers:
+                return rank
+            else:
+                rank += 1
+
+        print("Your rank is at least {}...".format(rank))
+        page += 1
+
+
+channel_response = s.get('https://mixer.com/api/v1/channels/{}'.format(sys.argv[1]))
+
+viewers = channel_response.json()['viewersTotal']
+print("You have {} viewers...".format(viewers))
+
+rank = channels_with_more_viewers(viewers)
+print("Your rank on Mixer is {}!".format(rank))
+```
+...and run it to get your rank on Mixer!
+```
+$ python rank.py connor4312
+You have 595 total viewers...
+Your rank is at least 51...
+Your rank is at least 101...
+Your rank is at least 151...
+Your rank is at least 201...
+Your rank is at least 251...
+Your rank is at least 301...
+Your rank is at least 351...
+Your rank is at least 401...
+Your rank is at least 451...
+Your rank is at least 501...
+Your rank is at least 551...
+Your rank is at least 601...
+Your rank is at least 651...
+Your rank is at least 701...
+Your rank is at least 751...
+Your rank on Mixer is 761!
+```
+[/mixer-tab]
 [/mixer-tabs]
