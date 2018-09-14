@@ -377,12 +377,18 @@ channel_response = s.get('https://mixer.com/api/v1/channels/{}'.format(sys.argv[
 
 viewers = channel_response.json()['viewersTotal']
 print("You have {} viewers...".format(viewers))
+```
+
 You've already got working code that connects and talks to our API. Go ahead, try it! Run python rank.py <your_username> in your terminal.
 
+```
 $ python rank.py connor4312
 You have 595 total viewers...
+```
+
 Next, let's make a function that loops the channel endpoint in descending order by total viewers, until it gets to a channel that equal to or lower than you're rank. When it finds such a channel, it'll return it.
 
+```python
 def channels_with_more_viewers(viewers):
     rank = 0
     page = 0
