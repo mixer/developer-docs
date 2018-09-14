@@ -50,6 +50,7 @@ Constellation is based on JSON-RPC with additional support for an event system. 
 ## Packets
 
 There are three packet types, you can read more about them by clicking them in the side menu or the table below:
+
 | Type                   | Description                                                           |
 | ---------------------- | --------------------------------------------------------------------- |
 | [Method](methods)      | Used by clients to instruct the server to do something.               |
