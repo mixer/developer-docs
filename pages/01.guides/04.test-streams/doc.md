@@ -1,6 +1,6 @@
 ---
 title: 'Test Streams'
-icon: SettingsSolid
+icon: MixerSettingsSolid
 icon_bg: red
 redirect: 'introduction'
 ---
