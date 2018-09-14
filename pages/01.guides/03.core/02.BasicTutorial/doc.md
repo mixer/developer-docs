@@ -165,4 +165,183 @@ Your rank on Mixer is 761!
 ```
 [/mixer-tab]
 
+[mixer-tab title="Java"]
+## Prerequisites
+- Java 1.8 or above
+- A Java IDE such as:
+  - Eclipse
+  - IntelliJ
+  - NetBeans
+- A Java Project Manager such as:
+  - Maven
+  - Gradle
+
+## Project Setup
+Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency.
+
+
+To set up `beam-client-java` with **Maven**, first add the Mixer repo to your `pom.xml` as a repository as follows:
+```
+<repositories>
+  <repository>
+    <id>beam-snapshots</id>
+    <url>https://maven.mixer.com/content/repositories/snapshots/</url>
+  </repository>
+</repositories>
+And secondly, add this project as a dependency in your pom.xml:
+
+<dependencies>
+  <dependency>
+    <groupId>com.mixer</groupId>
+    <artifactId>api</artifactId>
+    <version>6.0.0-SNAPSHOT</version>
+  </dependency>
+</dependencies>
+```
+
+To set up `beam-client-java` with **Gradle**, first add the Mixer repo to your `build.gradle` as a repository as follows:
+```
+repositories {
+    maven {
+        name = "beam"
+        url = "https://maven.mixer.com/content/repositories/snapshots"
+    }
+}
+```
+And secondly, add this project as a dependency in your build.gradle:
+```
+dependencies {
+    compile "com.mixer:api:6.0.0-SNAPSHOT"
+}
+```
+
+## Usage
+Let's start by creating a Main class for the Java application and importing all of the required packages. We'll also initialize an instance of the MixerAPI.
+
+```java
+import com.mixer.api.MixerAPI;
+import com.mixer.api.http.SortOrderMap;
+import com.mixer.api.resource.MixerUser;
+import com.mixer.api.resource.channel.MixerChannel;
+import com.mixer.api.response.channels.ShowChannelsResponse;
+import com.mixer.api.services.impl.ChannelsService;
+import com.mixer.api.services.impl.UsersService;
+
+import java.util.concurrent.ExecutionException;
+
+public class Tutorial {
+    public static MixerAPI mixer;
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        mixer = new MixerAPI("Click here to get your Client ID!");
+    }
+}
+```
+
+Next let's fetch the user's channel we'll grab their username off the command line. The Java Client uses a service orientated approach which means all channel related functions are on the `ChannelService`. So we need to `use` that service to get the channel data. Most methods that talk to the API return a [Java Future](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html). These are a form of asyncronous operation in Java. For this tutorial however we'll use the get method of a future to wait for the Future to complete. It returns a `MixerChannel` object. On the channel we can find the `viewersTotal` property which we can then print.
+
+```java
+//...
+MixerChannel channel = mixer.use(ChannelsService.class).findOneByToken(args[0]).get();
+
+int viewers = user.channel.viewersTotal;
+System.out.format("You have %d total views...\n", viewers);
+
+run(0,viewers,1);
+//...
+```
+
+Now you've already got some working code!
+
+To run your project you can use your Java IDE to create a run configuration that supplies the username as Program Arguments. If you're using IntelliJ it should look like this:
+![](runconfig.png)
+
+Next let's make a function which gets a page of channels from the API sorted in descending order based on total views.
+```java
+//...
+public static ShowChannelsResponse getChannelsPage(int page) throws ExecutionException,InterruptedException  {
+    SortOrderMap<ShowChannelsResponse.Attributes, ShowChannelsResponse.Ordering> map = new SortOrderMap<>();
+    map.put(ShowChannelsResponse.Attributes.VIEWERS_TOTAL, ShowChannelsResponse.Ordering.DESCENDING);
+    return mixer.use(ChannelsService.class).show(map,page,100).get();
+}
+//...
+Finally, we can make a function that loops through the MixerChannel objects on the ShowChannelsResponse, until it gets to a channel that equal to or lower than you're rank. If this is not found we request the next page recursively.
+
+When it finds such a channel, it'll log it to the console.
+
+public static int run(int page, int viewers, int rank) throws ExecutionException,InterruptedException {
+    ShowChannelsResponse channels = getChannelsPage(page);
+    for (int i = 0; i < channels.size(); i++) {
+        MixerChannel channel = channels.get(i);
+        if (channel.viewersTotal <= viewers) {
+            System.out.format("Your rank on Mixer is %d!\n", rank);
+            return rank;
+        }
+        System.out.format("Your rank is at least %d...\n", rank);
+        rank++;
+    }
+    return run(page + 1, viewers, rank);
+}
+```
+
+To start the ranking process we just need to call `run(0, viewers, 1)` in the main method. All together you can put the code together into one Java Class...
+
+```java
+import com.mixer.api.MixerAPI;
+import com.mixer.api.http.SortOrderMap;
+import com.mixer.api.resource.channel.MixerChannel;
+import com.mixer.api.response.channels.ShowChannelsResponse;
+import com.mixer.api.services.impl.ChannelsService;
+
+import java.util.concurrent.ExecutionException;
+
+public class Tutorial {
+    public static MixerAPI mixer;
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        mixer = new MixerAPI("Click here to get your Client ID!");
+
+        MixerChannel channel = mixer.use(ChannelsService.class).findOneByToken(args[0]).get();
+
+        int viewers = channel.viewersTotal;
+        System.out.format("You have %d total viewers...\n", viewers);
+
+        run(0,viewers,1);
+
+
+    }
+    public static int run(int page, int viewers, int rank) throws ExecutionException,InterruptedException {
+        ShowChannelsResponse channels = getChannelsPage(page);
+        for (int i = 0; i < channels.size(); i++) {
+            MixerChannel channel = channels.get(i);
+            if (channel.viewersTotal <= viewers) {
+                System.out.format("Your rank on Mixer is %d!\n", rank);
+                return rank;
+            }
+            System.out.format("Your rank is at least %d...\n", rank);
+            rank++;
+        }
+        return run(page + 1, viewers, rank);
+    }
+    public static ShowChannelsResponse getChannelsPage(int page) throws ExecutionException,InterruptedException  {
+        SortOrderMap<ShowChannelsResponse.Attributes, ShowChannelsResponse.Ordering> map = new SortOrderMap<>();
+        map.put(ShowChannelsResponse.Attributes.VIEWERS_TOTAL, ShowChannelsResponse.Ordering.DESCENDING);
+        return mixer.use(ChannelsService.class).show(map,page,100).get();
+    }
+}
+```
+... and run it to get your Rank on Mixer!
+
+```
+You have 2279 total viewers...
+Your rank is at least 1...
+Your rank is at least 2...
+...
+Your rank is at least 281...
+Your rank is at least 282...
+Your rank is at least 283...
+Your rank is at least 284...
+Your rank on Mixer is 285!
+```
+[/mixer-tab]
 [/mixer-tabs]
