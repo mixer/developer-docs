@@ -4,11 +4,9 @@ Mixer's Core API is the bread and butter of Mixer's platform. It allows you to r
 
 The Core API is comprised of two core concepts:
 - REST - Retrieve and update information on Mixer
-- Live Updates (Constellation) - Get Notifications about changes to information on Mixer.
+- Live Updates & Notifications (Constellation) - Get Notifications about changes to information on Mixer.
 
 ## Rest
-
-### What is REST?
 
 If your friend was going to the store and you needed something, you might ask them to "get" something for you. After they get back, they might "put" that item away for you. These are the constructs we use in everyday life, and REST APIs attempt to build on those, but, rather than operating on physical items, you're dealing with objects on the computer.
 
@@ -33,3 +31,13 @@ You can also run actions on a particular user by chaining on "actions", such as 
 | POST /resources/{id}/action | Runs some action on a 'resource'.                              | POST /users/314/action         |
 | GET /resources/{id}/data    | Gets some nested information about a 'resource'.               | GET /users/314/avatar          |
 | DELETE /resources/{id}      | Delete a resource from the server.                             | DELETE /channels/314/streamKey |
+
+To try out using our REST API try our [tutorial](basictutorial).
+
+## Live Updates via Constellation
+
+Mixer is a dynamic and ever changing platform, as viewers and streamers interact with Mixer data changes on the Mixer Platform. As a Developer continually polling for this data isn't idea. You'd rapidly exceed the rate limits set out on our API.
+
+Instead Mixer offers an alternative through Live Updates over a service called Constellation. You can connect to constellation and receive updates about changes to something on Mixer. For example if you use REST to retrieve a channel's title then you only get the title once. If it changes you won't know. Constellation solves this by sending you an event that lets you know the title has changed. You can read more about this in our [Constellation tutorial](tutorial).
+
+Additionally, constellation can also tell you when someone Follows or Subscribes to a channel and much much more. Checkout our [Constellation Technical Reference](reference/constellation) for more information.
