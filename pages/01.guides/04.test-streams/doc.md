@@ -1,5 +1,7 @@
 ---
 title: 'Test Streams'
+icon: SettingsSolid
+icon_bg: red
 ---
 
 # Test Streams
