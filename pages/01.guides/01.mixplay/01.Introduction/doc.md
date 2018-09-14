@@ -41,8 +41,7 @@ Interactive projects are created and configured in the [Developer Lab](https://m
 
 Go to the [Developer Lab](https://mixer.com/lab/interactive) and click on the #[strong plus] button to create a new project.
 
-![Screenshot showing the location of the create new project button](./studio/createNewProject.png?classes=caption )
-    p.caption Screenshot shows the location of the Create new project button.
+![Screenshot showing the location of the create new project button](./studio/createNewProject.png?classes=caption "Screenshot shows the location of the Create new project button.")
 
 You'll then be prompted to enter a name for your project. Enter a suitable name for your project.
 
