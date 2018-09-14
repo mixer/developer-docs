@@ -39,7 +39,7 @@ Download the appropriate SDK that your project needs from the repository and cre
 
 Interactive projects are created and configured in the [Developer Lab](https://mixer.com/lab/interactive).
 
-Go to the [Developer Lab](https://mixer.com/lab/interactive) and click on the #[strong plus] button to create a new project.
+Go to the [Developer Lab](https://mixer.com/lab/interactive) and click on the **plus** button to create a new project.
 
 ![Screenshot showing the location of the create new project button](./studio/createNewProject.png?classes=caption "Screenshot shows the location of the Create new project button.")
 
@@ -110,9 +110,9 @@ To help you decide whether your Interactive project is ready for publishing, the
 
 - Is your project something that everyone would use?
 - Is your project ready for every Mixer broadcaster to have access to?
-- Have you filled in the Info tab with #[strong detailed] installation and setup instructions?
+- Have you filled in the Info tab with **detailed** installation and setup instructions?
 
-If you’ve answered no to any of the questions above, you should #[strong not] publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](#sharing-your-project) your project instead.
+If you’ve answered no to any of the questions above, you should **not** publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](#sharing-your-project) your project instead.
 
 #### Understand the Publishing Flow
 

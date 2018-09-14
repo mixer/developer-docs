@@ -14,7 +14,7 @@ If you'd like other users and developers to be able to use your project then you
 
 To open these settings, click the Share icon on the top right of the Studio, as shown in the screenshot
 ![studio share button](./studio/share/shareButton.png)
-You'll be presented with a dialog with three options. #[strong Changing the sharing settings of a project will delete any previous share settings]
+You'll be presented with a dialog with three options. **Changing the sharing settings of a project will delete any previous share settings.**
 
 The first option, "Nobody can play this game until published", is the default. Selecting this option allows only the project owner to use the project in a broadcast until it is published. If you haven't opened these settings before then this will be the selected option.
 
@@ -25,7 +25,7 @@ You can also optionally give out this share code to smaller audiences to test or
 
 Once a share code has been set it is very important to not change the radio button in this setting screen. If you do it will delete the share code and potentially lock other users or members of your team out from the project.
 
-Once a project has been [published](#publishing-flow), you will not need the share code anymore. At this point #[strong any] Mixer user will have access to the project. Please ensure you go through the publishing process before your application or game is shipped to the public.
+Once a project has been [published](#publishing-flow), you will not need the share code anymore. At this point **any** Mixer user will have access to the project. Please ensure you go through the publishing process before your application or game is shipped to the public.
 
 ![studio share code](./studio/share/shareCode.png)
 
@@ -33,9 +33,9 @@ Once a project has been [published](#publishing-flow), you will not need the sha
 
 The third option, "Only allow specific users to play until published", is called explicit sharing. It lets you share the project with named Mixer users. Only users in the list can use the project. To share a project with a specific user, search for their username in the search box and then click "Add".
 
-The user #[strong must] have a Mixer User account for you to be able to share it with them. You can use this setting to share a project with a limited audience or with members of your team.
+The user **must** have a Mixer User account for you to be able to share it with them. You can use this setting to share a project with a limited audience or with members of your team.
 
-Changing this setting will #[strong delete] the list of authorized Mixer Users.
+Changing this setting will **delete** the list of authorized Mixer Users.
 ![studio explicit sharing](./studio/share/explicitSharing.png)
 
 ## Adding Project Editors
