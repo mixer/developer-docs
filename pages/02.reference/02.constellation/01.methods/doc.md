@@ -10,7 +10,7 @@ Method packets are sent from the client in a way very similar to JSON-RPC. This 
 * `id` may be any `uint32`. It’s included in the reply packet and used to correlate replies from the socket. You should ensure that each request has a unique id within your session.
 
 
-# Reply
+## Reply
 
 Reply packets are sent in response to method packets. Replies are always sent in response to methods unless the socket closes before they may be sent. Some reply packets may look like the following:
 
@@ -25,7 +25,7 @@ Reply packets are sent in response to method packets. Replies are always sent in
 
 Note that if fatal errors occur as a result of a method call, a websocket close frame will be sent instead of a reply. The close frame’s code and associated message will be the same as that which otherwise would have been sent in reply.error.
 
-# Error Codes
+## Error Codes
 Constellation uses the 4xxx error code range reserved for use by applications in addition to the standard 1xxx codes. The following codes are in use:
 
 * `1011` - Sent in a close or method reply if an unknown internal error occurs.
