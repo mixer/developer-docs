@@ -24,7 +24,7 @@ When a button with a spark cost is pressed, it creates a transaction. To deduct 
 
 This mechanism allows the [Game Client](#the-gameclient) to decide whether sparks should be deducted from a participant. This feature is a great way to ensure that input from a participant has been converted into the expected action associated with the button press before deducting sparks from their balance.
 
-Note that deducted sparks are #[strong not] transferred to the broadcaster.
+Note that deducted sparks are **not** transferred to the broadcaster.
 
 # Scale Considerations
 When developing an Interactive experience it is very important to consider scale as a factor. Your experience might work perfectly for a small test stream where you and your team try some features out but Mixer broadcasts are different. You need to ensure that your experience scales for more public broadcasts. You should aim to think about 4 levels of Scale:
