@@ -20,7 +20,7 @@ Once you have a URL just create a HTML `iframe` with the `src` property set to t
 ```html
 <iframe src="https://mixer.com/embed/player/mixer"></iframe>
 ```
-Would embed the Mixer Channel's Video Player
+Would embed the Mixer Channel's Video Player.
 
 ## Video Options
 
