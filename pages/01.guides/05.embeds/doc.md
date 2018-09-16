@@ -1,7 +1,7 @@
 ---
 title: 'Embeds'
 icon: MixerOnDemandVideo
-icon_bg: green
+icon_bg: rose
 redirect: 'introduction'
 ---
 
