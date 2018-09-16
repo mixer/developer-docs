@@ -1,5 +1,5 @@
 ---
-title: Default Page
+title: 'Sample Content'
 ---
 
 # Page Header
