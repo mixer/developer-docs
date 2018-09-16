@@ -1,5 +1,5 @@
 ---
-title: 'Rate Limits
+title: 'Rate Limits'
 ---
 
 # Rate Limits
