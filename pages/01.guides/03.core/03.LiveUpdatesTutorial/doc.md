@@ -1,3 +1,7 @@
+---
+title: 'Live Updates Tutorial'
+---
+
 # Introduction
 In this tutorial we're going to connect to Constellation and subscribe to Live Loading updates of your channel. If your viewer count or channel title changes, you'll receive an update within your code that you can respond to.
 
