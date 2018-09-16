@@ -3,9 +3,9 @@ In this tutorial we're going to connect to Constellation and subscribe to Live L
 
 ## Writing the Code
 
-[mixer-tabs active=1]
+[mixer-tabs]
 
-[mixer-tab title="Node & TypeScript"]
+[mixer-tab title="Node & TypeScript" active=1]
 ## Prerequisites
 - Get [NodeJS and NPM](https://nodejs.org/en/) for your platform.
 - Create a [new project](https://docs.npmjs.com/cli/init) with npm.
