@@ -26,7 +26,7 @@ Would embed the Mixer Channel's Video Player.
 
 For the video player you can provide extra query parameters on the URL to control various settings of the embed:
 - `disableCostream` - Set this to true to prevent the Embed from display CoStreams.
-- `diasbleLowLatency` - Set this to true to disable FTL Playback. This will make the video HLS instead.
+- `disableLowLatency` - Set this to true to disable FTL Playback. This will make the video HLS instead.
 - `muted` - Set this to true to mute the video player on load.
 - `vod` - Provide a VOD Id here to Embed a VOD.
 - `t` - Provide a time here to skip to this time within the vod
