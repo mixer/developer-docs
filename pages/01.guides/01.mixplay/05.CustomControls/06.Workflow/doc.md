@@ -5,8 +5,19 @@ title: 'Workflow'
 # Workflow
 We try to provide the best experience for creating awesome Interactive integrations from inception to massive popularity. This can be broken down into a couple phases:
 
-- [End-to-end testing](#local-development)), connecting to your controls from your local computer with a game client connected to the Mixer server;
-- [This is the state "tree" thats created when placing controls in the Interactive Studio, and is what is modified when your game client calls protocol methods- ke `createScene`(#final-testing)), `updateControl`, `deleteControl`, and so on. There are several other tabs which let you edit what the controls "see" as the currently connected participant, and the groups.
+- [Local Development](#local-development), iterating on custom Interactive bundles on your own computer;
+- [End-to-end testing](#end-to-end-testing)), connecting to your controls from your local computer with a game client connected to the Mixer server;
+- [Final touches and publishing](#final-touches-publishing), running your controls in production and publishing them.
+
+## Local Development
+
+The CDK, automatically builds and displays your controls as you edit them in real time. Just leave the CDK open and work on your files locally.
+
+On the left-hand side of the CDK, you'll see a control schema, which controls the display and positioning of controls.
+
+![](./cdkOverview.png?classes=caption "Overview of CDK showing various sections")
+
+This is the state "tree" thats created when placing controls in the Interactive Studio, and is what is modified when your game client calls protocol methods- ke `createScene`(#final-testing)), `updateControl`, `deleteControl`, and so on. There are several other tabs which let you edit what the controls "see" as the currently connected participant, and the groups.
 
 You can edit this state tree and see your controls update in real time, and as you edit the local source files the CDK will automatically recompile and update your controls. You can open a Developer Tools window by clicking the dev tools button just above the control preview. This allows you to view errors and debug source code. [Here](https://developer.chrome.com/devtools) is great introduction to using the Developer Tools.
 
@@ -18,7 +29,8 @@ Youve got some controls built and ready to test out, fantastic! Lets get those r
 
 
 - Youll need an Interactive Project to Link the Controls to. If you havent created one, go ahead and create a version on the [Interactive Studio](https://mixer.com/i/studio).
-- Youll need an Interactive Game Client to process your inputs. If you need help creating a game client, check out our reference [Test Stream Mode](/reference/interactive/index.html#getting-started)) at this time.
+- Youll need an Interactive Game Client to process your inputs. If you need help creating a game client, check out our reference
+- If your project is unreleased, you should put your channel in [Test Stream Mode](/reference/interactive/index.html#getting-started)) at this time.
 
 Armed with both of these items you can get started with End to End Testing. To do this click the "Run" menu and then "On my Channel Page". This process will prompt you to- nk your Control bundle to an Interactive Project you can select any Project you have on your Mixer Account.
 
