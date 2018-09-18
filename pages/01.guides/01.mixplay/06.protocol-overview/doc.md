@@ -1,8 +1,9 @@
 ---
-title: Protocol Overview
+title: 'Protocol Overview'
 process:
-	twig: true
+    twig: true
 ---
+
 ## MixPlay Protocol Overview
 
 Mixer's Interactive protocol is defined in a separate [downloadable document](/user/pages/mixplay/protocol.pdf) that has precise implementation details. This section provides an introduction to the protocol.

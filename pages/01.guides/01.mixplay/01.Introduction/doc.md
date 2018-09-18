@@ -1,6 +1,7 @@
 ---
 title: Introduction
 ---
+
 ## Introduction
 
 MixPlay enables viewers, also known as participants, to directly control the environment in and around streamer’s broadcasts by interacting with user interface controls. When a broadcast has interactivity enabled, controls appear beneath the video on the viewer’s screen. These controls dynamically change according to live events and update in response to different situations that occur within the broadcast.

@@ -1,6 +1,7 @@
 ---
 title: 'Custom Controls'
 ---
+
 # Custom Controls
 Custom controls is a feature for Mixer Interactive that allows you to create Interactive experiences for Mixer viewers and streamers. Unlike our standard controls and prefabs, such as the button and joystick, this allow you to create rich and engaging experiences with effectively limitless customizability!
 

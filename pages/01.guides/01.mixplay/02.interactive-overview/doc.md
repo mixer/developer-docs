@@ -1,8 +1,9 @@
 ---
-title: Interactive Overview
+title: 'Interactive Overview'
 process:
-	twig: true
+    twig: true
 ---
+
 ## Interactive Overview
 
 Four major components make up an interactive experience:

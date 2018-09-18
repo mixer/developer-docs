@@ -1,8 +1,9 @@
 ---
-title: Managing Access
+title: 'Managing Access'
 process:
-	twig: true
+    twig: true
 ---
+
 # Managing Project Access
 
 By default, only the owner of an Interactive project can use the project in a broadcast, access it from and SDK or make edits to it within the Interactive Studio. The goal of this restriction is to protect your project and ideas from access by unauthorized users. Mixer provides several options to expand project access to different groups of people in order to let them use the project or edit it.
