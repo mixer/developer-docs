@@ -34,3 +34,6 @@ Thumbs.db
 
 /config/security.yaml
 node_modules/
+interactive_next/
+old/
+package-lock.json
