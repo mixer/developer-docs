@@ -15,5 +15,5 @@ A live event looks like the following. Do note the socket event names are not li
 |Name|Description|
 |----|-----------|
 {% for p in page.children %}
-|{{p.title}}||
+|[{{p.title}}]({{p.path}})|{{p.summary}}|
 {% endfor %}
