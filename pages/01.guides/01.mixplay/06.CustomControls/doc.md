@@ -26,7 +26,7 @@ In Mixer, Interactive creations are organized into Projects, which include a nam
 
 The collection of HTML, CSS and JavaScript that you develop when creating a Custom Controls experience is called an Interactive **Bundle**, and project versions can be assigned to load a specific Bundle.
 
-![](project-heirarchy.svg?classes=caption "The project "My Awesome Project" has three versions. Two we've assigned to the default bundle (called the `interactive-launchpad`) and for version 2.0 we've created a custom bundle.")
+![](./project-heirarchy.svg?classes=caption "The project "My Awesome Project" has three versions. Two we've assigned to the default bundle (called the `interactive-launchpad`) and for version 2.0 we've created a custom bundle.")
 
 Bundles themselves can have multiple bundle versions. Bundles are initially created privately, accessible only to you. Once you decide to "publish" a bundle version to make it public, you wont be able to modify it. This ensures that you dont break users who are relying on released versions of your bundles.
 
