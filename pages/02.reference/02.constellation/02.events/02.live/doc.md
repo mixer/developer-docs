@@ -1,6 +1,8 @@
 ---
+title: 'Live Events'
 process:
     twig: true
+twig_first: true
 ---
 # Live Events
 
@@ -15,5 +17,5 @@ A live event looks like the following. Do note the socket event names are not li
 |Name|Description|
 |----|-----------|
 {% for p in page.children %}
-|[{{p.title}}]({{p.url}})|TEST|
+| [{{p.title}}]({{p.url}}) | TEST |
 {% endfor %}
