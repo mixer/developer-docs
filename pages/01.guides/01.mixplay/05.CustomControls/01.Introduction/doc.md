@@ -1,9 +1,9 @@
 ---
-title: 'Custom Controls'
+title: 'Introduction'
 ---
 
 # Custom Controls
-Custom controls is a feature for Mixer Interactive that allows you to create Interactive experiences for Mixer viewers and streamers. Unlike our standard controls and prefabs, such as the button and joystick, this allow you to create rich and engaging experiences with effectively limitless customizability!
+Custom controls is a feature for MixPlay that allows you to create Interactive experiences for Mixer viewers and streamers. Unlike our standard controls and prefabs, such as the button and joystick, this allow you to create rich and engaging experiences with effectively limitless customizability!
 
 The magic here is that with custom controls you can completely change the look, behavior and feel of Interactive Experiences by developing your own controls from scratch, or by using some of our standard controls as a base. Controls are written in HTML, JavaScript, and CSS which are then uploaded and served from Mixers infrastructure at no cost to you. When combined with a Game Client in your Game or Application, they allow for a truly unique and customized experience that can fit the look and feel of your brand and ideas.
 
