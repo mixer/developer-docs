@@ -3,5 +3,14 @@ title: Episode 1: Hello World!
 ---
 
 # Episode 1: Hello World
+Wednesday, September 19th 2018
 
-The Mixer Developer Show is your source for learning more about developing all things Mixer and MixPlay games! [**Join us live Wednesdays at 1pm PST/4pm EST**](https://mixer.com/MixerDevShow) to level up your Mixer know-how and influence our tutorials.
+The inaugural **#MixerDevShow** episode covered some platform basics, including:
+
+- An overview of the Mixer Platform
+- A simple tutorial project in Unity
+
+## Mixer Platform Overview
+
+
+## Simple Unity Tutorial Project
