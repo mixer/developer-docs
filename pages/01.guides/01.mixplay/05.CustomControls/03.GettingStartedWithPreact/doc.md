@@ -63,7 +63,7 @@ When youre ready, check out our [Workflow Section](/guides/mixplay/customcontrol
 
 When thinking about controls, it's important to remember that there are two consumers: the web frontend as seen by viewers and the Interactive Studio as seen by other developers and some streamers. You are free to only focus on the viewers if you don't need to use the Studio and don't intend to share your integration with other developers. But, keeping this duality in mind is important for understanding the considerations around which controls are designed.
 
-In the Preact Custom Control framework, an Interactive control is "just" a class, that happens to be decorated with #[code @Mixer.Control]. The decorator registers the class internally and it is also examined by the CDK during the upload process, to allow the control to be edited and placed in the Studio. We also provide a useful base component, [PreactControl](https://github.com/mixer/cdk-preact-starter/blob/master/src/alchemy/preact/Control.tsx).
+In the Preact Custom Control framework, an Interactive control is "just" a class, that happens to be decorated with `@Mixer.Control`. The decorator registers the class internally and it is also examined by the CDK during the upload process, to allow the control to be edited and placed in the Studio. We also provide a useful base component, [PreactControl](https://github.com/mixer/cdk-preact-starter/blob/master/src/alchemy/preact/Control.tsx).
 
 
 ```jsx
@@ -138,7 +138,7 @@ From your game client, you can set properties that _aren't_ statically-defined i
 The custom control framework provides a simple, effective means to add CSS styles and classes to your Preact components. On top of this, there are two layout engines that control where exactly controls are positioned. The Interactive Studio's editing experience is built to these layout engines, and if you're curious to take a look at them you can find the source [here](https://github.com/mixer/cdk-preact-starter/blob/master/src/alchemy/preact/Layout.tsx).
 
 ### Layout
-The important part is that whatever styles the layout engine chooses for a control, it will be passed into the control and accessible in #[code this.props.style] within the class. You then, generally, want to pass these styles into a wrapper element around your content. Let's modify our example to do that:
+The important part is that whatever styles the layout engine chooses for a control, it will be passed into the control and accessible in `this.props.style` within the class. You then, generally, want to pass these styles into a wrapper element around your content. Let's modify our example to do that:
 
 ```jsx
 @Mixer.Control({ kind: 'helloWorld' })
@@ -157,7 +157,7 @@ export class HelloWorldControl extends PreactControl {
 
 ### Static Styles
 
-CSS can be written in plain stylesheets which are included in your control bundle. In the launchpad project, youll see that there is a #[[) file that serves as an entry point, and imports other stylesheets that contain rules for buttons and joysticks.
+CSS can be written in plain stylesheets which are included in your control bundle. In the launchpad project, you'll see that there is a `style.scss` file that serves as an entry point, and imports other stylesheets that contain rules for buttons and joysticks.
 
 If you havent used CSS before, check out Mozilla's [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS).
 
@@ -295,7 +295,7 @@ const registry = new Mixer.Registry().register(
 // ...
 ```
 
-And that's it! Whenever the `leaderboard` scene is registered, it'll use your custom class and show `#[code `And the winners are...`.
+And that's it! Whenever the `leaderboard` scene is registered, it'll use your custom class and show `And the winners are...`.
 
 Like controls, you can also define and access `@Mixer.Input` properties on scenes.
 

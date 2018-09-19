@@ -83,7 +83,7 @@ In summary, we position the video on the stage, setup a handler to send custom d
 ### Make a Change
 Now that weve gone over the basics, lets make an overlay that automatically resizes itself to always be over the video - even when the browser window changes!
 
-!!!  Automatically resizing and adjusting to the size of the browser is called #[em responsive development] and is very important in building custom controls. You can read more in our [best practices](/guides/mixplay/customcontrols/bestpractices).
+!!!  Automatically resizing and adjusting to the size of the browser is called _responsive development_ and is very important in building custom controls. You can read more in our [best practices](/guides/mixplay/customcontrols/bestpractices).
 
 Lets talk strategy: our goal will be to place a semi-transparent `div` completely covering the real position of the video, independant of the size of the browser window or the aspect ratio of the video source. To do that, were going to use the `position()` API, which provides a handy observable for the real position of the video. Whenever that updates, well move our `div` so that it aligns with the video position.
 
