@@ -50,10 +50,10 @@ Now that everything is running, it is time to open the directory for your projec
 
 Now that youre all set up, its time to iterate on your custom controls and build the experience you are looking for. Continue editing files locally within your favorite editor and preview the changes- ve within the CDK. You dont need to upload or publish your custom controls until youre happy with them; everything can be done locally using the CDK to preview and test your changes.
 
-When youre ready, check out our [Workflow Section](workflow.html) for more about testing your integration and the publication/upload process.
+When youre ready, check out our [Workflow Section](/guides/mixplay/customcontrols/workflow) for more about testing your integration and the publication/upload process.
 
 ## Next Steps
-- Learn how to create and modify custom controls [here](workflow.html)
+- Learn how to create and modify custom controls [here](/guides/mixplay/customcontrols/workflow)
 - Read more about writing interactive game clients here [here](/guides/mixplay/customcontrols/gameclients)
 - Ask questions and get help [on Gitter](https://gitter.im/Mixer/developers)).
 
