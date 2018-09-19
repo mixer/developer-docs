@@ -18,3 +18,10 @@ A reply is received from the server in response to a Method packet.
 | error    | If an error has not occurred null, otherwise an error message.                                                     |
 | data     | Associated event data - may be of any type, specific to the event.                                                 |
 | id       | Must be a unique numeric ID. The ID will match the ID sent in the Method packet that this reply is in response to. |
+
+
+# Methods
+
+{% for p in page.children %}
+- [{{p.title}}]({{p.url}})
+{% endfor %}
