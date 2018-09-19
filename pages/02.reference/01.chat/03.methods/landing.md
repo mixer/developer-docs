@@ -1,3 +1,10 @@
+---
+title: 'Methods'
+process:
+    twig: true
+twig_first: true
+---
+
 # Methods
 
 A method is sent to the chat server the server will respond with a Reply packet.
