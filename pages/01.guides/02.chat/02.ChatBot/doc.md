@@ -1,7 +1,7 @@
 ---
 title: Creating a ChatBot
-process:
-    twig: true
+oauth: 'chat:connect chat:chat chat:bypass_slowchat'
+clientId: true
 ---
 # Creating a Chat Bot
 
@@ -436,5 +436,3 @@ public class Chat {
 
 - Try changing the above code to go to a different channel page.
 - Read our [Chat Reference](reference/chat) for information on how to do other cool things in Chat.
-
-{% do assets.addInlineJs("window.oauthUtils.registerOAuthClickHandler('chat:connect chat:chat chat:bypass_slowchat');", {group: 'bottom'}) %}
