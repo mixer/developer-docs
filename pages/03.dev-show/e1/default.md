@@ -18,6 +18,6 @@ Our platform overview covered some basics about Mixer, how MixPlay works and how
 // TODO: YT Embed
 
 ## Simple Unity Tutorial Project
-The simple Unity tutorial project saw us take the "2D Roguelike" sample and add the ability for viewers to spawn a Zombie inside the game while the streamer is playing, with just a few lines of code!
+The simple Unity tutorial project saw us take the [2D Roguelike](https://unity3d.com/learn/tutorials/s/2d-roguelike-tutorial) sample and add the ability for viewers to spawn a Zombie inside the game while the streamer is playing, with just a few lines of code!
 
 // TODO: YT Embed
