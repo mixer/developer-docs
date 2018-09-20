@@ -1,5 +1,6 @@
 ---
-title: Episode 1: Hello World!
+title: 'Episode 1: Hello World!'
+cache_enable: false
 ---
 
 # Mixer Dev Show Episode 1: Hello World
