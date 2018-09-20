@@ -1,21 +1,20 @@
 ---
-title: Dev Show
-
+title: 'Dev Show'
+cache_enable: false
 episodes:
-        -
-            title: Episode 1: Hello World!
-            subtitle: Welcome to the Mixer Dev Show!
-            image: dev-show-e1.png
-            link: /dev-show/e1/
-            description: Our inaugural episode! Join us as we provide an overview of the platform, and walk through a simple Unity tutorial project.
-            segments:
-                -
-                    name: Platform Overview
-                    link: https://youtube.com
-                -
-                    name: Simple Unity MixPlay
-                    link: https://youtube.com
-
+    -
+        title: 'Episode 1: Hello World!'
+        subtitle: 'Welcome to the Mixer Dev Show!'
+        image: dev-show-e1.png
+        link: /dev-show/e1/
+        description: 'Our inaugural episode! Join us as we provide an overview of the platform, and walk through a simple Unity tutorial project.'
+        segments:
+            -
+                name: 'Platform Overview'
+                link: 'https://youtube.com'
+            -
+                name: 'Simple Unity MixPlay'
+                link: 'https://youtube.com'
 ---
 
 # The Mixer Developer Show
