@@ -1,5 +1,5 @@
 ---
-title: The Mixer Developer Show
+title: Dev Show
 
 episodes:
         -
