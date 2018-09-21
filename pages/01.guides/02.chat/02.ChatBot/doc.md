@@ -435,4 +435,4 @@ public class Chat {
 ## Where to Go Next?
 
 - Try changing the above code to go to a different channel page.
-- Read our [Chat Reference](reference/chat) for information on how to do other cool things in Chat.
+- Read our [Chat Reference](/reference/chat) for information on how to do other cool things in Chat.
