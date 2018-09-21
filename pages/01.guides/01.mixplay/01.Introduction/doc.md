@@ -29,8 +29,8 @@ If you're making a Game Client from scratch, you'll need to use an Interactive S
 | Environment | Repository / Download | Documentation | Description |
 | ----------- | ----------------------|---------------|-----------------|
 | Typescript, Node.js & Browsers | [GitHub](https://github.com/mixer/interactive-node) | [API Reference](https://mixer.github.io/interactive-node) | Great for creating Interactive tools and utilities. Suitable for beginners. |
-| C++ | [GitHub](https://github.com/mixer/interactive-cpp) | [API Reference](/reference/interactive/cplusplus/index.html) <br />[Docs & Getting Started](https://aka.ms/MixerCPPDocs) | Add Mixer Interactive features directly into a C++ Game. |
-| Unity | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [API Reference](/reference/interactive/csharp/index.html) <br />[Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea.
+| C++ | [GitHub](https://github.com/mixer/interactive-cpp) | [API Reference](#) <br />[Docs & Getting Started](https://aka.ms/MixerCPPDocs) | Add Mixer Interactive features directly into a C++ Game. |
+| Unity | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [API Reference](#) <br />[Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea.
 | Unreal Engine 4 | [GitHub](https://github.com/mixer/interactive-unreal-plugin) | [Documentation and Getting Started](https://aka.ms/MixerUnrealDocs) | Add Mixer Interactive features into a game created using Unreal Engine 4. |
 | Java | [GitHub](https://github.com/mixer/interactive-java) | [API Reference](https://mixer.github.io/interactive-java) | Add Mixer interactive to your Java project. |
 
