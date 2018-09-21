@@ -472,3 +472,10 @@ Your rank on Mixer is 761!
 ```
 [/mixer-tab]
 [/mixer-tabs]
+
+## Where to go Next?
+
+Now that you've successfully talked to our REST Api, the possibilities are endless!
+
+- Check out our complete listings of endpoints and resources [here](/rest/index.html?target=_blank)
+- Try Updating a Game or Channel Title, for this you'll need [OAuth](/reference/oauth)

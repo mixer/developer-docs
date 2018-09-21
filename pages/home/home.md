@@ -14,6 +14,14 @@ hero:
                 text: Build a Chat Bot
                 icon: icon-MixerChatSolid
                 url: /guides/chat/chatbot
+            -
+                text: Get Live Updates
+                icon: icon-MixerRingerSolid
+                url: /guides/core/liveupdatestutorial
+            -
+                text: Query our API
+                icon: icon-MixerPollSolid
+                url: /guides/core
 
 sections:
     -

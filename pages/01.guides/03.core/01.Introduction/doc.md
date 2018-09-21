@@ -32,7 +32,11 @@ You can also run actions on a particular user by chaining on "actions", such as 
 | GET /resources/{id}/data    | Gets some nested information about a 'resource'.               | GET /users/314/avatar          |
 | DELETE /resources/{id}      | Delete a resource from the server.                             | DELETE /channels/314/streamKey |
 
-To try out using our REST API try our [tutorial](/guides/core/basictutorial).
+To get started with our REST API try out our [tutorial](/guides/core/basictutorial).
+
+## Rest Reference
+
+You can find complete listings of Mixer's endpoints and resources [here](/rest/index.html?target=_blank)
 
 ## Live Updates via Constellation
 
