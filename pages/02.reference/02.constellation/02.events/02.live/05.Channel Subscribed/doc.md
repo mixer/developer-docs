@@ -5,7 +5,7 @@ Sent when a user subscribes to the channel.
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|user|[User](REST_LINK/User)|The user who just subscribed to the channel.|
+|user|[User](/rest/index.html#/User)|The user who just subscribed to the channel.|
 
 ## Example
 ```json

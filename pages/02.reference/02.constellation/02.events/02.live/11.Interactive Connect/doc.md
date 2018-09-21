@@ -5,7 +5,7 @@ Sent when an interactive app connects to this channel.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[string](REST_LINK/string)|The address of the interactive server the application has connected to.|
+|[string](/rest/index.html#/string)|The address of the interactive server the application has connected to.|
 
 ## Example
 ```json

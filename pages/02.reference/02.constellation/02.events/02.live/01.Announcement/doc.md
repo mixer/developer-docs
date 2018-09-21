@@ -7,7 +7,7 @@ Sent when there is a site-wide announcement. The message property of the body co
 ## Payload
 |Type|Description|
 |----|-----------|
-|[Announcement](REST_LINK/Announcement)|The site-wide announcement that has been sent.|
+|[Announcement](/rest/index.html#/Announcement)|The site-wide announcement that has been sent.|
 
 ## Example
 ```json

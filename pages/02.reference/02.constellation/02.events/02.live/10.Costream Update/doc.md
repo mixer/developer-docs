@@ -5,7 +5,7 @@ Sent when a costream model is changed (e.g. when a streamer joins/leaves the cos
 ## Payload
 |Type|Description|
 |----|-----------|
-|[Costream](REST_LINK/Costream)|The full costream model after the costream has been changed.|
+|[Costream](/rest/index.html#/Costream)|The full costream model after the costream has been changed.|
 
 ## Example
 ```json

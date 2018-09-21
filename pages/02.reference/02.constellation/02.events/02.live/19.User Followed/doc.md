@@ -5,8 +5,8 @@ Sent when a user follows or unfollows a channel.
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|following|[boolean](REST_LINK/boolean)|Whether the user just followed the channel (&#x60;true&#x60; if this was a follow and &#x60;false&#x60; if this was an unfollow).|
-|channel|[Channel](REST_LINK/Channel)|The channel that the user just followed.|
+|following|[boolean](/rest/index.html#/boolean)|Whether the user just followed the channel (&#x60;true&#x60; if this was a follow and &#x60;false&#x60; if this was an unfollow).|
+|channel|[Channel](/rest/index.html#/Channel)|The channel that the user just followed.|
 
 ## Example
 ```json

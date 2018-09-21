@@ -3,10 +3,10 @@ title: 'Global Footer'
 copyright: 'Copyright Microsoft. [Spot an issue?](https://github.com/mixer/developers/issues/new)'
 links:
     Mixer:
-        Home: /
-        Browser: /browse/all
-        About: /about
-        Contact: /contact
+        Home: https://mixer.com
+        Browse: https://mixer.com/browse/all
+        About: https://mixer.com//about
+        Contact: https://mixer.com//contact
     Social:
         Twitter: 'https://twitter.com/WatchMixer'
         GitHub: 'https://github.com/mixer'

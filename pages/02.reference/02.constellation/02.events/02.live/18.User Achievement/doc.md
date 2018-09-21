@@ -5,7 +5,7 @@ Sent when a user achievement earning is updated.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[AchievementEarning](REST_LINK/AchievementEarning)|The updated achievement.|
+|[AchievementEarning](/rest/index.html#/AchievementEarning)|The updated achievement.|
 
 ## Example
 ```json

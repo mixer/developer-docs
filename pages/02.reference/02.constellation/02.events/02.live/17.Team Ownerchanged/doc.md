@@ -5,7 +5,7 @@ Sent when a team&#x27;s ownership changes.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[User](REST_LINK/User)|The new team owner.|
+|[User](/rest/index.html#/User)|The new team owner.|
 
 ## Example
 ```json

@@ -5,7 +5,7 @@ Sent when a user leaves a team or rejects its invite.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[Team](REST_LINK/Team)|The team the user left.|
+|[Team](/rest/index.html#/Team)|The team the user left.|
 
 ## Example
 ```json
