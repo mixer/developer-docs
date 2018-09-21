@@ -11,10 +11,10 @@ episodes:
         segments:
             -
                 name: 'Platform Overview'
-                link: 'https://youtube.com'
+                link: 'https://youtu.be/tpHG4c-rfO8'
             -
                 name: 'Simple Unity MixPlay'
-                link: 'https://youtube.com'
+                link: 'https://youtu.be/dGyTveU-pME'
 ---
 
 # The Mixer Developer Show
