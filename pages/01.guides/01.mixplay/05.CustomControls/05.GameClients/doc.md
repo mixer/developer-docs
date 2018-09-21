@@ -144,7 +144,7 @@ Note that you may include more than one scope, which specifies who should receiv
 
 ## Custom Data Tutorial
 
-Now that we've covered the ways to send custom data between your custom controls and game client, let's walk through a simple example using the [minimal game client](https://github.com/mixer/interactive-node-samples/tree/master/minimal-game-client). Although this sample is written in JavaScript, [Mixer provides SDKs](/reference/interactive/index.html#choosing-an-sdk-environment) in many languages and environments to plug into your game.
+Now that we've covered the ways to send custom data between your custom controls and game client, let's walk through a simple example using the [minimal game client](https://github.com/mixer/interactive-node-samples/tree/master/minimal-game-client). Although this sample is written in JavaScript, [Mixer provides SDKs](/downloads) in many languages and environments to plug into your game.
 
 In this example well create a custom control that allows users to move the the Hello World text to the location of their choosing by clicking on the video overlay. The custom control will send the location of the click on the video to the game client, which will then update the location of the title and send it out to all connected participants.
 
