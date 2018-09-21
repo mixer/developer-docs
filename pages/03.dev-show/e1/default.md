@@ -8,8 +8,8 @@ Wednesday, September 19th 2018, hosts: [Mike Blouin](https://twitter.com/Michael
 
 The inaugural [#MixerDevShow](https://twitter.com/hashtag/MixerDevShow) episode covered platform basics, including:
 
-- [An overview of the Mixer Platform]()
-- [A simple tutorial project in Unity]()
+- [An overview of the Mixer Platform](https://youtu.be/tpHG4c-rfO8)
+- [A simple tutorial project in Unity](https://youtu.be/dGyTveU-pME)
 
 You can check out the [full recording here](), and be sure to [**join us live Wednesdays at 1pm PST/4pm EST**](https://mixer.com/MixerDevShow)
 
