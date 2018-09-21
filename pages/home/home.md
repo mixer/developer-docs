@@ -5,22 +5,15 @@ body_classes: home
 hero:
     text: "Build the **Next big thing**   \n\nfor the millions of creators, gamer's & audiences on Mixer"
     buttons:
-        primary:
-            text: Start Building
-            link: #
         secondary:
             -
                 text: Integrate a game with Mixer
                 icon: icon-MixerInteractiveSolid
+                link: /guides/mixplay
             -
                 text: Build a Chat Bot
                 icon: icon-MixerChatSolid
-            -
-                text: Make an interactive masterpiece
-                icon: icon-MixerAudienceTeen
-            -
-                text: Integrate a game with Mixer
-                icon: icon-MixerFTLRocketSolid
+                link: guides/chat/chatbot
 
 sections:
     -
