@@ -6,7 +6,7 @@ process:
 
 ## MixPlay Protocol Overview
 
-Mixer's Interactive protocol is defined in a separate [downloadable document](/user/pages/mixplay/protocol.pdf) that has precise implementation details. This section provides an introduction to the protocol.
+Mixer's Interactive protocol is defined in a separate [document](/guides/mixplay/protocol/specification) that has precise implementation details. This section provides an introduction to the protocol.
 
 ### Wire Format
 The Interactive Service communicates using a protocol similar to [JSON-RPC](http://jsonrpc.org/historical/json-rpc-1-2-proposal.html) except that it is bi-directional. Clients and Servers can both call and respond to methods.
