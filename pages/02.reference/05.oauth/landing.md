@@ -4,7 +4,7 @@ title: OAuth
 
 ## Introduction
 
-!!! Familiar with OAuth? Checkout our [Quick Details](#123) page and jump right in.
+!!! Familiar with OAuth? Checkout our [Quick Details](quickdetails) page and jump right in.
 
 If you want to act as another user in chat, access a user's private resources as part of your app, or just want to use Mixer credentials to authenticate your users, it's best to use OAuth so the users' credentials don't need to be stored on your servers.
 
