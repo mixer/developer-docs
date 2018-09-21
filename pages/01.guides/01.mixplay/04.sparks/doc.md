@@ -61,7 +61,4 @@ Refer to your [chosen SDK](#choosing-an-sdk-environment), for documentation on h
 ## Scale Testing
 If you'd like to test your Experience at scale then our team can help. We can work with you to arrange a test session with some of our team or even one of our Partnered broadcasters. Additionally we have some internal testing tools that we can work with your team to run against a test build of your game. If you'd like to find out more please [reach out at to us](mailto:mixerdevinfo@microsoft.com).
 
-## Interactive Game Design
-It is important to factor Interactivity directly into your game design and we'd love to help out with that. To start with you can checkout our [Game Design with Mixer](/reference/interactive/design.pdf) booklet.
-
 If you've got a cool idea for Mixer and your game please also [reach out to our team](mailto:mixerdevinfo@microsoft.com), we'd be happy to discuss ways to make your game awesome with Mixer.
