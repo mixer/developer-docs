@@ -17,4 +17,4 @@ If you're familiar with OAuth, feel free to dig in! You can register your OAuth 
 
 # Scopes
 
-For a list of scopes see our [scopes page](scopes).
+For a list of scopes see our [scopes page](/reference/oauth/scopes).
