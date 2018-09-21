@@ -30,7 +30,7 @@ Youve got some controls built and ready to test out, fantastic! Lets get those r
 
 - Youll need an Interactive Project to Link the Controls to. If you havent created one, go ahead and create a version on the [Interactive Studio](https://mixer.com/i/studio).
 - Youll need an Interactive Game Client to process your inputs. If you need help creating a game client, check out our reference
-- If your project is unreleased, you should put your channel in [Test Stream Mode](/reference/interactive/index.html#getting-started)) at this time.
+- If your project is unreleased, you should put your channel in [Test Stream Mode](/guides/test-streams/introduction)) at this time.
 
 Armed with both of these items you can get started with End to End Testing. To do this click the "Run" menu and then "On my Channel Page". This process will prompt you to- nk your Control bundle to an Interactive Project you can select any Project you have on your Mixer Account.
 

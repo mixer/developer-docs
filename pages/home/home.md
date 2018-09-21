@@ -13,7 +13,7 @@ hero:
             -
                 text: Build a Chat Bot
                 icon: icon-MixerChatSolid
-                url: guides/chat/chatbot
+                url: /guides/chat/chatbot
 
 sections:
     -

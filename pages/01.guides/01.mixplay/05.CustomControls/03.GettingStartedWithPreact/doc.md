@@ -259,7 +259,7 @@ export class HelloWorldControl extends PreactControl {
 
 ## Custom Scenes
 
-The launchpad provides a [basic scene](href='https://github.com/mixer/cdk-preact-starter/blob/master/src/alchemy/preact/Scene.tsx') out of the box, but you are free to add your own scenes, or customize or replace it!
+The launchpad provides a [basic scene](https://github.com/mixer/cdk-preact-starter/blob/master/src/alchemy/preact/Scene.tsx) out of the box, but you are free to add your own scenes, or customize or replace it!
 
 Say you had some specific scene, the `leaderboard`, for which you wanted to have some scene-level logic or styling applied. Like controls, scenes are decorated with the `@Mixer.Scene` decorator. There can be one scene defined as the default, and other scene classes that can be used instead for specific scene names.
 
