@@ -25,7 +25,7 @@ mixer.socket.call('giveInput', {
     },
 });
 ```
-The only required parameter in a `giveInput`(/reference/interactive/protocol/protocol.pdf)) message is the `controlID` which tells the game client which control in the scene received input. For this to work, ensure that you have a control with the id `my-control`, such as:
+The only required parameter in a `giveInput`(/user/pages/mixplay/protocol.pdf)) message is the `controlID` which tells the game client which control in the scene received input. For this to work, ensure that you have a control with the id `my-control`, such as:
 ```json
 [
     {
@@ -140,7 +140,7 @@ It is sometimes convenient to send a packet of data at an instant in time rather
 }
 ```
 
-Note that you may include more than one scope, which specifies who should receive the event. You can specify things- ke: `group:default` or `participant:e1fefc78-d4cc-4c69-b2d9-b36ed5c52893`. For more information see the [interactive protocol reference](/reference/interactive/protocol/protocol.pdf)).
+Note that you may include more than one scope, which specifies who should receive the event. You can specify things- ke: `group:default` or `participant:e1fefc78-d4cc-4c69-b2d9-b36ed5c52893`. For more information see the [interactive protocol reference](/user/pages/mixplay/protocol.pdf)).
 
 ## Custom Data Tutorial
 

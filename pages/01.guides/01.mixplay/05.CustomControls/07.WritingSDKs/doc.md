@@ -5,7 +5,7 @@ title: 'Writing SDks'
 # Writing SDKs
 This page serves as a guideline for writing game client- braries SDKs for Interactive with awareness for the flexibility lent by Custom Controls. Specifics may vary between languages. This guide is meant to be descriptive of best practices and patterns, not prescriptive. Where relevant, examples are given from our own SDKs and codebases.
 
-!!!  If you havent already, check out the #[Interactive Protocol Reference](/reference/interactive/protocol/protocol.pdf').This guide will make references to it.
+!!!  If you havent already, check out the #[Interactive Protocol Reference](/user/pages/mixplay/protocol.pdf').This guide will make references to it.
 
 
 ## State Model
