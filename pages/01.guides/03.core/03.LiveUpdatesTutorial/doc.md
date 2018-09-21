@@ -42,7 +42,7 @@ const ca = new Carina({
 }).open();
 ```
 
-To receive Live Loading events you need to subscribe to them. We'll just need `channel:{id}:update`. For a full list of events check our [Constellation reference guide](https://mixerdev.azurewebsites.net/en/reference/constellation/events). You subscribe to events within Carina by using the `subscribe` method.
+To receive Live Loading events you need to subscribe to them. We'll just need `channel:{id}:update`. For a full list of events check our [Constellation reference guide](/reference/constellation/events). You subscribe to events within Carina by using the `subscribe` method.
 
 ```js
 ca.subscribe(`channel:${channelId}:update`, data => {

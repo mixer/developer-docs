@@ -32,12 +32,12 @@ You can also run actions on a particular user by chaining on "actions", such as 
 | GET /resources/{id}/data    | Gets some nested information about a 'resource'.               | GET /users/314/avatar          |
 | DELETE /resources/{id}      | Delete a resource from the server.                             | DELETE /channels/314/streamKey |
 
-To try out using our REST API try our [tutorial](basictutorial).
+To try out using our REST API try our [tutorial](/guides/core/basictutorial).
 
 ## Live Updates via Constellation
 
 Mixer is a dynamic and ever changing platform, as viewers and streamers interact with Mixer data changes on the Mixer Platform. As a Developer continually polling for this data isn't idea. You'd rapidly exceed the rate limits set out on our API.
 
-Instead Mixer offers an alternative through Live Updates over a service called Constellation. You can connect to constellation and receive updates about changes to something on Mixer. For example if you use REST to retrieve a channel's title then you only get the title once. If it changes you won't know. Constellation solves this by sending you an event that lets you know the title has changed. You can read more about this in our [Constellation tutorial](liveupdatestutorial).
+Instead Mixer offers an alternative through Live Updates over a service called Constellation. You can connect to constellation and receive updates about changes to something on Mixer. For example if you use REST to retrieve a channel's title then you only get the title once. If it changes you won't know. Constellation solves this by sending you an event that lets you know the title has changed. You can read more about this in our [Constellation tutorial](/guides/core/liveupdatestutorial).
 
 Additionally, constellation can also tell you when someone Follows or Subscribes to a channel and much much more. Checkout our [Constellation Technical Reference](/reference/constellation) for more information.
