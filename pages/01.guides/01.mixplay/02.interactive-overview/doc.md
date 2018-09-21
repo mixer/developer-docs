@@ -166,4 +166,4 @@ You can also adjust mouse move event throttling.  The `moveThrottle` duration, g
 
 ### Looking for More Customization?
 
-If you're looking for more customization and more options for your interactive controls then checkout our new [Custom Controls](/reference/interactive_next/index.html) feature. It lets you create awesome experiences that are 100% custom and written in HTML, JavaScript and CSS.
+If you're looking for more customization and more options for your interactive controls then checkout our new [Custom Controls](/guides/mixplay/customcontrols/introduction) feature. It lets you create awesome experiences that are 100% custom and written in HTML, JavaScript and CSS.

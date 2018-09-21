@@ -10,7 +10,7 @@ Chat also fully supports developers, you can use our Chat APIs to get in on this
 
 ## Tutorials
 
-We currently have one chat tutorial, it shows you how to setup a basic chat bot and can be found [here](ChatBot). Try it out. If you'd like to know how to do other things with out Chat API then please open an issue](https://github.com/mixer/developer-docs/issues/new) and let us know!
+We currently have one chat tutorial, it shows you how to setup a basic chat bot and can be found [here](/guides/chat/ChatBot). Try it out. If you'd like to know how to do other things with out Chat API then please open an issue](https://github.com/mixer/developer-docs/issues/new) and let us know!
 
 ## Reference Material
 

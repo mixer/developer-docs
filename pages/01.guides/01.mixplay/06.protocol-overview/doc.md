@@ -26,7 +26,7 @@ Methods contain an additional property called `discard`, which when `true`, indi
 #### Reply
 A reply is sent from a recipient back to the caller informing them about the result after executing the method that was sent. It can contain a `result` or an `error` which indicates what went wrong.
 
-For full packet implementation details, please refer to the protocol specification which you can download [here](/reference/interactive/protocol/protocol.pdf).
+For full packet implementation details, please refer to the protocol specification which you can download [here](/user/pages/mixplay/protocol.pdf).
 
 ### Compression
 By default, packets on the wire are transmitted as plain text, but the Game Client can opt to use [GZIP](https://tools.ietf.org/html/rfc1952) or [LZ4](https://lz4.github.io/lz4/) compression. To do this, the Game Client must call a method providing its supported compression formats. The server will then respond with its chosen compression format.
@@ -37,7 +37,7 @@ A Game Client needs to authenticate as a Mixer user when establishing an interac
 #### OAuth 2.0
 Mixer supports [OAuth 2.0](https://tools.ietf.org/html/rfc6749) flows which enable you to get a valid [OAuth 2.0 Bearer](https://tools.ietf.org/html/rfc6750) token. Tokens can be passed in the `Authorization` header when you initiate a connection to the interactive service.
 
-The only required scope for an interactive connection is `interactive:robot:self`. For more information about Mixer's OAuth, go to [OAuth reference page](/reference/oauth/index.html).
+The only required scope for an interactive connection is `interactive:robot:self`. For more information about Mixer's OAuth, go to [OAuth reference page](/reference/oauth).
 
 #### XToken
 You can provide a Xbox Live XToken in the `Authorization` header when you initiate a connection to the interactive service. This authentication method is useful for Universal Windows Platform (UWP) applications that are Xbox Live enabled, as well as games on Xbox One.

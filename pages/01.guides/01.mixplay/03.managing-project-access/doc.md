@@ -14,7 +14,7 @@ By default you are the only person who can broadcast the project. Other users wi
 If you'd like other users and developers to be able to use your project then you have several options, which are managed in the project's share settings.
 
 To open these settings, click the Share icon on the top right of the Studio, as shown in the screenshot
-![studio share button](./studio/share/shareButton.png)
+![studio share button](./shareButton.png)
 You'll be presented with a dialog with three options. **Changing the sharing settings of a project will delete any previous share settings.**
 
 The first option, "Nobody can play this game until published", is the default. Selecting this option allows only the project owner to use the project in a broadcast until it is published. If you haven't opened these settings before then this will be the selected option.
@@ -28,7 +28,7 @@ Once a share code has been set it is very important to not change the radio butt
 
 Once a project has been [published](#publishing-flow), you will not need the share code anymore. At this point **any** Mixer user will have access to the project. Please ensure you go through the publishing process before your application or game is shipped to the public.
 
-![studio share code](./studio/share/shareCode.png)
+![studio share code](./shareCode.png)
 
 ### Explicit Sharing
 
@@ -37,21 +37,21 @@ The third option, "Only allow specific users to play until published", is called
 The user **must** have a Mixer User account for you to be able to share it with them. You can use this setting to share a project with a limited audience or with members of your team.
 
 Changing this setting will **delete** the list of authorized Mixer Users.
-![studio explicit sharing](./studio/share/explicitSharing.png)
+![studio explicit sharing](./explicitSharing.png)
 
 ## Adding Project Editors
 
 If you'd like other members of your team to be able to edit your Interactive project in the Interactive Studio then you should add them as a Project Editor. You can do this by clicking the project editors button in the studio.
 
-![Project editors studio button](./studio/editors/button.png)
+![Project editors studio button](./editors/button.png)
 
 In the dialog that opens you can search for other Mixer users and add them to your project as an editor. Once added you can also remove them.
 
-![Adding a project editor](./studio/editors/add.png)
+![Adding a project editor](./editors/add.png)
 
 Users added to this dialog will see your project in the project list of the studio. They can then edit the project as though they owned it.
 
-![Project list with a project the user can edit](./studio/editors/list.png)
+![Project list with a project the user can edit](./editors/list.png)
 
 ## Project Access Best Practices
 

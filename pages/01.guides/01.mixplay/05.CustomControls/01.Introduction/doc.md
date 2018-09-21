@@ -39,7 +39,7 @@ Controls are interactive elements within an Interactive experience such as a But
 
 All of Mixers standard controls and experiences such as Share your Controller are built using Custom Controls. They use [Preact](https://preactjs.com/), a super lightweight framework that takes care of the dirty work for you, and [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), a superset of JavaScript which gives you the option of adding type annotations to your code.
 
-For more information on Mixers Standard Controls, check out [the documentation for them](../interactive/index.html#controls).
+For more information on Mixers Standard Controls, check out [the documentation for them](/guides/mixplay/interactive-overview#controls).
 
 ### Summary
 

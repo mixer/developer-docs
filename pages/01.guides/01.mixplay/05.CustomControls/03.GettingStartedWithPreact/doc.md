@@ -11,7 +11,7 @@ With both of these tools combined Custom Control development can be a blast. We 
 
 ### Prerequisites
 
-p You first need to [install Node.js](https://nodejs.org/en/download/) on your computer. We require Node.js version 8.0.0 or higher. Node.js lets you run our build scripts and tools. Youll also need a decent code editor. We recommend [Visual Studio Code](https://code.visualstudio.com/) as a powerful editor with great JavaScript support out-of-the-box.
+You first need to [install Node.js](https://nodejs.org/en/download/) on your computer. We require Node.js version 8.0.0 or higher. Node.js lets you run our build scripts and tools. Youll also need a decent code editor. We recommend [Visual Studio Code](https://code.visualstudio.com/) as a powerful editor with great JavaScript support out-of-the-box.
 
 ### Downloading the Control Development Kit
 
