@@ -9,11 +9,11 @@ hero:
             -
                 text: Integrate a game with Mixer
                 icon: icon-MixerInteractiveSolid
-                link: /guides/mixplay
+                url: /guides/mixplay
             -
                 text: Build a Chat Bot
                 icon: icon-MixerChatSolid
-                link: guides/chat/chatbot
+                url: guides/chat/chatbot
 
 sections:
     -
