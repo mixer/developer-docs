@@ -1,6 +1,6 @@
 ---
 title: 'Global Footer'
-copyright: 'Copyright Microsoft. [Spot an issue?](https://github.com/mixer/developers/issues/new)'
+copyright: 'Copyright Microsoft. [Spot an issue?](https://github.com/mixer/developer-docs/issues/new)'
 links:
     Mixer:
         Home: https://mixer.com
