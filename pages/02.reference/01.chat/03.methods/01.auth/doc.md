@@ -1,6 +1,6 @@
 # Auth
 
-Authenticate as an active user in a specified channel. Arguments are `channelId`, `userId`, `key`. \n\n You can connect anonymously by supplying just the `channnelId` as an argument, but if you do this you will not be able to send messages or participate in chat. This can be useful for creating chat overlays.
+Authenticate as an active user in a specified channel. Arguments are `channelId`, `userId`, `key`. You can connect anonymously by supplying just the `channnelId` as an argument, but if you do this you will not be able to send messages or participate in chat. This can be useful for creating chat overlays.
 
 # Arguments
 
