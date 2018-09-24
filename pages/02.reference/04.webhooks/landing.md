@@ -153,4 +153,4 @@ By default, webhooks expire after 90 days unless they're renewed using `POST /ho
 We provide several other APIs you can use to manage your registered webhooks. You can read more about them in our API docs here.
 
 ## Available Events
-The available events to register for web hooks match our constellation live events. To see a list of available events. Please checkout the live events section of our constellation reference [here](https://mixerdev.azurewebsites.net/reference/constellation/events/live)
+The available events to register for web hooks match our constellation live events. To see a list of available events. Please checkout the live events section of our constellation reference [here](/reference/constellation/events/live)
