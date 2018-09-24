@@ -1,5 +1,5 @@
 ---
-title: Mixer Developer
+title: Home
 body_classes: home
 
 hero:
