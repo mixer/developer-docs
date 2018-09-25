@@ -1,6 +1,7 @@
 ---
 title: Sparks
 process:
+    markdown: true
     twig: true
 ---
 
@@ -16,7 +17,7 @@ Sparks are earnt by watching content on Mixer. Mixer users gain 2 sparks for eve
 Currently users cannot buy Sparks with real world money. That may change in the future, but we don’t have anything to share on those plans right now. If you have a cool idea for sparks, you can share your ideas on Sparks over on our [feedback site](https://feedback.mixer.com).
 
 ## Best Practices for Sparks
-When placing a spark cost on a control it is important to remember to balance the cost against your Game or situation. For example Interactions that potentially impact game balance should be priced higher than those that are less impacting. What might be surprising is that the majority of Mixer users (more than 90%) have between 500 and 1,000. The next largest tranche of users has between 1,001 and 10,000 Sparks, followed by those with more than 10,000 Sparks, but that’s a very small (roughly 1%) of Mixer users.
+When placing a spark cost on a control it is important to remember to balance the cost against your Game or situation. For example, Interactions that potentially impact game balance should be priced higher than those that are less impacting. What might be surprising is that the majority of Mixer users (more than 90%) have between 500 and 1,000. The next largest tranche of users has between 1,001 and 10,000 Sparks, followed by those with more than 10,000 Sparks, but that’s a very small percentage of Mixer users (roughly 1%).
 
 ## Spark Transactions
 ![Diagram of a transaction\'s life cycle](./TransactionLifecycle.svg?classes=caption "Diagram of a spark transaction's life cycle, showing its transition between states.")
@@ -59,6 +60,6 @@ For an example of how this might be used consider a very large viewership Broadc
 Refer to your [chosen SDK](#choosing-an-sdk-environment), for documentation on how to set a bandwidth throttle on a particular event.
 
 ## Scale Testing
-If you'd like to test your Experience at scale then our team can help. We can work with you to arrange a test session with some of our team or even one of our Partnered broadcasters. Additionally we have some internal testing tools that we can work with your team to run against a test build of your game. If you'd like to find out more please [reach out at to us](mailto:mixerdevinfo@microsoft.com).
+If you'd like to test your Experience at scale then our team can help. We can work with you to arrange a test session with some of our team or even one of our Partnered broadcasters. Additionally we have some internal testing tools that we can work with your team to run against a test build of your game. If you'd like to find out more please [reach out to us](mailto:mixerdevinfo@microsoft.com).
 
 If you've got a cool idea for Mixer and your game please also [reach out to our team](mailto:mixerdevinfo@microsoft.com), we'd be happy to discuss ways to make your game awesome with Mixer.
