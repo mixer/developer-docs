@@ -32,7 +32,7 @@ The Interactive Service is a service operated by Mixer. A Game Client connects t
 
 ### An Interactive Project
 
-An Interactive Project stores settings and metadata about an interactive experience. They are created by developers through the [Developer Lab](https://mixer.com/lab/interactive). Projects are owned by a single Mixer user but can be [shared](#sharing-your-project) with other users.
+An Interactive Project stores settings and metadata about an interactive experience. They are created by developers through the [Developer Lab](https://mixer.com/lab/interactive). Projects are owned by a single Mixer user but can be [shared](/guides/mixplay/managing-project-access#sharing-an-interactive-project) with other users.
 
 Within the Studio you can:
 
@@ -100,7 +100,7 @@ Developers can use buttons to enable participants to vote, cause in-game actions
 
 Buttons are highly customizable. These button properties can be edited from both the Interactive Studio and a Game Client:
 1. Text displayed on the button
-2. Spark cost (For more info about sparks, see [What are sparks?](#what-are-sparks))
+2. Spark cost (For more info about sparks, see [What are sparks?](/guides/mixplay/sparks#what-are-sparks))
 3. Width of the progress bar, which is displayed at the bottom of a button
 4. Disabled state - Buttons which are disabled cannot be interacted with
 5. Cooldown duration - Prevents interaction until it expires
@@ -153,7 +153,7 @@ Textboxes are customizable. These textbox properties can be edited from both the
 1.  Whether the textbox has a submit button
 1. Disabled state - Textboxes which are disabled cannot be interacted with
 1. Cooldown duration - Prevents interaction until it expires
-1. Spark cost (For more info about sparks, see [What are Sparks?](#what-are-sparks))
+1. Spark cost (For more info about sparks, see [What are Sparks?](/guides/mixplay/sparks#what-are-sparks))
 
 ### Mouse
 
