@@ -33,8 +33,8 @@ Once you have enabled test streams for an account, it is enabled for every broad
 ## Controlling Access
 Whilst in test stream mode there are two ways to grant viewers access to view your test stream.
 
-By Making them a moderator in the channel - Moderators of your channel can see your test streams
-By Sharing out the access key link - At the top of your channel page whilst streaming in test stream mode is a banner which has a link in it. You can give this link out and those with the link will be able to access your test stream. This link resets for every stream.
+* By Making them a moderator in the channel - Moderators of your channel can see your test streams
+* By Sharing out the access key link - At the top of your channel page whilst streaming in test stream mode is a banner which has a link in it. You can give this link out and those with the link will be able to access your test stream. This link resets for every stream.
 
 ## Best Practices
 1. Use the `/clear` chat command at the end of the stream to clear chat.
