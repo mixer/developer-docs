@@ -27,9 +27,9 @@ The second, "Anyone with the versionId and code can play", option generates a sh
 
 You can also optionally give out this share code to smaller audiences to test or trial your project. If you do this you'll have to create a user interface or command within your game or application that can take this Share Code and pass it to your SDK of choice as a part of the SDK initialization.
 
-Once a share code has been set it is very important to not change the radio button in this setting screen. If you do it will delete the share code and potentially lock other users or members of your team out from the project.
+Once a share code has been set it is very important to not change the radio button in this setting screen. If you do, it will delete the share code and potentially lock other users or members of your team out from the project.
 
-Once a project has been [published](../introduction?target=_blank&classes=button#understand-the-publishing-flow), you will not need the share code anymore. At this point **any** Mixer user will have access to the project. Please ensure you go through the publishing process before your application or game is shipped to the public.
+Once a project has been [published](/guides/mixplay/introduction#understand-the-publishing-flow), you will not need the share code anymore. At this point **any** Mixer user will have access to the project. Please ensure you go through the publishing process before your application or game is shipped to the public.
 
 ![studio share code](./shareCode.png)
 
