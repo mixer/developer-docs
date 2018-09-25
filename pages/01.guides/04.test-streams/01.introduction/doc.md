@@ -12,7 +12,7 @@ Test Streams are currently available to a limited audience. To qualify for Test 
 3. Microsoft/Xbox Partner
 
 ## Applying for Test Stream Access
-If you're an Xbox, Microsoft, or Mixer Partner, please reach out to your Mixer contact so they can enable test streaming for you. Otherwise please follow the folling steps:
+If you're an Xbox, Microsoft, or Mixer Partner, please reach out to your Mixer contact so they can enable test streaming for you. Otherwise please follow these steps:
 1. Visit the Mixer Developer Lab
 1. Click the Test Streams tab
 1. Fill out the displayed form and click Send Request
