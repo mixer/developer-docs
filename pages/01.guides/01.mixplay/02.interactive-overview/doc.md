@@ -1,6 +1,7 @@
 ---
 title: 'Interactive Overview'
 process:
+    markdown: true
     twig: true
 ---
 
@@ -27,11 +28,11 @@ A Game Client can be created for a variety of environments, such as:
 
 ### The Interactive Service
 
-The Interactive Service is a service operated by Mixer. A Game Client connects to it to create an interactive session. Once a session is established, the service acts as a mediator for the Interactive session. The service manages data flow and state within the session by processing and distributing data sent to and from both the [Game Client](#the-gameclient) and [Participants](#participants). The Game Client sends messages to the service when it needs to update the session state or to interact with the session.
+The Interactive Service is a service operated by Mixer. A Game Client connects to it to create an interactive session. Once a session is established, the service acts as a mediator for the Interactive session. The service manages data flow and state within the session by processing and distributing data sent to and from both the [Game Client](#the-game-client) and [Participants](#participants). The Game Client sends messages to the service when it needs to update the session state or to interact with the session.
 
 ### An Interactive Project
 
-An Interactive Project stores settings and metadata about an interactive experience. They are created by developers through the [Developer Lab](https://mixer.com/lab/interactive). Projects are owned by a single Mixer user but can be [shared](#sharing-your-project) with other users.
+An Interactive Project stores settings and metadata about an interactive experience. They are created by developers through the [Developer Lab](https://mixer.com/lab/interactive). Projects are owned by a single Mixer user but can be [shared](/guides/mixplay/managing-project-access#sharing-an-interactive-project) with other users.
 
 Within the Studio you can:
 
@@ -40,11 +41,11 @@ Within the Studio you can:
 - Control who can access your project
 - Publish your project for everyone on Mixer to see and use
 
-When a [Game Client](#the-gameclient) connects to the Interactive Service, it provides your project's ID to the service. The service reads this ID and sets up an interactive session with the saved settings and controls created in the Studio.
+When a [Game Client](#the-game-client) connects to the Interactive Service, it provides your project's ID to the service. The service reads this ID and sets up an interactive session with the saved settings and controls created in the Studio.
 
 ### Participants
 
-Participants are viewers of a live stream. They are Mixer users watching a broadcast in a broadcaster's channel. When they join the channel, they are connected to the interactive session. They are provided with the controls within the Project, that they can use to affect the broadcast. A [Game Client](#the-gameclient) can react to events and interactive input to change the controls that are displayed to participants.
+Participants are viewers of a live stream. They are Mixer users watching a broadcast in a broadcaster's channel. When they join the channel, they are connected to the interactive session. They are provided with the controls within the Project, that they can use to affect the broadcast. A [Game Client](#the-game-client) can react to events and interactive input to change the controls that are displayed to participants.
 
 ## Interactive Experience Structure
 
@@ -63,29 +64,29 @@ These elements are:
 
 A scene is a named collection of controls. Within a scene, controls are arranged on a grid. The grid's layout determines how the controls are displayed to participants.
 
-The [Game Client](#the-gameclient) can add or remove controls from a scene. It controls which scenes (and controls) are shown to which participants throughout the session. Scenes are used to group controls together in a coherent fashion that is meaningful to the experience.
+The [Game Client](#the-game-client) can add or remove controls from a scene. It controls which scenes (and controls) are shown to which participants throughout the session. Scenes are used to group controls together in a coherent fashion that is meaningful to the experience.
 
 For example, in an adventure game, you might have a "Battle" scene displayed when a broadcaster's game character is in battle; a "Field" scene displayed when the character is walking around in the game world.
 
-All [Interactive Projects](#an-interactive-project) have a default scene. Without any intervention from the [Game Client](#the-gameclient), all participants and [groups](#groups) are shown the default scene.
+All [Interactive Projects](#an-interactive-project) have a default scene. Without any intervention from the [Game Client](#the-game-client), all participants and [groups](#groups) are shown the default scene.
 
-The [Game Client](#the-gameclient) can change the scene that a participant sees by updating the [group](#groups) they belong to.
+The [Game Client](#the-game-client) can change the scene that a participant sees by updating the [group](#groups) they belong to.
 
 ## Groups
-Individual participants can be segmented into groups. Participants within a group all see the same Scene and contribute input to the controls that are part of that scene. [Game Clients](#the-gameclient) can create and update groups any time, including changing the scene that the group is set to see. A participant can only be a member of one group at any time.
+Individual participants can be segmented into groups. Participants within a group all see the same Scene and contribute input to the controls that are part of that scene. [Game Clients](#the-game-client) can create and update groups any time, including changing the scene that the group is set to see. A participant can only be a member of one group at any time.
 
 Groups can be used to create team-based experiences where groups compete to achieve a goal within the experience. Using an adventure game again as an example, you could create an "Allies" group and an "Adversaries" group.
 
 The "Allies" group is provided with controls that gives them the ability to heal the character that the broadcaster is controlling or grant buffs to increase their chance of winning. Alternatively, the "Adversaries" group could spawn traps or monsters to try to get in the way of winning - using their controls.
 
-Participants always start out in the default group but [Game Clients](#the-gameclient) can re-assign participants into any group.
+Participants always start out in the default group but [Game Clients](#the-game-client) can re-assign participants into any group.
 
 ## Controls
 A control is an interactive element in a user interface within a scene. [Participants](#participants) can interact with the control using touch, keyboard, mouse, or controller. There are currently a variety of types of controls including Buttons, Joysticks, Labels, & Textboxes. Additional control types may be added in the future.
 
 ### Buttons
 
-A button is a rectangular, interactive control within a scene. [Game Clients](#the-gameclient) receive events when participants interact with a button.
+A button is a rectangular, interactive control within a scene. [Game Clients](#the-game-client) receive events when participants interact with a button.
 
 
 - `mousedown` event is sent when a button is pressed by a participant
@@ -99,7 +100,7 @@ Developers can use buttons to enable participants to vote, cause in-game actions
 
 Buttons are highly customizable. These button properties can be edited from both the Interactive Studio and a Game Client:
 1. Text displayed on the button
-2. Spark cost (For more info about sparks, see [What are sparks?](#what-are-sparks))
+2. Spark cost (For more info about sparks, see [What are sparks?](/guides/mixplay/sparks#what-are-sparks))
 3. Width of the progress bar, which is displayed at the bottom of a button
 4. Disabled state - Buttons which are disabled cannot be interacted with
 5. Cooldown duration - Prevents interaction until it expires
@@ -136,7 +137,7 @@ Labels are customizable. These label properties can be edited from both the Inte
 
 ### Textboxes
 
-Textboxes are controls which can be used to get text input from participants. [Game Clients](#the-gameclient) receive events when participants either type or submit the text.
+Textboxes are controls which can be used to get text input from participants. [Game Clients](#the-game-client) receive events when participants either type or submit the text.
 
 
 - `change` event is sent when the participant types in the textbox (This is not sent if the button has a submit button)
@@ -152,7 +153,7 @@ Textboxes are customizable. These textbox properties can be edited from both the
 1.  Whether the textbox has a submit button
 1. Disabled state - Textboxes which are disabled cannot be interacted with
 1. Cooldown duration - Prevents interaction until it expires
-1. Spark cost (For more info about sparks, see [What are Sparks?](#what-are-sparks))
+1. Spark cost (For more info about sparks, see [What are Sparks?](/guides/mixplay/sparks#what-are-sparks))
 
 ### Mouse
 
