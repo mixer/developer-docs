@@ -21,7 +21,7 @@ We have 2 main types of content on the Developer Site and they are for different
 
 ### File Headers
 
-The top portion of each file is a block of [YAML](http://yaml.org/) this controls various settings about the pages. Be sure that this is valid YAML before committing.
+The top portion of each file is a block of [YAML](http://yaml.org/) this controls various settings about the pages. Be sure that this is valid YAML before committing. For possible values check out Grav's Documentation: https://learn.getgrav.org/content.
 
 We'll be adding some tests to ensure valid yaml is used before PRs can be merged in due course.
 
