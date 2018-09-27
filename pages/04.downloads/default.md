@@ -1,10 +1,16 @@
+---
+title: ''
+media_order: ''
+body_classes: ''
+order_by: ''
+order_manual: ''
+---
+
 # Downloads
 
 Looking to get started quicky? Grab an SDK Below and Get Started!
 
 ## MixPlay
-
-<div class="downloads-table">
 
 | Environment                    | Repository / Download                                                 | Documentation                                                                                                                           | Description                                                                                                             |
 | ------------------------------ | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -13,8 +19,6 @@ Looking to get started quicky? Grab an SDK Below and Get Started!
 | Unity                          | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [API Reference](#). [Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea. |
 | Unreal Engine 4                | [GitHub](https://github.com/mixer/interactive-unreal-plugin)          | [Documentation and Getting Started](https://aka.ms/MixerUnrealDocs)                                                                     | Add Mixer Interactive features into a game created using Unreal Engine 4.                                               |
 | Java                           | [GitHub](https://github.com/mixer/interactive-java)                   | [API Reference](https://mixer.github.io/interactive-java)                                                                               | Add Mixer interactive to your Java project.                                                                             |
-
-</div>
 
 ## Chat
 
