@@ -7,7 +7,7 @@ hero:
     buttons:
         primary:
             text: Start Building
-            link: /downloads
+            url: /downloads
         secondary:
             -
                 text: Integrate a game with Mixer
