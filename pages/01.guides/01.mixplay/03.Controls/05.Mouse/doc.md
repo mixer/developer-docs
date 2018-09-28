@@ -37,7 +37,7 @@ First make sure that you're using the same coordinate system as us. The Origin s
 Then you can apply the following to each coordinate to translate them into your coordinate space:
 
 - For X - take the width of your Game / Application's window and multiply it by the X coordinate
-- For Y - take the height of your Game / Application's window and multiply it by Y
+- For Y - take the height of your Game / Application's window and multiply it by the Y coordinate
 
 
 
