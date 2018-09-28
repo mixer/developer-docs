@@ -3,7 +3,7 @@ title: Home
 body_classes: home
 
 hero:
-    text: "Build the **Next big thing**   \n\nfor the millions of creators, gamers & audiences on Mixer"
+    text: "Build the **Next big thing**   \n\nfor the millions of creators, gamers & viewers on Mixer"
     buttons:
         primary:
             text: Start Building
