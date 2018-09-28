@@ -8,7 +8,7 @@ order_manual: ''
 
 # Downloads
 
-Looking to get started quicky? Grab an SDK Below and Get Started!
+Looking to get started quickly? Grab an SDK Below and Get Started!
 
 ## MixPlay
 
@@ -19,6 +19,13 @@ Looking to get started quicky? Grab an SDK Below and Get Started!
 | Unity                          | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [API Reference](#). [Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea. |
 | Unreal Engine 4                | [GitHub](https://github.com/mixer/interactive-unreal-plugin)          | [Documentation and Getting Started](https://aka.ms/MixerUnrealDocs)                                                                     | Add Mixer Interactive features into a game created using Unreal Engine 4.                                               |
 | Java                           | [GitHub](https://github.com/mixer/interactive-java)                   | [API Reference](https://mixer.github.io/interactive-java)                                                                               | Add Mixer interactive to your Java project.                                                                             |
+
+## Control Development Kit
+
+For developing with [Custom Controls](/guides/mixplay/customcontrols/introduction), you'll need the CDK:
+
+- [Windows](https://aka.ms/MixerCDK)
+- Mac - Coming soon!
 
 ## Chat
 
