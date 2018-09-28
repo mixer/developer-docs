@@ -1,6 +1,6 @@
 # Mouse
 
-! The Mouse control cannot be used with other controls including Buttons.
+! The Mouse control cannot be used in the same Scene as other controls including Buttons. Ensure you create a scene exclusively for it.
 
 Mouse input allows you to get mouse events over video. When a Mouse control is added to a scene it will create a rectangle that covers the video. When a Participant moves their mouse over the video events can be sent down to your Game or Application.
 
