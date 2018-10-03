@@ -5,16 +5,29 @@ episodes:
     -
         title: 'Episode 1: Hello World!'
         subtitle: 'Welcome to the Mixer Dev Show!'
-        image: dev-show-e1.png
+        image: /dev-show/e1/dev-show-e1.png
         link: /dev-show/e1/
         description: 'Our inaugural episode! Join us as we provide an overview of the platform, and walk through a simple Unity tutorial project.'
         segments:
             -
                 name: 'Platform Overview'
-                link: 'https://youtu.be/tpHG4c-rfO8'
+                link: 'https://youtu.be/jKyZlMkLk0I'
             -
                 name: 'Simple Unity MixPlay'
-                link: 'https://youtu.be/dGyTveU-pME'
+                link: 'https://youtu.be/ftGt6Loxk0Y'
+    -
+        title: 'Episode 2: Viewer Agency'
+        subtitle: 'Individual viewer agency in Unity'
+        image: /dev-show/e2/dev-show-e2.png
+        link: /dev-show/e2/
+        description: 'Our inaugural episode! Join us as we provide an overview of the platform, and walk through a simple Unity tutorial project.'
+        segments:
+            -
+                name: 'Platform Overview'
+                link: 'https://youtu.be/jKyZlMkLk0I'
+            -
+                name: 'Simple Unity MixPlay'
+                link: 'https://youtu.be/ftGt6Loxk0Y'
 ---
 
 # The Mixer Developer Show
