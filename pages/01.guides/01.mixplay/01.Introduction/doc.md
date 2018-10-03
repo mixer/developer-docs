@@ -29,8 +29,8 @@ If you're making a Game Client from scratch, you'll need to use an Interactive S
 | Environment | Repository / Download | Documentation | Description |
 | ----------- | ----------------------|---------------|-----------------|
 | Typescript, Node.js & Browsers | [GitHub](https://github.com/mixer/interactive-node) | [API Reference](https://mixer.github.io/interactive-node) | Great for creating Interactive tools and utilities. Suitable for beginners. |
-| C++ | [GitHub](https://github.com/mixer/interactive-cpp) | [API Reference](#) <br />[Docs & Getting Started](https://aka.ms/MixerCPPDocs) | Add Mixer Interactive features directly into a C++ Game. |
-| Unity | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [API Reference](#) <br />[Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea.
+| C++ | [GitHub](https://github.com/mixer/interactive-cpp) | [API Reference](https://mixer.github.io/interactive-cpp/html/index.html) <br />[Docs & Getting Started](https://aka.ms/MixerCPPDocs) | Add Mixer Interactive features directly into a C++ Game. |
+| Unity | [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/88585) | [Docs & Getting Started](https://aka.ms/MixerUnityDocs) | Add Mixer Interactive features into a game created using Unity. Also great for quickly prototyping an Interactive Idea.
 | Unreal Engine 4 | [GitHub](https://github.com/mixer/interactive-unreal-plugin) | [Docs & Getting Started](https://aka.ms/MixerUnrealDocs) | Add Mixer Interactive features into a game created using Unreal Engine 4. |
 | Java | [GitHub](https://github.com/mixer/interactive-java) | [API Reference](https://mixer.github.io/interactive-java) | Add Mixer interactive to your Java project. |
 
@@ -101,7 +101,7 @@ Once you are finished building your scenes/controls, press the Save button in th
 
 The code step is to help you complete the code portion of your project. This is usually done after you have set up the scenes and controls. This is also where you can grab the `Project Version ID` which is displayed in the center of the screen.
 
-You will need to write your own Game Client to connect to the Interactive service. For SDK downloads, documentation, and samples, go to [Choose a SDK](#choosing-an-sdk-environment).
+You will need to write your own Game Client to connect to the Interactive service. For SDK downloads, documentation, and samples, go to [Choose a SDK](#choose-a-sdk).
 
 ### Publish
 
@@ -114,7 +114,7 @@ To help you decide whether your Interactive project is ready for publishing, the
 - Is your project ready for every Mixer broadcaster to have access to?
 - Have you filled in the Info tab with **detailed** installation and setup instructions?
 
-If you’ve answered no to any of the questions above, you should **not** publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](#sharing-your-project) your project instead.
+If you’ve answered no to any of the questions above, you should **not** publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](/guides/mixplay/managing-project-access#sharing-an-interactive-project) your project instead.
 
 #### Understand the Publishing Flow
 

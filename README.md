@@ -1,27 +1,26 @@
 # Developer Documentation
 
-The Mixer Developer Site uses Markdown files to generate the content on the site. By contributing to these files you'll be improving our Documentation. For Mixer Staff members you can also use the Developer Site Admin panel.
+The Mixer Developer Site uses these Markdown files to generate the content on the site.
 
-To gain access to the panel please contact Richard Fox.
+You can checkout the Mixer Developer site at: dev.mixer.com.
 
-## File Headers
+## How to Contribute
 
-The top portion of each file is a block of [YAML](http://yaml.org/) this controls various settings about the pages. Be sure that this is valid YAML before committing.
+Checkout our [CONTRIBUTING](CONTRIBUTING.md) guide.
 
-We'll be adding some tests to ensure valid yaml is used before PRs can be merged in due course.
+## Asking Questions
 
-## Folder Structure
+If you have a question, feel free to open an [issue]https://github.com/mixer/developer-docs/issues/new), or contacting us on [Gitter](https://gitter.im/Mixer/developers)
 
-Grav uses folders for page titles. This allows supplementary files such as images to be placed neatly with the content which it supports.
+## How to Report an Error in our Documentation
 
-When creating a new article, start by making a folder. Always give this a numeric prefix as this allows us to order the folders later in the admin panel. For example `01.coolstuff`.
+If you run into an error in our documentation:
+* [Open an Issue](https://github.com/mixer/developer-docs/issues/new)
+* Include as many details as possible.
+* Make sure to include a link to the page on dev.mixer.com
 
-The file within the folder should usually be `doc.md`. `doc` is the name of the template that should be used. Doc is usually the correct template but there are exceptions. This should be picked up in PRs.
+Once it's filed:
 
-### Note
-
-Remember that even though the folder structure may seem odd, you're contributing to a live CMS. Its primarily designed for WYSIWYG editing and due to this the structure might seem odd when editing it manually.
-
-
-
-WORK IN PROGRESS, contact rifox for more information.
+* The team will review your issue
+* If the team can locate the error, it will be assigned to a team member
+* They will fix the issue and then let you know when it is fixed by replying to the issue
