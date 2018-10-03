@@ -1,5 +1,4 @@
 ---
-visible: false
 tntsearch:
     index: false
 ---
