@@ -18,9 +18,9 @@ You can check out the [full recording here](https://youtu.be/CYoXXvgNIa4), and b
 ## Sharing interactive projects with share codes
 This short tutorial covers how you can use share codes to share your interactive projects between many users, which is especially useful during development!
 
-[youtube autoplay=1 color=white]https://youtu.be/lfFPNod30Vg[/youtube]
+[youtube color=white]https://youtu.be/lfFPNod30Vg[/youtube]
 
 ## Sample: Player Agency in Unity
 In this tutorial we created a game with player agency for viewers on Mixer - basically we gave everyone watching a tank! We used the [Unity Tanks](https://unity3d.com/learn/tutorials/s/tanks-tutorial) tutorial and made it so that it spawns a tank for each viewer - giving them individual control.
 
-[youtube autoplay=1 color=white]https://youtu.be/MpiqNU58lZo[/youtube]
+[youtube color=white]https://youtu.be/MpiqNU58lZo[/youtube]
