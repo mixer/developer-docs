@@ -4,26 +4,26 @@ title: 'Getting Started - HTML'
 
 ## Introduction
 
-Writing with pure HTML and JavaScript is the fastest and easiest way to get started building rich custom control experiences for Mixer. Well cover setting up a project, making some changes, and running it on Mixer.
+Writing with pure HTML and JavaScript is the fastest and easiest way to get started building rich custom control experiences for Mixer. We'll cover setting up a project, making some changes, and running it on Mixer.
 
 ## Quickstart
 
 ### Prerequisites
 
-You first need to [install Node.js](https://nodejs.org/en/download/) on your computer. We require Node.js version 8.0.0 or higher. Node.js lets you run our build scripts and tools. Youll also need a decent code editor. We recommend [Visual Studio Code](https://code.visualstudio.com/) as a powerful editor with great JavaScript support out-of-the-box.
+You first need to [install Node.js](https://nodejs.org/en/download/) on your computer. We require Node.js version 8.0.0 or higher. Node.js lets you run our build scripts and tools. You'll also need a decent code editor. We recommend [Visual Studio Code](https://code.visualstudio.com/) as a powerful editor with great JavaScript support out-of-the-box.
 
 ### Downloading the Control Development Kit
 
-After Node.js is installed youll need to download our Control Development Kit (CDK). The CDK powers custom control development with an integrated set of tools such as previewing, testing and more. You can download the CDK [here](https://aka.ms/MixerCDK). Once youve downloaded the installer, double click on it to open it. This will install and then run the CDK.
+After Node.js is installed, you'll need to download our Control Development Kit (CDK). The CDK powers custom control development with an integrated set of tools such as previewing, testing and more. You can download the CDK [here](https://aka.ms/MixerCDK). Once you've downloaded the installer, double click on it to open it. This will install and then run the CDK.
 
 ### Create a Project
 
-Once the CDK is running youll see the following screen:
+Once the CDK is running you'll see the following screen:
 ![The Start Screen of the CDK width=800](../cdkStartScreen.png)
 
-Custom Controls are stored within Projects in the CDK so the first step is to create a new project. To do this select the new project option in the File menu along the top of the CDK. This will launch a wizard which will guide you through the steps to create your new project.
+Custom Controls are stored within Projects in the CDK, so the first step is to create a new project. To do this, select the new project option in the File menu along the top of the CDK. This will launch a wizard which will guide you through the steps to create your new project.
 
-First, select the folder that the project will be created in. We recommend you create a new folder to store all of your Custom Control projects so that they are organized. For example you could put them in `D:\dev\custom-controls\`.
+First, select the folder that the project will be created in. We recommend you create a new folder to store all of your Custom Control projects so that they are organized. For example, you could put them in `D:\dev\custom-controls\`.
 
 ![Screenshot, showing the HTML template selected](./cdkHTML.png)
 
@@ -31,21 +31,21 @@ Next, you will be asked to choose your Starter Template. For this guide choose, 
 
 You will be asked to choose a control layout. For this guide, please select "Full Screen".
 
-Youll then be asked to enter some details about your project; feel free to fill these in. This is your chance to explain what the project is about.
+You'll then be asked to enter some details about your project; feel free to fill these in. This is your chance to explain what the project is about.
 
-Once youve clicked "Create My Project", the CDK will spin up a new project for you. This will download the template and install its dependencies. This will take a few moments. Behind the scenes here were setting up your new project as a standard [NPM Module](https://docs.npmjs.com/getting-started/creating-node-modules) which is built using [Webpack](https://webpack.js.org/).
+Once you've clicked "Create My Project", the CDK will spin up a new project for you. This will download the template and install its dependencies. This will take a few moments. Behind the scenes we're setting up your new project as a standard [NPM Module](https://docs.npmjs.com/getting-started/creating-node-modules) which is built using [Webpack](https://webpack.js.org/).
 
 The CDK will tell you when the installation completes, and give you the option to open your projects folder in an IDE (if it can detect one) or in your file browser. You can also do this at any time by clicking your project name in the top action bar of the CDK and selecting "Open Folder".
 
 ### Login
 
-In order for some parts of the CDK to work such as uploading or publishing you need to login to the tool with your Mixer user account. We recommend you do this now so that it is done and you dont need to to worry about it. Click the "Not Logged In" Icon in the top right of the CDK to begin the login process.
+In order for some parts of the CDK to work, such as uploading or publishing, you need to log in to the tool with your Mixer user account. We recommend you do this now so that it is done and you don't need to to worry about it. Click the "Not Logged In" Icon in the top right of the CDK to begin the login process.
 
 Once everything has been completed, the CDK will show you the HTML Starter in a preview State within its UI. Each time you make changes to your custom control code it will detect this change and update the preview to show you the new output.
 
-If you havent done already, you should now open your new project in your favorite code editor. Were now ready to take a look at some code.
+If you haven't done so already, you should now open your new project in your favorite code editor. We're now ready to take a look at some code.
 
-Lets look at whats going on in `scripts.js`:
+Let's look at what's going on in `scripts.js`:
 
 ```js
 window.addEventListener('load', function initMixer () {
@@ -76,18 +76,18 @@ window.addEventListener('load', function initMixer () {
 
 `mixer.socket.call(giveInput, ...)` activates whenever you click on the "Hello World" text. This method sends a `giveInput` message down to the game client. To learn more about sending messages between a control and the game client, check out the [game client communication documentation](/guides/mixplay/customcontrols/gameclients).
 
-`mixer.isLoaded()` tells Mixer that your control has loaded. Its best to do this when youre finished setting up and loading in any images or scripts. Viewers on Mixer wont see your control until `isLoaded()` is called.
+`mixer.isLoaded()` tells Mixer that your control has loaded. It's best to do this when you're finished setting up and loading in any images or scripts. Viewers on Mixer won't see your control until `isLoaded()` is called.
 
 In summary, we position the video on the stage, setup a handler to send custom data back to the game, and then tell Mixer the control is ready to be seen by the world.
 
 ### Make a Change
-Now that weve gone over the basics, lets make an overlay that automatically resizes itself to always be over the video - even when the browser window changes!
+Now that we've gone over the basics, let's make an overlay that automatically resizes itself to always be over the video - even when the browser window changes!
 
 !!!  Automatically resizing and adjusting to the size of the browser is called _responsive development_ and is very important in building custom controls. You can read more in our [best practices](/guides/mixplay/customcontrols/bestpractices).
 
-Lets talk strategy: our goal will be to place a semi-transparent `div` completely covering the real position of the video, independant of the size of the browser window or the aspect ratio of the video source. To do that, were going to use the `position()` API, which provides a handy observable for the real position of the video. Whenever that updates, well move our `div` so that it aligns with the video position.
+Let's talk strategy: our goal will be to place a semi-transparent `div` completely covering the real position of the video, independant of the size of the browser window or the aspect ratio of the video source. To do that, we're going to use the `position()` API, which provides a handy observable for the real position of the video. Whenever that updates, we'll move our `div` so that it aligns with the video position.
 
-To start, we need an element to overlay on top of the video. Well add an overlay `div` to `index.html` by replacing the file contents with the following:
+To start, we need an element to overlay on top of the video. We'll add an overlay `div` to `index.html` by replacing the file contents with the following:
 
 ```html
 <!DOCTYPE html>
@@ -121,13 +121,13 @@ function handleVideoResized (position) {
 }
 ```
 
-Lastly, lets tie it all together. At the top of the `initMixer()` function, add the following. This will subscribe our handler function to updates and does the initial positioning of the overlay.
+Lastly, let's tie it all together. At the top of the `initMixer()` function, add the following. This will subscribe our handler function to updates and does the initial positioning of the overlay.
 
 ```js
 mixer.display.position().subscribe(handleVideoResized);
 ```
 
-All together, heres our `scripts.js` file:
+All together, here's our `scripts.js` file:
 
 ```js
 window.addEventListener('load', function initMixer () {
@@ -165,9 +165,9 @@ function handleVideoResized (position) {
 }
 ```
 
-Thats it! Go back to the CDK and you should see the overlay being positioned properly.
+That's it! Go back to the CDK and you should see the overlay being positioned properly.
 
-You can try changing the emulated device to see how your changes look on different devices. To do this, open the view menu at the top of the CDK and select "Device Emulation". In the panel that opens, try changing the device to a Phone or tablet and watch your overlay resize automatically.
+You can try changing the emulated device to see how your changes look on different devices. To do this, open the view menu at the top of the CDK and select "Device Emulation". In the panel that opens, try changing the device to a phone or tablet and watch your overlay resize automatically.
 
 ### Next Steps
 - Read more about [sending data between a custom control and a game client](/guides/mixplay/customcontrols/gameclients)

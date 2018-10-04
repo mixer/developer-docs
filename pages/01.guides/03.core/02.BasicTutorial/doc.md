@@ -1,5 +1,6 @@
 ---
 title: Basic Tutorial
+clientId: true
 ---
 
 # Basic Tutorial - Let's write a Ranker!

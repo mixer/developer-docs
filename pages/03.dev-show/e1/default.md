@@ -1,17 +1,16 @@
 ---
 title: 'Episode 1: Hello World!'
-cache_enable: false
 ---
 
 # Mixer Dev Show Episode 1: Hello World
-Wednesday, September 19th 2018, hosts: [Mike Blouin](https://twitter.com/MichaelBlouin), [Hutch White](https://twitter.com/AechDub)
+Wednesday, September 17th 2018, hosts: [Mike Blouin](https://twitter.com/MichaelBlouin), [Hutch White](https://twitter.com/AechDub)
 
 The inaugural [#MixerDevShow](https://twitter.com/hashtag/MixerDevShow) episode covered platform basics, including:
 
 - [An overview of the Mixer Platform](https://youtu.be/tpHG4c-rfO8)
 - [A simple tutorial project in Unity](https://youtu.be/dGyTveU-pME)
 
-You can check out the [full recording here](), and be sure to [**join us live Wednesdays at 1pm PST/4pm EST**](https://mixer.com/MixerDevShow)
+You can check out the [full recording here](https://youtu.be/sk2CVqdnGOg), and be sure to [**join us live Wednesdays at 1pm PST/4pm EST**](https://mixer.com/MixerDevShow)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sk2CVqdnGOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

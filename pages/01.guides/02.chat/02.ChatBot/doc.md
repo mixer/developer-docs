@@ -7,7 +7,7 @@ clientId: true
 
 For this tutorial, we will show you how to create a 'ping-pong' chat bot using either our [Node](https://github.com/mixer/client-node), [Java](https://github.com/mixer/beam-client-java) or [Python](https://github.com/mixer/beam-client-python) libraries to communicate with the Mixer API. We'll also take a look at how you can talk to the API directly with [curl](https://curl.haxx.se/) and [wscat](https://github.com/websockets/wscat).
 
-We'll be using OAuth for authentication. In the tutorial code below, click "Click here to get your token" to grab a token for the tutorial. You can read more about how OAuth works on our [OAuth page](https://mixerdev.azurewebsites.net/reference/oauth)
+We'll be using OAuth for authentication. In the tutorial code below, click "Click here to get your token" to grab a token for the tutorial. You can read more about how OAuth works on our [OAuth page](/reference/oauth)
 
 
 [mixer-tabs active=1]
