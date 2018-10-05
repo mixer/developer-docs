@@ -5,7 +5,7 @@ title: 'Writing SDks'
 # Writing SDKs
 This page serves as a guideline for writing game client- braries SDKs for Interactive with awareness for the flexibility lent by Custom Controls. Specifics may vary between languages. This guide is meant to be descriptive of best practices and patterns, not prescriptive. Where relevant, examples are given from our own SDKs and codebases.
 
-!!!  If you havent already, check out the #[Interactive Protocol Reference](/user/pages/mixplay/protocol.pdf).This guide will make references to it.
+!!!  If you havent already, check out the #[Interactive Protocol Reference](/guides/mixplay/protocol/specification).This guide will make references to it.
 
 
 ## State Model
@@ -20,7 +20,7 @@ Various languages necessitate different approaches to dynamic, user-defined prop
 
 Most callable methods on the protocol allow for bulk changes to be made. Using these, when possible, reduces the amount of network and computation load for the users computer. Depending on practices in the language youre using, it may make sense to automatically bulk updates on behalf of the developer. For example, a JavaScript client- brary might defer sending control updates until the next event loop tick so that its able to automatically bundle any synchronous updates that the developer makes together.
 
-Many Interactive methods are fire-and-forget methods. In the protocol document, methods which cannot return an error are called with `discard:true`(/user/pages/mixplay/protocol.pdf)) in their examples and dont have any- sted "Unsuccessful Replies". For these methods, you need not wait for confirmation from the service; unless the users connection drops before they arrive, they will be successful.
+Many Interactive methods are fire-and-forget methods. In the protocol document, methods which cannot return an error are called with `discard:true`(/guides/mixplay/protocol/specification)) in their examples and dont have any- sted "Unsuccessful Replies". For these methods, you need not wait for confirmation from the service; unless the users connection drops before they arrive, they will be successful.
 
 The Interactive protocol provides compression algorithms you can use in the Interactive protocol. Using these can significantly reduce bandwidth consumption at the cost of increased CPU load. Whether to enable these is a choice that shouldtimately be left up to the consumer of your SDK, but the ability to switch between protocols should not be omitted.
 

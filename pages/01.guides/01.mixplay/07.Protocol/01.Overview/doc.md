@@ -26,7 +26,7 @@ Methods contain an additional property called `discard`, which when `true`, indi
 #### Reply
 A reply is sent from a recipient back to the caller informing them about the result after executing the method that was sent. It can contain a `result` or an `error` which indicates what went wrong.
 
-For full packet implementation details, please refer to the protocol specification which you can download [here](/user/pages/mixplay/protocol.pdf).
+For full packet implementation details, please refer to the protocol specification which you can download [here](/guides/mixplay/protocol/specification).
 
 ### Compression
 By default, packets on the wire are transmitted as plain text, but the Game Client can opt to use [GZIP](https://tools.ietf.org/html/rfc1952) or [LZ4](https://lz4.github.io/lz4/) compression. To do this, the Game Client must call a method providing its supported compression formats. The server will then respond with its chosen compression format.
