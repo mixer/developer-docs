@@ -1,3 +1,6 @@
+---
+title: 'UserTimeout'
+---
 # UserTimeout
 
 Sent only to a user when they are timed out. The duration provided is measured in milliseconds.

@@ -1,3 +1,6 @@
+---
+title: 'PollEnd'
+---
 # PollEnd
 
 Sent when a poll has ended.

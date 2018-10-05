@@ -1,3 +1,6 @@
+---
+title: 'UserLeave'
+---
 # UserLeave
 
 Sent when a user leaves the chat. This is not emitted for unauthenticated users.
