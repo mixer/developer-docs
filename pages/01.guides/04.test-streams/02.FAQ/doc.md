@@ -37,3 +37,8 @@ No, this is not supported. Mixer is not a platform for Private content.
 ### I'm a Mixer Partner can I use Test Streaming?
 
 Yes, read [this article for more information](https://watchbeam.zendesk.com/hc/en-us/articles/360000169791-Test-Streams-for-Partners).
+
+
+### Can the link to access the test stream be generated before I go Live?
+
+No, this is unfourtunately not possible.
