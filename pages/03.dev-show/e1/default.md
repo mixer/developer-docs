@@ -1,10 +1,9 @@
 ---
 title: 'Episode 1: Hello World!'
-cache_enable: false
 ---
 
 # Mixer Dev Show Episode 1: Hello World
-Wednesday, September 19th 2018, hosts: [Mike Blouin](https://twitter.com/MichaelBlouin), [Hutch White](https://twitter.com/AechDub)
+Wednesday, September 17th 2018, hosts: [Mike Blouin](https://twitter.com/MichaelBlouin), [Hutch White](https://twitter.com/AechDub)
 
 The inaugural [#MixerDevShow](https://twitter.com/hashtag/MixerDevShow) episode covered platform basics, including:
 

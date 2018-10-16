@@ -1,3 +1,6 @@
+---
+title: 'PurgeMessage'
+---
 # PurgeMessage
 
 Sent when a user's messages are purged. Note: The moderator object is only set when a user is purged from in chat. The ban event triggers a purge but the object is not defined.

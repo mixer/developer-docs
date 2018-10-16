@@ -1,3 +1,6 @@
+---
+title: 'DeleteMessage'
+---
 # DeleteMessage
 
 Sent when a message has been deleted from chat.

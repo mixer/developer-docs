@@ -1,3 +1,6 @@
+---
+title: 'UserUpdate'
+---
 # UserUpdate
 
 Sent when a user is updated, usually on status change. E.g. Modding, Subscribing, Banning.

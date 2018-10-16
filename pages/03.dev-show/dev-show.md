@@ -3,6 +3,19 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 2: Viewer Agency'
+        subtitle: 'Individual viewer agency in Unity'
+        image: dev-show-e2.png
+        link: /dev-show/e2/
+        description: 'Our second episode where we explore play agency through Mixer.'
+        segments:
+            -
+                name: 'Sample: Player Agency in Unity'
+                link: 'https://youtu.be/MpiqNU58lZo'
+            -
+                name: 'Sharing interactive projects with share codes'
+                link: 'https://youtu.be/lfFPNod30Vg'
+    -
         title: 'Episode 1: Hello World!'
         subtitle: 'Welcome to the Mixer Dev Show!'
         image: dev-show-e1.png
@@ -11,10 +24,10 @@ episodes:
         segments:
             -
                 name: 'Platform Overview'
-                link: 'https://youtu.be/tpHG4c-rfO8'
+                link: 'https://youtu.be/jKyZlMkLk0I'
             -
                 name: 'Simple Unity MixPlay'
-                link: 'https://youtu.be/dGyTveU-pME'
+                link: 'https://youtu.be/ftGt6Loxk0Y'
 ---
 
 # The Mixer Developer Show

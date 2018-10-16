@@ -1,3 +1,6 @@
+---
+title: 'ChatMessage'
+---
 # ChatMessage
 
 Sent by the server when a client sends a message. It contains multiple message components, such as `text`, `emoticon`, `link`, and `tag`. The `meta` property of a message contains various attributes which define additional details about where the message comes from.

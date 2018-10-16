@@ -1,3 +1,6 @@
+---
+title: 'WelcomeEvent'
+---
 # WelcomeEvent
 
 Sent by the server once you're fully connected to chat.

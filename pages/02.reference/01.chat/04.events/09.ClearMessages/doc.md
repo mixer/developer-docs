@@ -1,3 +1,6 @@
+---
+title: 'ClearMessages'
+---
 # ClearMessages
 
 Sent when the server clears all messages in chat.

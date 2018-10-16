@@ -1,5 +1,5 @@
 ---
-title: 'Introduction'
+title: Introduction
 ---
 
 # Custom Controls
@@ -29,7 +29,7 @@ The collection of HTML, CSS and JavaScript that you develop when creating a Cust
 
 ![](./project-heirarchy.svg?classes=caption "The project 'My Awesome Project' has three versions. Two we've assigned to the default bundle, called the interactive-launchpad, and for version 2.0 we've created a custom bundle.")
 
-Bundles themselves can have multiple bundle versions. Bundles are initially created privately, accessible only to you. Once you decide to "publish" a bundle version to make it public, you wont be able to modify it. This ensures that you dont break users who are relying on released versions of your bundles.
+Bundles themselves can have multiple bundle versions. Bundles are initially created privately, accessible only to you. Once you decide to "publish" a bundle version to make it public, you wont be able to modify it. This ensures that you don't break users who are relying on released versions of your bundles.
 
 ### Controls
 
@@ -37,10 +37,10 @@ Within a Custom Control bundle are a set of Controls.
 
 Controls are interactive elements within an Interactive experience such as a Button, Joystick or even a MiniMap. They allow users to give inputs and receive data from your Game or Application. They exist within scenes of an Interactive experience and have a free-form set of properties that can be used to modify their behavior or appearance. They can also send inputs and data to your Game Client which can in turn send data back to update the controls appearance or behavior.
 
-All of Mixers standard controls and experiences such as Share your Controller are built using Custom Controls. They use [Preact](https://preactjs.com/), a super lightweight framework that takes care of the dirty work for you, and [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), a superset of JavaScript which gives you the option of adding type annotations to your code.
+All of Mixer's standard controls and experiences, such as Share your Controller, are built using Custom Controls. They use [Preact](https://preactjs.com/), a super lightweight framework that takes care of the dirty work for you, and [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), a superset of JavaScript which gives you the option of adding type annotations to your code.
 
-For more information on Mixers Standard Controls, check out [the documentation for them](/guides/mixplay/interactive-overview#controls).
+For more information on Mixer's Standard Controls, check out [the documentation for them](/guides/mixplay/interactive-overview#controls).
 
 ### Summary
 
-In summary, when a streamer goes Interactive with a version of your Interactive Project, Mixer will look up the linked bundle for this version and load it onto the streamers channel page for any viewers watching. Theyll be connected through Mixer to your Game or Application where you can start receiving inputs and data to change and enhance a streamers game or broadcast.
+In summary, when a streamer goes Interactive with a version of your Interactive Project, Mixer will look up the linked bundle for this version and load it onto the streamers channel page for any viewers watching. They'll be connected through Mixer to your Game or Application where you can start receiving inputs and data to change and enhance a streamer's game or broadcast.

@@ -8,7 +8,7 @@ Test streams allow you to broadcast your content in private. This means if you a
 ## Test Stream Qualifications
 Test Streams are currently available to a limited audience. To qualify for Test Streams, you must be a part of at least one of these groups:
 1. Mixer Partner
-2. Verifyable Mixer Developer (Integration, Chat Bots, etc.)
+2. Verifiable Mixer Developer (Integration, Chat Bots, etc.)
 3. Microsoft/Xbox Partner
 
 ## Applying for Test Stream Access

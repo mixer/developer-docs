@@ -1,12 +1,13 @@
 ---
-title: 'Controls'
+title: Controls
 process:
-  twig: true
+    markdown: true
+    twig: true
 twig_first: true
 ---
 
 # Controls
-A control is an interactive element in a user interface within a MixPlay scene. [Participants](#participants) can interact with the control using touch, keyboard, mouse, or controller.
+A control is an interactive element in a user interface within a MixPlay scene. [Participants](/guides/mixplay/interactive-overview#participants) can interact with the control using touch, keyboard, mouse, or controller.
 
 Mixer has a variety of controls available to use out of the box and we're always looking to add more in the future. Each control has its own page here on the dev site so that we can provide as much detail as possible.
 
