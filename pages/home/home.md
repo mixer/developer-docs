@@ -3,7 +3,7 @@ title: Home
 body_classes: home
 
 hero:
-    text: "Build the **Next big thing**   \n\nfor the millions of creators, gamers & viewers on Mixer"
+    text: "Build the **Next big thing**   \n\nfor the millions of creators & viewers on Mixer"
     buttons:
         primary:
             text: Start Building
@@ -43,7 +43,7 @@ sections:
         title: Core API
         color: pink-background
         icon: icon-News
-        text: Discover and query data about Mixer's Platform such as the Top Games, Who Follows who and Much more.
+        text: Discover and query data about Mixer's Platform such as the Top Games, Who has the most sparks and more.
         link: /guides/core
 ---
 
