@@ -129,7 +129,8 @@ Once your project is accepted for publishing, we can start discussing the actual
 
 ## Where to get help
 
-Have questions? Stuck? We're here to help! We have places you can get help so drop by!
+Have questions? Stuck? We're here to help! Please feel free to reach out at any time.
 
+- [Contact Us](mailto:mixerdevinfo@microsoft.com) - Send us an email.
 - [Gitter](https://gitter.im/Mixer/developers) - Chat with our team and other developers.
 - [Community Discord](https://discord.gg/mixer) - Hang out with other developers in our community Discord.
