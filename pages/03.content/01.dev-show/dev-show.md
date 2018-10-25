@@ -6,7 +6,7 @@ episodes:
         title: 'Episode 2: Viewer Agency'
         subtitle: 'Individual viewer agency in Unity'
         image: dev-show-e2.png
-        link: /dev-show/e2/
+        link: /content/dev-show/e2/
         description: 'Our second episode where we explore play agency through Mixer.'
         segments:
             -
@@ -19,7 +19,7 @@ episodes:
         title: 'Episode 1: Hello World!'
         subtitle: 'Welcome to the Mixer Dev Show!'
         image: dev-show-e1.png
-        link: /dev-show/e1/
+        link: /content/dev-show/e1/
         description: 'Our inaugural episode! Join us as we provide an overview of the platform, and walk through a simple Unity tutorial project.'
         segments:
             -

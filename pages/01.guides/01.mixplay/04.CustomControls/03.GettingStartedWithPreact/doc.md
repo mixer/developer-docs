@@ -313,7 +313,7 @@ You have a folder `locales` that contain JSON files for various locales. These m
 { clickMe: Click Me }
 ```
 
-You can get the appropriate translation in a Preact control using the `&lt;Translate /&gt;` component:
+You can get the appropriate translation in a Preact control using the `<Translate>` component:
 
 ```jsx
 import { h } from 'preact';
