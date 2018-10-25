@@ -10,7 +10,7 @@ Checkout our [CONTRIBUTING](CONTRIBUTING.md) guide.
 
 ## Asking Questions
 
-If you have a question, feel free to open an [issue]https://github.com/mixer/developer-docs/issues/new), or contacting us on [Gitter](https://gitter.im/Mixer/developers)
+If you have a question, feel free to open an [issue](https://github.com/mixer/developer-docs/issues/new), or contacting us on [Gitter](https://gitter.im/Mixer/developers)
 
 ## How to Report an Error in our Documentation
 
