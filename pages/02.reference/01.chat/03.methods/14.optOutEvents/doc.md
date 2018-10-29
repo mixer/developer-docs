@@ -4,7 +4,7 @@ Request to opt out from receiving certain events from chat socket.
 
 ## Arguments
 
-1. An array of events to opt out from. For ex. UserJoin, UserLeave. Reference: [event](events)
+1. An array of events to opt out from. For ex. UserJoin, UserLeave. Reference: [event](/reference/chat/events)
 
 ## Examples
 
