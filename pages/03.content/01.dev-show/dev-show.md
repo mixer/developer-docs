@@ -36,7 +36,7 @@ episodes:
         subtitle: 'Exploring Custom Controls and the CDK'
         image: dev-show-e4.png
         link: /content/dev-show/e4/
-        description: 'Our fourth episode where we go over Death's Door, a high-level overview of Custom Controls, and introduce the CDK.'
+        description: 'Our fourth episode where we go over Deaths Door, a high-level overview of Custom Controls, and introduce the CDK.'
         segments:
             -
                 name: 'Interactive News'
