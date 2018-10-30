@@ -3,6 +3,64 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 6: Chat & Chatbots'
+        subtitle: 'Mixer Chat, Chatbots, and OAuth'
+        image: dev-show-e6.png
+        link: /content/dev-show/e6/
+        description: 'In the sixth episode we show a Chrome extension to blur deleted chat messages, cover the basics of chat, and show how to make a Chatbot.'
+        segments:
+            -
+                name: 'Chrome Extension'
+                link: 'https://youtu.be/G-OrCeZtDY8'
+            -
+                name: 'Chat Basics'
+                link: 'https://youtu.be/gWlIklyrJZQ'
+            -
+                name: 'Chatbot Project'
+                link: 'https://youtu.be/xjbUNoJgkmU'
+    -
+        title: 'Episode 5: Custom Controls Continued'
+        subtitle: 'Mixer API & Custom Controls'
+        image: dev-show-e5.png
+        link: /content/dev-show/e5/
+        description: 'In the fifth episode we talk about our latest MixPlay Exclusive, Halls of Horror, and using the Mixer API with Custom Controls.'
+        segments:
+            -
+                name: 'Interactive News'
+                link: 'https://youtu.be/vql9Q5-JcmM'
+            -
+                name: 'Custom Controls Basics Pt. 2'
+                link: 'https://youtu.be/hWcESLaT7nc'
+    -
+        title: 'Episode 4: Custom Controls for Realz!'
+        subtitle: 'Exploring Custom Controls and the CDK'
+        image: dev-show-e4.png
+        link: /content/dev-show/e4/
+        description: 'Our fourth episode where we go over Death's Door, a high-level overview of Custom Controls, and introduce the CDK.'
+        segments:
+            -
+                name: 'Interactive News'
+                link: 'https://youtu.be/7DFdxph0Uik'
+            -
+                name: 'Custom Controls Overview'
+                link: 'https://youtu.be/cWUPBi7ugvc'
+            -
+                name: 'Introduction to the CDK'
+                link: 'https://youtu.be/-X_uwhh_mPk'
+    -
+        title: 'Episode 3: A Prelude to Custom Controls'
+        subtitle: 'Diving in to MixPlay Custom Controls'
+        image: dev-show-e3.png
+        link: /content/dev-show/e3/
+        description: 'Our third episode, where we start exploring Game Clients and Custom Controls.'
+        segments:
+            -
+                name: 'Sample: Player Agency in Unity Pt. 2'
+                link: 'https://youtu.be/EtlTLgMSwpk'
+            -
+                name: 'Custom Controls Introduction'
+                link: 'https://youtu.be/CBckXI1YdBA'
+    -
         title: 'Episode 2: Viewer Agency'
         subtitle: 'Individual viewer agency in Unity'
         image: dev-show-e2.png
