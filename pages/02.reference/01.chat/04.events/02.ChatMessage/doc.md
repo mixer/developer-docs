@@ -3,7 +3,7 @@ title: 'ChatMessage'
 ---
 # ChatMessage
 
-Sent by the server when a client sends a message. It contains multiple message components, such as `text`, `emoticon`, `link`, and `tag`. The `meta` property of a message contains various attributes which define additional details about where the message comes from.
+Sent by the server when a client sends a message. It contains multiple message components, such as `text`, `emoticon`, `link`, `tag` and `image`. The `meta` property of a message contains various attributes which define additional details about where the message comes from.
 
 ## Examples
 
@@ -64,6 +64,11 @@ A regular channel message seen by all users
             "height": 24
           },
           "text": ":coolpartneremote"
+        },
+        {
+            "type": "image",
+            "text": "image_name",
+            "url": "https://mixer.com/image.png"
         }
       ],
       "meta": {}
@@ -196,3 +201,51 @@ A channel owner can configure their channel's [Catbot auto moderation](https://a
   }
 }
 ```
+
+#### Skill
+
+Sent by the server when a client sends a message based on a Skill.
+
+```json
+{
+	"type": "event",
+	"event": "ChatMessage",
+	"data": {
+		"channel": 12345,
+		"id": "eaf6e9b0-3a25-11e6-b410-e9a72fcede64",
+		"user_name": "username",
+		"user_id": 12345,
+		"user_roles": [
+			"User"
+		],
+		"user_level": 5,
+		"user_avatar": "https://uploads.mixer.com/avatar/ed47s4h5-696.jpg",
+		"message": {
+			"message": [{
+					"type": "text",
+					"data": "hi",
+					"text": "hi"
+				},
+				{
+					"type": "image",
+					"text": "sticker_name",
+					"url": "https://mixer.com/sticker.png"
+				}
+			],
+			"meta": {
+				"is_skill": true,
+				"skill": {
+					"skill_id": "d314fb50-70e9-4f59-96f8-98a5f24737ef",
+					"skill_name": "Sticker",
+					"execution_id": "f319fb50-70e9-4f59-96f8-98a5f24737ef",
+					"icon_url": "https://mixer.com/skill.png",
+					"cost": 100,
+					"currency": "Sparks"
+				}
+			}
+		}
+	}
+}
+```
+
+
