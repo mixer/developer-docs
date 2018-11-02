@@ -150,7 +150,7 @@ By default, webhooks expire after 90 days unless they're renewed using `POST /ho
     "renewUrl": "https://mixer.com/api/v1/hooks/875829e3-52c5-4976-a053-2861d8c3bc79/renew"
 }
 ```
-We provide several other APIs you can use to manage your registered webhooks. You can read more about them in our API docs here.
+We provide several other APIs you can use to manage your registered webhooks. You can read more about them in our API docs in the [REST Reference](/rest/index.html#hooks).
 
 ## Available Events
 The available events to register for web hooks match our constellation live events. To see a list of available events. Please checkout the live events section of our constellation reference [here](/reference/constellation/events/live)
