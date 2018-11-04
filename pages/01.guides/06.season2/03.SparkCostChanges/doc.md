@@ -52,5 +52,9 @@ No, this update does not require that any changes be made within your [Game Clie
 
 When dynamically created controls are created on the MixPlay service their Spark Cost will be adjusted to the nearest Discrete value. Our Applications will show this rounded value instead of the absolute value you create the control with.
 
+## Can you add more Items to this List?
+
+Adding new values to this list is easy. We just had to start somewhere, these items are based on the most common spark costs we see on MixPlay today. If you'd like more added please [post/upvote this suggestion](https://watchmixer.uservoice.com/forums/382521-mixer-feedback-ideas/suggestions/35906746-new-spark-intervals-for-upcoming-spark-cost-change). 
+
 
 
