@@ -33,7 +33,7 @@ This list will be updated as values are added or removed in the future.
 * 5000
 * 7500
 * 10000
-* Need more? Comment [here]((https://watchmixer.uservoice.com/forums/382521-mixer-feedback-ideas/suggestions/35906746-new-spark-intervals-for-upcoming-spark-cost-change)
+* Need more? Comment [here](https://watchmixer.uservoice.com/forums/382521-mixer-feedback-ideas/suggestions/35906746-new-spark-intervals-for-upcoming-spark-cost-change)
 
 ### Can you add more Items to this List?
 
