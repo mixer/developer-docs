@@ -1,3 +1,7 @@
+---
+title: 'What's V2?'
+---
+
 # What's V2?
 
 With Season 2, You might have noticed some V2 endpoints appearing around Skills and Sparks Patronage.

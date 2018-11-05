@@ -12,4 +12,6 @@ We're reviewing how to make this a possibility, stand by for further news.
 
 YES!!
 
+## What's V2?
 
+Take a look at [our guide](/guides/core/whatsv2).
