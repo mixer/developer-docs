@@ -1,5 +1,5 @@
 ---
-title: 'What''s V2?'
+title: 'Whats V2?'
 ---
 
 # What's V2?
