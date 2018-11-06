@@ -36,7 +36,7 @@ Moderators in a channel can cancel a skill by deleting the attribution message i
 
 ### Skill Endpoints
 Formal REST Documentation is coming soon but until then take a look at the following endpoints:
-- POST `/api/v1/catalog/skills/channels/52581669?locale=en-US` with a body `{"globalLevel":<your level>}`  - Requires authentication.
+- POST `/api/v1/catalog/skills/channels/{channelId}?locale=en-US` with a body `{"globalLevel":<your level>}`  - Requires authentication via JWT or XToken.
 
 ## Spark Patronage
 
