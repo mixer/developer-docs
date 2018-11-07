@@ -3,6 +3,22 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 7: Live Loading with Constellation'
+        subtitle: 'Using Constellation for liveloading events'
+        image: dev-show-e7.png
+        link: /content/dev-show/e7/
+        description: 'In the seventh episode we look at Constellation, our service that can be used for liveloading events. Mike and Hutch also go over Arms Race, a new game from VVSpaceship.'
+        segments:
+            -
+                name: 'Interactive News'
+                link: 'https://youtu.be/dqkJXABanj8'
+            -
+                name: 'Live Loading Events'
+                link: 'https://youtu.be/hT7yjke-0fA'
+            -
+                name: 'Live Loading Project'
+                link: 'https://youtu.be/eG-nxHwN4i4'
+    -
         title: 'Episode 6: Chat & Chatbots'
         subtitle: 'Mixer Chat, Chatbots, and OAuth'
         image: dev-show-e6.png
