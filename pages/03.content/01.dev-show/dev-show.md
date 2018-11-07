@@ -7,7 +7,7 @@ episodes:
         subtitle: 'Using Constellation for liveloading events'
         image: dev-show-e7.png
         link: /content/dev-show/e7/
-        description: 'In the seventh episode we look at Constellation, our service that can be used for liveloading events. Mike and Hutch also go over Arms Race, a new game from VVSpaceship.'
+        description: 'In the seventh episode we look at Constellation, our service that can be used for liveloading events. We also show a new game from VVSpaceship, Arms Race.'
         segments:
             -
                 name: 'Interactive News'
