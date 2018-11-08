@@ -35,7 +35,7 @@ Drop us a line [here](mailto:mixerdevinfo@microsoft.com).
 
 ## Documentation
 
-REST Documentation for V2 endpoints being a part of our regular REST reference is in progress so until then the documentation for these new endpoints can be found on a separate page [here]().
+REST Documentation for V2 endpoints being a part of our regular REST reference is in progress so until then the documentation for these new endpoints can be found on a separate page [here](/reference/chat/chatviewerlist).
 
 We'll redirect this page back to the overall REST reference page once its in amongst the other endpoints.
 
