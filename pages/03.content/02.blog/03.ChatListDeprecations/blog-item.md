@@ -18,22 +18,29 @@ A new version of the Chat viewer List API is now available. It exists in the V2 
 It has the following changes:
 - Removes the `/chat/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it.
 - Changes the calling pattern of `/chat/{channelId}/users.` This will affect pagination.
-- Moves `/chat/{channelId}/users and /chat/{channelId}/users/{userId}` to the V2 namespace.
-
-You can find documenation for these new endpoints here.
+- Moves `/chat/{channelId}/users and /chat/{channelId}/users/{userId}` to the V2 namespace and pluralize `chat` to `chats`.
 
 
 # Deprecating Chat Viewer List API V1
 
-With V2 available we plan to deprecate the chat viewer list v1 API on DATE.
+With V2 available we plan to deprecate the chat viewer list v1 API on 12/08/2018.
 
 ## What do I need to do?
 
-Before DATE, if you use the V1 Chat Viewer List API. Move to V2.
+Before 12/08/2018, if you use the V1 Chat Viewer List API. Move to V2.
 
 ## What do I do if I have questions?
 
 Drop us a line [here](mailto:mixerdevinfo@microsoft.com).
+
+## Documentation
+
+REST Documentation for V2 endpoints being a part of our regular REST reference is in progress so until then the documentation for these new endpoints can be found on a separate page [here]().
+
+We'll redirect this page back to the overall REST reference page once its in amongst the other endpoints.
+
+
+
 
 
 
