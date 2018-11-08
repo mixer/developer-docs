@@ -4,7 +4,7 @@ title: 'Continuation Tokens'
 
 # Continuation Tokens
 
-Continuation tokens are a method used for Pagination in endpoints starting with V2.
+Continuation tokens are a method used for pagination in endpoints starting with V2.
 
 When you make a request to an endpoint that supports continuation tokens you will get the response and a continuation token back. This is usually found in the headers and often included in a link header.
 
