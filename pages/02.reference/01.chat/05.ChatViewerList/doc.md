@@ -27,7 +27,7 @@
 
 **Media Type**: application/json
 
-**Data Type**: Array<[ChatUser](https://dev.mixer.com/rest/index.html#Role)>
+**Data Type**: Array<[ChatUser](#ChatUserType)>
 
 ## GET /api/v2/chats/{channelId}/users/{userId}
 
