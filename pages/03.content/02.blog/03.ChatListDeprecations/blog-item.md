@@ -39,6 +39,8 @@ REST Documentation for V2 endpoints being a part of our regular REST reference i
 
 We'll redirect this page back to the overall REST reference page once its in amongst the other endpoints.
 
+That's all for now, keep an eye on this blog for more posts and cool things coming soon.
+
 
 
 
