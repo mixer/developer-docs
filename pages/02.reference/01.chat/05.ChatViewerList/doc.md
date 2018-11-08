@@ -11,7 +11,7 @@
 
 * limit: uint? [1≤integer≤100] - Amount of items per page.
 * showLurkers: boolean? - Show lurkers in the channel for staff user (Authed API and requires JWT Token)
-* continuationToken: string? - ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](TODO) for more info on how these work
+* continuationToken: string? - An opaque token. ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](/guides/core/continuationtokens) for more info on how these work.
 * username: string? - Name fragment to search users by.
 
 
