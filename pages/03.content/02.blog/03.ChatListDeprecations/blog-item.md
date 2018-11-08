@@ -16,9 +16,9 @@ With the introduction to V2 over, let's move onto the changes.
 A new version of the Chat viewer List API is now available. It exists in the V2 path.
 
 It has the following changes:
-- Removes the `/chat/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it.
-- Changes the calling pattern of `/chat/{channelId}/users.` This will affect pagination.
-- Moves `/chat/{channelId}/users and /chat/{channelId}/users/{userId}` to the V2 namespace and pluralize `chat` to `chats`.
+- Removes the `/chats/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it.
+- Changes the calling pattern of `/chats/{channelId}/users.` This will affect pagination.
+- Removing the `/chats/{channelId}/users/search` endpoint. Instead supply a `username` query parameter to `/chats/{channelId}/users` to search.
 
 
 # Deprecating Chat Viewer List API V1
