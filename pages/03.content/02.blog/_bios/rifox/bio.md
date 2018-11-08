@@ -1,6 +1,6 @@
 ---
 title: Richard Fox
-image: https://avatars1.githubusercontent.com/u/2230985?s=128
+image: https://probableprime.co.uk/logo.png
 social:
     email: mixerdevinfo@microsoft.com
     github: ProbablePrime
