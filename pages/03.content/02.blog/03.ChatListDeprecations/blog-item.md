@@ -7,7 +7,7 @@ taxonomy:
     tag: [blog, sdk, client, deprecations]
 ---
 
-As Mixer grows, our API needs to grow too this sometimes leads to deprecations. With the power of our new developer site, we're taking a more active role in announcing them. You'll see a blog post from our team detailing the changes we're making and what you need to do. The first example of this is with the deprecation of V1 of the Chat Viewer List API.
+As Mixer grows, our API needs to grow too. This sometimes leads to deprecations. With the power of our new developer site, we're taking a more active role in announcing them. You'll see a blog post from our team detailing the changes we're making and what you need to do. The first example of this is with the deprecation of V1 of the Chat Viewer List API.
 
 # Chat Viewer List API
 
