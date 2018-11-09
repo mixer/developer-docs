@@ -23,7 +23,7 @@ It has the following changes:
 
 # Deprecating Chatters List API V1
 
-With V2 available we plan to deprecate the chat viewer list v1 API on 12/08/2018.
+With V2 available we plan to deprecate the chatters list v1 API on 12/08/2018.
 
 ## What do I need to do?
 
