@@ -21,7 +21,7 @@ It has the following changes:
 - Removing the `/chats/{channelId}/users/search` endpoint. Instead supply a `username` query parameter to `/chats/{channelId}/users` to search.
 
 
-# Deprecating Chat Viewer List API V1
+# Deprecating Chatters List API V1
 
 With V2 available we plan to deprecate the chat viewer list v1 API on 12/08/2018.
 
