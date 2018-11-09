@@ -13,7 +13,7 @@ As Mixer grows, our API needs to grow too. This sometimes leads to deprecations.
 
 With the introduction to V2 over, let's move onto the changes.
 
-A new version of the Chat viewer List API is now available. It exists in the V2 path.
+A new version of the Chatters List API is now available. It exists in the V2 path.
 
 It has the following changes:
 - Removes the `/chats/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it.
