@@ -13,7 +13,7 @@ Returns a list of users connected to this Channel's chat.
 
 * limit: uint? [1≤integer≤100] - Amount of items per page.
 * showLurkers: boolean? - Show lurkers in the channel for staff user (Authed API and requires JWT Token)
-* continuationToken: string? - An opaque token. ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](/guides/core/continuationtokens) for more info on how these work. We reccomend using the link header provided on the response.
+* continuationToken: string? - An opaque token. ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](/guides/core/continuationtokens) for more info on how these work. We recommend using the link header provided on the response.
 * username: string? - Name fragment to search users by.
 
 
