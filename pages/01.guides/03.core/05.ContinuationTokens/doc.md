@@ -14,7 +14,7 @@ When you make a request to an endpoint that supports continuation tokens you wil
 GET /api/v2/people HTTP/1.1
 Accept: application/json, */*
 Host: mixer.com
-link: </api/v2/chat/160788/users?limit=50&showLurkers=False&continuationToken=ABC123>; rel="next"
+link: </api/v2/chats/160788/users?limit=50&showLurkers=False&continuationToken=ABC123>; rel="next"
 [
     {
         "name":"Katie"
