@@ -1,5 +1,5 @@
 ---
-title: Deprecations coming to Chat Viewer List
+title: Deprecations coming to Chat Chatters List
 date: 14:00 11/05/2018
 author: rifox
 taxonomy:
@@ -23,9 +23,9 @@ The new API has the following changes:
         - `experience` - Experience of the ChatUser.
 
 
-# Deprecating Chatters List API V1
+# Deprecating the Chatters List API V1
 
-With V2 available we plan to deprecate the chatters list v1 API on 2018-12-10.
+With V2 available we plan to deprecate the chatters list V1 API on 2018-12-10.
 
 ## What do I need to do?
 
