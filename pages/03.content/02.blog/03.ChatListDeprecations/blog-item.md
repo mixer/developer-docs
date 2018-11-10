@@ -11,12 +11,12 @@ As Mixer grows, our API needs to grow too. This sometimes leads to deprecations.
 
 # Chat Chatters List API
 
-A new version of the Chatters List API is now available. It exists in the V2 path.
+A new version of the Chatters List API is now available. It exists in the V2 path. See "[What is V2?](https://dev.mixer.com/guides/core/whatsv2)" for more info on the V2 path.
 
-It has the following changes:
-- Removes the `/chats/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it.
+The new API has the following changes:
+- Removes the `/chats/{channelId}/friends` endpoint. This endpoint is not being used in any Mixer Application and we've seen a very small usage of it globally in our telemetry.
 - Changes the calling pattern of `/chats/{channelId}/users.` This will affect pagination.
-- Removing the `/chats/{channelId}/users/search` endpoint. Instead supply a `username` query parameter to `/chats/{channelId}/users` to search.
+- Removes the `/chats/{channelId}/users/search` endpoint. Instead supply a `username` query parameter to `/chats/{channelId}/users` to search.
 - Removes some fields from the `ChatUser` model:
     - Removes the nested `user` field which contained:
         - `level` - Level of the ChatUser.
