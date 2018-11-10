@@ -1,6 +1,8 @@
-# Chat Viewer List V2 Endpoints
+# Chat Chatters List V2 Endpoints
 
 ## GET /api/v2/chats/{channelId}/users
+
+Returns a list of users connected to this Channel's chat.
 
 ### Request
 
@@ -11,7 +13,7 @@
 
 * limit: uint? [1≤integer≤100] - Amount of items per page.
 * showLurkers: boolean? - Show lurkers in the channel for staff user (Authed API and requires JWT Token)
-* continuationToken: string? - An opaque token. ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](/guides/core/continuationtokens) for more info on how these work.
+* continuationToken: string? - An opaque token. ContinuationToken to paginate through all chat users in the channel. See [Continuation Tokens](/guides/core/continuationtokens) for more info on how these work. We reccomend using the link header provided on the response.
 * username: string? - Name fragment to search users by.
 
 
@@ -30,6 +32,8 @@
 **Data Type**: Array<[ChatUser](#ChatUserType)>
 
 ## GET /api/v2/chats/{channelId}/users/{userId}
+
+Returns a specific user by their ID from the Chatters list. If they are not in the channel you will recieve a 404.
 
 ### Request
 
