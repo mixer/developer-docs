@@ -14,7 +14,7 @@ When you make a request to an endpoint that supports continuation tokens you wil
 GET /api/v2/people HTTP/1.1
 Accept: application/json, */*
 Host: mixer.com
-link: </api/v2/chat/160788/users?limit=50&showLurkers=False&continuationToken=ABC123>; rel = "next"
+link: </api/v2/chat/160788/users?limit=50&showLurkers=False&continuationToken=ABC123>; rel="next"
 [
     {
         "name":"Katie"
@@ -43,5 +43,11 @@ FETCH THE ENDPOINT
 ```
 
 ## Link Headers
+Link headers are a standard header format defined in [RFC5988](https://tools.ietf.org/html/rfc5988). They're used to communicate various linking opportunities that a developer may have from a request that has just been made. In the above examples you'll see the `rel` property being set to "next" this means that the next page can be found with the preceding link.
 
-For more information on the structure of link headers see their rfc [here](https://tools.ietf.org/html/rfc5988).
+We recommend using software libraries or packages for your environment to parse these instead of rolling your own. You should treat these headers as opaque entities.
+
+A few examples of packages can be found below:
+- Node.js - [parse-link-header](https://www.npmjs.com/package/parse-link-header)
+- Java - There's a Parser in [`javax.ws.rs.core`](https://docs.oracle.com/javaee/7/api/javax/ws/rs/core/Link.html)
+- Do you know of More? [Make a PR to add them!](https://github.com/mixer/developer-docs)
