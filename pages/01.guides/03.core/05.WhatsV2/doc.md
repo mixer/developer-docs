@@ -10,7 +10,7 @@ These endpoints are appearing as we adjust and add Mixer features as we grow. Us
 
 In all cases we'll be doing our best to ensure that developers have the appropriate time and documentation to ensure a smooth transition.
 
-With the launch of our new Developer Site you'll be able to read about Deprecations on our [Developer Orientated Blog](content/blog).
+With the launch of our new Developer Site you'll be able to read about Deprecations on our [Developer Orientated Blog](/content/blog).
 
 For now here's a list of questions you might have and some answers. If you have more [drop us a line](mailto:mixerdevinfo@microsoft.com).
 
