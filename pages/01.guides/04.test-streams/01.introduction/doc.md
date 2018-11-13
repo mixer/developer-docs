@@ -30,6 +30,8 @@ Once you've been granted access, to enable test stream mode:
 
 Once you have enabled test streams for an account, it is enabled for every broadcast, across all devices. You don't need to enable test streams for each device you broadcast from. There is one, global setting applied to the account.
 
+! Please note, when viewing a test stream on our mobile apps, only MixPlay will show. The video feed will not appear.
+
 ## Controlling Access
 Whilst in test stream mode there are two ways to grant viewers access to view your test stream.
 
