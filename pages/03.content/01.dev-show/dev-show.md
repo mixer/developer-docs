@@ -3,6 +3,19 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 8: Season 2'
+        subtitle: 'Skills, Patronage, and more!'
+        image: dev-show-e8.png
+        link: /content/dev-show/e8/
+        description: 'In the eighth episode we look at Season 2, the latest major update from Mixer. We discuss changes and new features availble for developers.'
+        segments:
+            -
+                name: 'Interactive News'
+                link: 'https://youtu.be/ZTcJzWMqskE'
+            -
+                name: 'Season 2 Tutorial Project'
+                link: 'https://youtu.be/y35vpr-L-VA'
+    -
         title: 'Episode 7: Live Loading with Constellation'
         subtitle: 'Using Constellation for liveloading events'
         image: dev-show-e7.png
