@@ -4,7 +4,7 @@ Sent when a channel's patronage is updated. This happens as the result of a Skil
 
 | Property                | Type | Description                                                                |
 | ----------------------- | ---- | -------------------------------------------------------------------------- |
-| patronagePeriodID       | GUID | An ID for the patronage period this event contributes to                   |
+| patronagePeriodId       | GUID | An ID for the patronage period this event contributes to                   |
 | currentMilestoneGroupId | uint | The current group within this patronage period that this channel is in     |
 | currentMilestoneId      | uint | The current Milestone within this patronage period that this channel is in |
 | patronageEarned         | uint | The total amount of patronage earnt for this period. Measured in Sparks.   |
