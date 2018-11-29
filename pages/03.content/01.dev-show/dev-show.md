@@ -3,6 +3,19 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 9: Tower Defense'
+        subtitle: 'Deprecations and MixPlay Tower Defense'
+        image: dev-show-e9.png
+        link: /content/dev-show/e9/
+        description: 'In the ninth episode we talk about upcoming deprecations and dive into a MixPlay Tower Defense game.'
+        segments:
+            -
+                name: 'Interactive News'
+                link: 'https://youtu.be/DVOv2lVZIYc'
+            -
+                name: 'Unity Tower Defense'
+                link: 'https://youtu.be/qY1uZ6CVmDE'
+    -
         title: 'Episode 8: Season 2'
         subtitle: 'Skills, Patronage, and more!'
         image: dev-show-e8.png
