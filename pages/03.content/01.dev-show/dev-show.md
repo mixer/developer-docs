@@ -3,6 +3,16 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 10: Unity Custom Control'
+        subtitle: 'Custom Control Mini Map'
+        image: dev-show-e10.png
+        link: /content/dev-show/e10/
+        description: 'In the tenth episode we start building a Mini Map using Custrom Controls and Unity.'
+        segments:
+            -
+                name: 'Unity Custom Control'
+                link: 'https://youtu.be/FDW39QHmseg'
+    -
         title: 'Episode 9: Tower Defense'
         subtitle: 'Deprecations and MixPlay Tower Defense'
         image: dev-show-e9.png
