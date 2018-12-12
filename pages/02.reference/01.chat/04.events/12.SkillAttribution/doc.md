@@ -14,7 +14,7 @@ Sent from the server when a skill execution has been triggered by a user.
     "type": "event",
     "event": "SkillAttribution",
     "data": {
-        "id": "6e291af8-fd5d-4c9a-8303-b2232cba294d",
+        "id": "c2059394-fe40-11e8-8eb2-f2801f1b9fd1",
         "skill": {
             "skill_id": "d314fb50-70e9-4f59-96f8-98a5f24737ef",
             "skill_name": "Sticker",
