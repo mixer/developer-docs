@@ -3,6 +3,16 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 11: Unity Custom Control Pt. 2'
+        subtitle: 'Continuing Custom Controls with Unity'
+        image: dev-show-e11.png
+        link: /content/dev-show/e11/
+        description: 'In the eleventh episode we continue our work with Custom Controls and Unity, and incorporate viewer interaction into the game.'
+        segments:
+            -
+                name: 'Unity Tower Defense Part 2'
+                link: 'https://youtu.be/9p5p7S3-A1M'
+    -
         title: 'Episode 10: Unity Custom Control'
         subtitle: 'Custom Control Mini Map'
         image: dev-show-e10.png
