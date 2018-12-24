@@ -17,8 +17,7 @@ Date: Sun, 26 Jun 2016 22:50:41 GMT
 {
     "authkey": "b41e9ae6b14df18c59f415419b1f827c",
     "endpoints": [
-        "wss://chat2-dal.mixer.com:443",
-        "wss://chat1-dal.mixer.com:443"
+        "wss://chat.mixer.com:443"
     ],
     "permissions": [
         "chat",
@@ -28,7 +27,9 @@ Date: Sun, 26 Jun 2016 22:50:41 GMT
 }
 ```
 
-Once you have the details, you'll need to use them to connect to a chat server. The response's endpoints array contains a list of chat servers. You should choose one randomly to connect to. If you lose connection to this address, you should reconnect to a different server (you can choose randomly or use a round-robin strategy of your choosing).
+Once you have the details, you'll need to use them to connect to a chat server. The response's endpoints array contains a list of chat servers. You should connect to the first element in the array and if this fails fallback to subsequent elements if they are available.
+
+!!! Right now you'll see the same Endpoint address multiple times. We're in the process of cutting some things over. Soon you'll just see that address once.
 
 When connecting to the chat socket, please pass your OAuth application's Client ID within the Client-ID header (or as a query parameter). Our official SDKs add this header for you; please refer to our Chat Tutorials for more information.
 
