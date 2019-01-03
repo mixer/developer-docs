@@ -3,6 +3,19 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 12: Unity Custom Control Pt. 3'
+        subtitle: 'More progress with Unity Custom Controls'
+        image: dev-show-e12.png
+        link: /content/dev-show/e12/
+        description: 'In the twelfth episode we make more progress with Custom Controls and Unity, and discuss getting into software development.'
+        segments:
+            -
+                name: 'How do I Start Developing?'
+                link: 'https://youtu.be/M-yL-MaJxTc'
+            -
+                name: 'Unity Custom Controls Part 3'
+                link: 'https://youtu.be/Bh-r3t28d4w'
+    -
         title: 'Episode 11: Unity Custom Control Pt. 2'
         subtitle: 'Continuing Custom Controls with Unity'
         image: dev-show-e11.png
