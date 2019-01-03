@@ -5,6 +5,8 @@ title: 'ChatMessage'
 
 Sent by the server when a client sends a message. It contains multiple message components, such as `text`, `emoticon`, `link`, `tag` and `image`. The `meta` property of a message contains various attributes which define additional details about where the message comes from.
 
+By design ChatMessage events do not contain a timestamp, you should process them in the order that they come in from Mixer.
+
 ## Examples
 
 #### Regular Message
