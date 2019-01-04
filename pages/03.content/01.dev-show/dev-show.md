@@ -3,6 +3,16 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 13: Tutorial Project Custom Control'
+        subtitle: 'Custom Controls & Development Practices'
+        image: dev-show-e13.png
+        link: /content/dev-show/e13/
+        description: 'In the thirteenth episode we go through the Custom Control tutorial project, and discuss controversial development practices.'
+        segments:
+            -
+                name: 'Tutorial Project Custom Control'
+                link: 'https://youtu.be/8k_7H6z9VyA'
+    -
         title: 'Episode 12: Unity Custom Control Pt. 3'
         subtitle: 'More progress with Unity Custom Controls'
         image: dev-show-e12.png
