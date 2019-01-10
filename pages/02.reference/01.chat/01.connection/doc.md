@@ -29,8 +29,6 @@ Date: Sun, 26 Jun 2016 22:50:41 GMT
 
 Once you have the details, you'll need to use them to connect to a chat server. The response's endpoints array contains a list of chat servers. You should connect to the first element in the array and if this fails fallback to subsequent elements if they are available.
 
-!!! Right now you'll see the same Endpoint address multiple times. We're in the process of cutting some things over. Soon you'll just see that address once.
-
 When connecting to the chat socket, please pass your OAuth application's Client ID within the Client-ID header (or as a query parameter). Our official SDKs add this header for you; please refer to our Chat Tutorials for more information.
 
 If you have not already, you can create an OAuth application within the Developer Lab.
