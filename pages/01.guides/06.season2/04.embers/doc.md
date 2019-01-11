@@ -8,13 +8,13 @@ title: Embers
 
 !!! If you haven't already we suggest reading our [blog post](https://blog.mixer.com) first.
 
-When we launched Season 2, [we announced](https://blog.mixer.com/2018/11/01/season-2/) several features coming to Mixer, the next feature on that list is here and its called Embers.
+Back in November 2018 we introduced the first phase of [Season 2](https://blog.mixer.com/2018/11/01/season-2/) and now we're launching the next phase with Embers.
 
-Embers are Mixer's new virtual currency that is powered by real world money. Users can purchase embers and then use them on Skills on partnered channels on Mixer. As with the launch of Season 2, we understand that developers may have questions and we'll be answering them on this page. If you have further questions please [drop us a line](mailto:mixerdevinfo@microsoft.com).
+Embers are Mixer's new paid virtual currency. Users can purchase embers and then use them on Premium Skills on partnered channels on Mixer. As with the launch of Season 2, we understand that developers may have questions and we'll be answering them on this page. If you have further questions please [drop us a line](mailto:mixerdevinfo@microsoft.com).
 
 ## Skills
 
-With the launch of embers we've added a new collection of Skills. These Skills cost a varying amount of embers and are visually different from Spark based Skills.
+With the launch of embers we've added a new collection of Premium Skills. These Skills cost a varying amount of embers and are visually different from Spark based Skills.
 
 ### Attribution
 
