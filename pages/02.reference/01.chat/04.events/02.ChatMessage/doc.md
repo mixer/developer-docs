@@ -208,6 +208,12 @@ A channel owner can configure their channel's [Catbot auto moderation](https://a
 
 Sent by the server when a client sends a message based on a Skill.
 
+Within the meta object's skill object you can see the currency and priced used to use this Skill.
+
+For currencies:
+- Embers - Indicates the skill used Embers
+- Sparks - Indicates the skill used Sparks
+
 ```json
 {
 	"type": "event",
