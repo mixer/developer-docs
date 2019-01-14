@@ -4,7 +4,7 @@ title: Embers
 
 # Embers
 
-[](https://static.mixer.com/img/design/ui/embers/ember_48_4x.png?classes=centered)
+![](https://static.mixer.com/img/design/ui/embers/ember_48_4x.png?classes=centered)
 
 !!! If you haven't already we suggest reading our [blog post](https://blog.mixer.com) first.
 
