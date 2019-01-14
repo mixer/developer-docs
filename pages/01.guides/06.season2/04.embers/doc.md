@@ -59,6 +59,10 @@ Not today, we're looking for ways to make this a possibility in the future thoug
 
 Not today, we're looking for ways to make this a possibility in the future though. Standby for updates.
 
+### What do I do if I have more questions?
+
+If you have developer related questions please [drop us a line](mailto:mixerdevinfo@microsoft.com). For other queries. [mixer.com/contact](https://mixer.com/contact).
+
 
 
 
