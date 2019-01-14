@@ -9,6 +9,10 @@ title: 'Introduction'
 
 Season 2 is the next evolution of the Mixer platform. It provides a great way to engage more deeply with your community on Mixer.
 
+## Embers
+
+Read our Embers guide [here](/guides/season2/embers).
+
 ## Skills
 
 Skills are new forms of expression for users to interact with streamers. Skills cost sparks to execute and can be level or role locked. Each Skill can be uniquely Identified by its ID. There are 3 types of Skill:
