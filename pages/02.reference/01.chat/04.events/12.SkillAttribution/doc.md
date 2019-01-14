@@ -6,6 +6,11 @@ title: 'Skill Attribution'
 
 Sent from the server when a skill execution has been triggered by a user.
 
+Within the data object's skill object you can see the currency and priced used to use this Skill.
+
+For currencies:
+- Embers - Indicates the skill used Embers
+- Sparks - Indicates the skill used Sparks
 
 ## Examples
 
