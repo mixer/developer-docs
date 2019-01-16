@@ -9,6 +9,10 @@ title: 'Introduction'
 
 Season 2 is the next evolution of the Mixer platform. It provides a great way to engage more deeply with your community on Mixer.
 
+## Leader Boards
+
+Check out our leaderboard guide here: [here](/guides/season2/leaderboards).
+
 ## Embers
 
 Read our Embers guide [here](/guides/season2/embers).
