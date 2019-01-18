@@ -29,3 +29,4 @@ Buttons are highly customizable. These button properties can be edited from both
 11. Focus Color applied to the border when focusing
 12. Color of the text display on the button
 13. Size of the text display on the button
+14. The background image of the button
