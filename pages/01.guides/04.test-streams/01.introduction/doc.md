@@ -40,7 +40,7 @@ Whilst in test stream mode there are two ways to grant viewers access to view yo
 
 ## Example Access Key Link
 
-Here's an example of a test stream access link. You can see the channel name in the same way a regular channel shows up. The new section is the query paramter on the end which contains an access key: `?accessKey=<key>`.
+Here's an example of a test stream access link. You can see the channel name in the same way a regular channel shows up. The new section is the query paramter on the end which contains an access key: `?accessKey=key`.
 
 `https://mixer.com/TestStream123?accessKey=123456-5765ca8894b1c011e0aca1786158032e`
 
