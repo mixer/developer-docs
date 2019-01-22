@@ -38,6 +38,12 @@ Whilst in test stream mode there are two ways to grant viewers access to view yo
 * By Making them a moderator in the channel - Moderators of your channel can see your test streams
 * By Sharing out the access key link - At the top of your channel page whilst streaming in test stream mode is a banner which has a link in it. You can give this link out and those with the link will be able to access your test stream. This link resets for every stream.
 
+## Example Access Key Link
+
+Here's an example of a test stream access link. You can see the channel name in the same way a regular channel shows up. The new section is the query paramter on the end which contains an access key: `?accessKey=<key>`.
+
+`https://mixer.com/TestStream123?accessKey=123456-5765ca8894b1c011e0aca1786158032e`
+
 ## Best Practices
 1. Use the `/clear` chat command at the end of the stream to clear chat.
 2. Keep your access key / link secure. If you need to reset it, restart the broadcast to generate a new one.
