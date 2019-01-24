@@ -27,6 +27,7 @@ Type must be one of the leader board types as specified below:
 
 The response is an array of leaderboard entries with the following fields:
 
+- `userId` - The UserId of the person in the leaderboard
 - `username` - Username of the person in the leaderboard
 - `statValue` - The amount of sparks or embers the user has contributed.
 - `avatarUrl` - A link to the user's avatar.
@@ -36,6 +37,7 @@ The response is an array of leaderboard entries with the following fields:
 ```json
 [
     {
+        "userId":"1234567",
         "username":"Connor",
         "statValue":9001,
         "avatarUrl":"https://uploads.beam.pro/avatar/asg4whr9-146.jpg"
