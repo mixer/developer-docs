@@ -4,7 +4,7 @@ title: Live Subscribe
 
  # livesubscribe
 
-A livesubscribe method allows users to subscribe to #[a(href='#events_live_events') liveloading events]. The number of events you can subscribe to is limited; please see #[a(href='#introduction__liveloading_limits') liveloading limits]
+A livesubscribe method allows users to subscribe to [liveloading events](/reference/constellation/events/live). The number of events you can subscribe to is limited; please see [liveloading limits](/reference/constellation#limits) for more information.
 
 ```json
 {"type": "method", "method": "livesubscribe", "params": {"events": ["user:1:update", "channel:1:followed"]}, "id": 42}
