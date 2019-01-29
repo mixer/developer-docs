@@ -10,8 +10,8 @@ episodes:
         description: 'In the fifteenth episode we explore the new Leaderboards endpoint and incorporate it into a project with Custom Controls.'
         segments:
             -
-                name: 'Optimizing Custom Controls'
-                link: 'https://youtu.be/rmzZbl-JSWM'
+                name: 'Sparks and Embers Leaderboards'
+                link: 'https://youtu.be/1L0iLL--QEs'
     -
         title: 'Episode 14: Optimizing Custom Controls'
         subtitle: 'Performance improvements to Custom Controls'
