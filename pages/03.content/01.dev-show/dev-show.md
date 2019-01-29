@@ -3,6 +3,26 @@ title: 'Dev Show'
 cache_enable: false
 episodes:
     -
+        title: 'Episode 15: Custom Control Leaderboards'
+        subtitle: 'Diving into the new Leaderboards endpoint'
+        image: dev-show-e15.png
+        link: /content/dev-show/e15/
+        description: 'In the fifteenth episode we explore the new Leaderboards endpoint and incorporate it into a project with Custom Controls.'
+        segments:
+            -
+                name: 'Optimizing Custom Controls'
+                link: 'https://youtu.be/rmzZbl-JSWM'
+    -
+        title: 'Episode 14: Optimizing Custom Controls'
+        subtitle: 'Performance improvements to Custom Controls'
+        image: dev-show-e14.png
+        link: /content/dev-show/e14/
+        description: 'In the fourteenth episode we look at past work on the Mini Map Custom Controls, and optimize things for better performance.'
+        segments:
+            -
+                name: 'Optimizing Custom Controls'
+                link: 'https://youtu.be/rmzZbl-JSWM'
+    -
         title: 'Episode 13: Tutorial Project Custom Control'
         subtitle: 'Custom Controls & Development Practices'
         image: dev-show-e13.png
