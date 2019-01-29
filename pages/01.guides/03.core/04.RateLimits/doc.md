@@ -30,6 +30,7 @@ Mixer's Core API has rate limiting in place to ensure service and platform stabi
 | user-read          | 500           | 60                         |
 | user-write         | 100           | 60                         |
 
+
 Endpoints within each Bucket can be called `Request Count` times per `Time Interval`.
 
 
@@ -37,11 +38,11 @@ Endpoints within each Bucket can be called `Request Count` times per `Time Inter
 
 When you exceed a rate limit you will see a `429 Too Many Requests`.
 
-If you are regularly exceeding our rate limits first ensure that you're calling pattern is optimized. Here are some things to try:
+If you are regularly exceeding our rate limits, first ensure that your calling pattern is optimized. Here are some things to try:
 - Adjust the interval at which you make requests.
-- Instead of polling try using [Constellation for live updates](/guides/core/introduction#live-updates-via-constellation)
+- Instead of polling, try using [Constellation for live updates](/guides/core/introduction#live-updates-via-constellation)
 
 
 ## Rate Limit Exceptions
 
-If you're use case is unique or you'd like to discuss getting a rate limit exception please reach out to our [Developer Inquiry Address](mailto:mixerdevinfo@microsoft.com). Fair warning though, we rarely grant these at this time.
+If your use case is unique or you'd like to discuss getting a rate limit exception, please reach out to our [Developer Inquiry Address](mailto:mixerdevinfo@microsoft.com). Fair warning though, we rarely grant these at this time.
