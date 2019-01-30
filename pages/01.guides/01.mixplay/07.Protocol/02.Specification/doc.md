@@ -2590,8 +2590,9 @@ File Storage
 ------------
 
 With the advent of Custom Controls, the Interactive service provides
-secure session-bound storage for files. Total file size is limited and
-the storage is cleared immediately when the game client disconnects.
+secure session-bound storage for files. Total file size is limited, set 
+at 50 MB per implementation, and is subject to change. The storage is 
+cleared immediately when the game client disconnects.
 
 ### uploadFile <span class="mixplay-method server"></span>
 
