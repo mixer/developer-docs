@@ -7,7 +7,7 @@ Sent when a user uses an ember skill on a channel. This happens as the result of
 | triggeringuserid        | uint   | The ID of the user that executed the                                       |
 | currency                | string | Currently this value is only "embers"                                      |
 | amount                  | uint   | The amount of currency spent to execute the skill                          |
-| skillid                 | uint   | The ID of the skill executed                                               |
+| skillid                 | string | The ID of the skill executed                                               |
 
 ## Examples
 
