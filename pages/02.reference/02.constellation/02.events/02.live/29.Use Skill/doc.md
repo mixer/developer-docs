@@ -4,7 +4,7 @@ Sent when a user uses an ember skill on a channel. This happens as the result of
 
 | Property                |  Type  | Description                                                                |
 | ----------------------- | ------ | -------------------------------------------------------------------------- |
-| userid                  | uint   | The ID of the user that executed the                                       |
+| triggeringuserid        | uint   | The ID of the user that executed the                                       |
 | currency                | string | Currently this value is only "embers"                                      |
 | amount                  | uint   | The amount of currency spent to execute the skill                          |
 | skillid                 | uint   | The ID of the skill executed                                               |
@@ -13,7 +13,7 @@ Sent when a user uses an ember skill on a channel. This happens as the result of
 
 ```json
 {
-	"userid": 12345,
+	"triggeringuserid": 12345,
 	"currency": "embers",
 	"amount": 50,
 	"skillid": "3c8f4d71-1736-4e03-8e7b-13bca00cbf82"
