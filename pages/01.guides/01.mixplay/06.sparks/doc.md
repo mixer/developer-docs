@@ -11,7 +11,7 @@ process:
 Sparks are Mixer's virtual currency. You can make controls and interactions in your Interactive Game or Application cost sparks for a participant by giving them a cost. When participants interact with controls that have a spark cost, the cost is deducted from their spark balance.
 
 ## How are Sparks Earned?
-Sparks are earnt by watching content on Mixer. Mixer users gain 2 sparks for every minute that they watch. Mixer broadcasters also earn sparks at the same rate. If a user subscribes to a channel or is a [Pro](https://mixer.com/pro) user, they'll earn double the rate of sparks (4 every minute).
+Sparks are earnt by watching content on Mixer. Mixer users gain 50 sparks for every minute that they watch. Mixer broadcasters also earn sparks at the same rate. If a user subscribes to a channel or is a [Pro](https://mixer.com/pro) user, they'll earn double the rate of sparks (100 every minute).
 
 ## Can users buy Sparks?
 Currently users cannot buy Sparks with real world money. That may change in the future, but we don’t have anything to share on those plans right now. If you have a cool idea for Sparks, you can share them over on our [feedback site](https://feedback.mixer.com).
