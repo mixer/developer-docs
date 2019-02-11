@@ -11,7 +11,7 @@ An event is received from the chat server when an event occurs in the channel's 
 | Property | Description                                                        |
 | -------- | ------------------------------------------------------------------ |
 | type     | Must be event.                                                     |
-| vent     | The event name.                                                    |
+| event    | The event name.                                                    |
 | data     | Associated event data - may be of any type, specific to the event. |
 
 
