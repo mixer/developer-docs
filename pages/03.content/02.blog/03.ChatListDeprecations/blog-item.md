@@ -29,7 +29,7 @@ With V2 available we plan to deprecate the chatters list V1 API on 2018-12-10.
 
 ## What do I need to do?
 
-Before 12/08/2018, if you use the V1 Chat Viewer List API. Move to V2. On this date the V1 endpoint will be removed.
+As soon as possible, if you use the V1 Chat Viewer List API. Move to V2. On this date the V1 endpoint will be removed.
 
 ## What do I do if I have questions?
 
