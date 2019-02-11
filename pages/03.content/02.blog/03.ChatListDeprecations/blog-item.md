@@ -25,7 +25,7 @@ The new API has the following changes:
 
 # Deprecating the Chatters List API V1
 
-With V2 available we plan to deprecate the chatters list V1 API on 2018-12-10.
+With V2 available we plan to deprecate the chatters list V1 as soon as possible. We're closely monitor the use of these endpoints and we're actively reaching out to all parties we see who are still on the V1 API.
 
 ## What do I need to do?
 
