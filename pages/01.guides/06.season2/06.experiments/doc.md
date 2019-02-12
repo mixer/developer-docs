@@ -23,4 +23,4 @@ If you use a browser debugger or your application / bot's logs you might see det
 [Email Us](mailto:mixerdevinfo@microsoft.com) your question and we'll get back to you.
 
 ### Will these experiments turn into fully fledged features?
-Stay tuned on the regular Mixer [blog](blog.mixer.com) for full feature announcements and details.
+Stay tuned on the regular Mixer [blog](https://blog.mixer.com) for full feature announcements and details.
