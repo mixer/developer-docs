@@ -7,6 +7,8 @@ taxonomy:
     tag: [blog, sdk, client, deprecations]
 ---
 
+Updated on Feb 20, 2019.
+
 As Mixer grows, our API needs to grow too. This sometimes leads to deprecations. With the power of our new developer site, we're taking a more active role in announcing them. You'll see a blog post from our team detailing the changes we're making and what you need to do. The first example of this is with the deprecation of V1 of the Chat Chatters List API.
 
 # Chat Chatters List API
@@ -25,11 +27,11 @@ The new API has the following changes:
 
 # Deprecating the Chatters List API V1
 
-With V2 available we plan to deprecate the chatters list V1 as soon as possible. We're closely monitor the use of these endpoints and we're actively reaching out to all parties we see who are still on the V1 API.
+With V2 available, we plan to deprecate the V1 Chatters List API on March 25, 2019. We're closely monitoring the use of these endpoints and we're actively reaching out to all parties we see who are still on the V1 API.
 
 ## What do I need to do?
 
-As soon as possible, if you use the V1 Chat Viewer List API. Move to V2.
+Before March 25, 2019, if you use the V1 Chat Chatters List API, please move to V2. On this date the V1 endpoint will be removed. 
 
 ## What do I do if I have questions?
 
