@@ -61,3 +61,6 @@ Represents a user within chat for a channel and provides details about their sta
 * userId:  uint - The user ID that this chat user belongs to.
 * username:  string - The username.
 * userRoles:  Array<[Role](https://dev.mixer.com/rest/index.html#Role)> - The roles the user has in this chat.
+
+## Rate limiting
+Follows the same rate limiting bucket for chats as [here](https://dev.mixer.com/guides/core/ratelimits)
