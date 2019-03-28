@@ -78,12 +78,7 @@ Authenticate as an active user in a specified channel. Arguments are `channelId`
 ```json
 {
   "type": "reply",
-  "error": {
-    "code": 1,
-    "message": "UNOTFOUND",
-    "stacktrace": "",
-    "data": {}
-  },
+  "error": "UNOTFOUND",
   "id": 0
 }
 ```
@@ -108,12 +103,7 @@ Attempting to join a channel currently in Test Stream mode with an invalid or mi
 ```json
 {
   "type": "reply",
-  "error": {
-    "code": 1,
-    "message": "UACCESS",
-    "stacktrace": "",
-    "data": {}
-  },
+  "error": "UACCESS",
   "id": 0
 }
 ```
