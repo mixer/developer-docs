@@ -4,7 +4,7 @@ title: 'FAQ'
 
 # Frequently Asked Questions
 
-## How do I get a list of channels playing a particular game?
+## How do I get a list of channels playing a game?
 
 On Mixer the game a channel is playing is called a "type" this is because we have non-gaming listings within our site such as IRL and Art.
 
