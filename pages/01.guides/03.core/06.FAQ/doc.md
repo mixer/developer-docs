@@ -1,3 +1,7 @@
+---
+title: 'FAQ'
+---
+
 # Frequently Asked Questions
 
 ## How do I get a list of channels playing a particular game?
