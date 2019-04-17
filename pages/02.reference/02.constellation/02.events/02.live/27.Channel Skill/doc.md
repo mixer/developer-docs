@@ -26,6 +26,6 @@ Sent when a skill is executed on a channel. The payload varies depending on the 
 	"parameters": {},
 	"socketUrl": null,
 	"triggeringUserId": 46205,
-    "currencyType": "Sparks",
-    "price": 125
+	"currencyType": "Sparks",
+	"price": 125
 }
