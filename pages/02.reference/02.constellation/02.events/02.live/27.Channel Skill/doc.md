@@ -11,6 +11,8 @@ Sent when a skill is executed on a channel. The payload varies depending on the 
 | parameter        | Object | Any parameters asociated with the Skill                                                                                          |
 | socketUrl        | string | Used to provide a socket for users to connect to when the Skill is a rally e.g. Beachball                                        |
 | triggeringUserId | uint   | User Id of the user who executed this skill                                                                                      |
+| currencyType     | string | Currency (None, Sparks, or Embers) of the executed skill                                                                          |
+| price            | uint   | The cost of the executed skill                                                                                                    |
 
 
 ## Examples
@@ -23,5 +25,7 @@ Sent when a skill is executed on a channel. The payload varies depending on the 
 	"manifest": {},
 	"parameters": {},
 	"socketUrl": null,
-	"triggeringUserId": 46205
+	"triggeringUserId": 46205,
+    "currencyType": "Sparks",
+    "price": 125
 }
