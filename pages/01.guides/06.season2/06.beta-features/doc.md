@@ -7,7 +7,6 @@ With Season 2 and Embers released we've started work on what's next for Season 2
 We've currently got 2 beta features running on a limited number of channels:
 
 1. Applause - Viewers can applaud each other's chat messages
-2. Progression - Viewers level up by interacting on a channel.
 
 
 ## FAQ
