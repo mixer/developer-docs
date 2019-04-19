@@ -1,25 +1,25 @@
 # progression:{channelId}:levelup
 
-Sent when a user levels up in a channel, to the channel they level upped in.
+Sent when a user levels up in a channel, to the channel they ranked upped in.
 
 | Property  | Type             | Description                                                |
 | --------- | ---------------- | ---------------------------------------------------------- |
 | level     | ProgressionLevel | The channelId of the channel this gift subscription is for. |
 | userId    | uint             | The userId of the user who leveled up.                      |
 | timestamp | string           | The timestamp of this event.                                |
-| total     | uint             | The total exp of this user.                                 |
+| total     | uint             | The total Hearts of this user.                                 |
 
 ## ProgressionLevel
-| Property    | Type   | Description                            |
-| ----------- | ------ | -------------------------------------- |
-| nextLevelXp | uint   | The XP required for the next level     |
-| currentXp   | uint   | The current XP for the user            |
-| level       | uint   | The level of the user                  |
-| minXp       | uint   | The minimum xp required for this level |
-| color       | string | the color of this level                |
-| complement  | string | the color complement for this level    |
-| assetsUrl   | string | The asset url for this level           |
-| name        | string | The name of the level                  |
+| Property    | Type   | Description                           |
+| ----------- | ------ | ------------------------------------- |
+| nextLevelXp | uint   | The  required for the next rank       |
+| currentXp   | uint   | The current Hearts for the user       |
+| level       | uint   | The rank of the user                  |
+| minXp       | uint   | The minimum xp required for this rank |
+| color       | string | the color of this rank                |
+| complement  | string | the color complement for this rank    |
+| assetsUrl   | string | The asset url for this rank           |
+| name        | string | The name of the rank                  |
 
 ## Examples
 
