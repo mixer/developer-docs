@@ -1,6 +1,6 @@
 # Fan Progression
 
-In Fan Progression enabled channels each user will earn Hears for interacting with channel. Hearts will be earnt for various types of interactions including:
+In Fan Progression enabled channels each user will earn Hearts for interacting with channel. Hearts will be earnt for various types of interactions including:
 - Chatting
 - Watching
 - Spending Embers
@@ -24,7 +24,7 @@ In our API you'll see the property name `level` used. Within our endpoints howev
 
 You can use GET `https://mixer.com/api/v1/ascension/channels/{channelId}/users/{userId}` to look up the rank of a particular user.
 
-The response matches the payload of the [Level Up Constellation Event](/reference/constellation/events/live/fan%20progression).
+The response matches the payload of the [Level Up Constellation Event](/reference/constellation/events/live/progression%20levelup).
 
 ### Getting a list of Levels
 You can GET `https://mixer.com/api/v1/ascension/levels` to look up a list of ranks. The response contains an array called `levels` whose members contain the following properties.
@@ -58,7 +58,7 @@ In the above example level object you'll see `{variant}`, you can replace varian
 
 ## Constellation Events
 
-You can subscribe to the [Level Up Constellation Event](/reference/constellation/events/live/fan%20progression) to receive an event when a user levels up in a channel.
+You can subscribe to the [Level Up Constellation Event](/reference/constellation/events/live/progression%20levelup) to receive an event when a user levels up in a channel.
 
 
 ## Further Questions
