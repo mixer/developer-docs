@@ -4,7 +4,7 @@ Sent when a user levels up in a channel, to the channel they ranked upped in.
 
 | Property  | Type             | Description                                                |
 | --------- | ---------------- | ---------------------------------------------------------- |
-| level     | ProgressionLevel | The current level information of the user who leveled up.  |
+| level     | ProgressionLevel | The current hearts information of the user who ranked up.  |
 | userId    | uint             | The userId of the user who leveled up.                     |
 | timestamp | string           | The timestamp of this event.                               |
 | total     | uint             | The total Hearts of this user.                             |
@@ -12,7 +12,7 @@ Sent when a user levels up in a channel, to the channel they ranked upped in.
 ## ProgressionLevel
 | Property    | Type   | Description                           |
 | ----------- | ------ | ------------------------------------- |
-| nextLevelXp | uint   | The required xp for the next rank     |
+| nextLevelXp | uint   | The required Hearts for the next rank     |
 | currentXp   | uint   | The current Hearts for the user       |
 | level       | uint   | The rank of the user                  |
 | minXp       | uint   | The minimum xp required for this rank |
