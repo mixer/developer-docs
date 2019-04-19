@@ -32,7 +32,7 @@ You can GET `https://mixer.com/api/v1/ascension/levels` to look up a list of ran
 
 | Property   | Type   | Description                                                      |
 | ---------- | ------ | ---------------------------------------------------------------- |
-| level      | uint   | The level number for this entry                                  |
+| level      | uint   | The rank number for this entry                                  |
 | minXp      | uint   | The minimum Hearts points required for this level.               |
 | color      | string | A hexadecimal color code for the color of this level.            |
 | complement | string | A hexadecimal color code for the complement color of this level. |
