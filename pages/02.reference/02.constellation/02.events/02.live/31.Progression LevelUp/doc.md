@@ -21,7 +21,6 @@ Sent when a user levels up in a channel, to the channel they level upped in.
 | assetsUrl   | string | The asset url for this level           |
 | name        | string | The name of the level                  |
 
-
 ## Examples
 
 ```json
