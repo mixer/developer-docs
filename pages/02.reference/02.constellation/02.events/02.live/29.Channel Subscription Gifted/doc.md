@@ -14,7 +14,7 @@ Send when a subscription is gifted to a user within a channel
 ```json
 { "giftReceiverId": 123,
   "gifterId": 123,
-  "giftRecieverUsername": "username",
+  "giftReceiverUsername": "username",
   "gifterUsername": "username"
 }
 ```
