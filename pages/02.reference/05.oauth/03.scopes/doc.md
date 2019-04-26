@@ -9,6 +9,7 @@ To request access to a users' account you need to use scopes. Scopes limit the a
 
 | Scope                        | Description                                                      |
 | ---------------------------- | ---------------------------------------------------------------- |
+| user:act_as                  | Let's you act as this user on other resources.                   |
 | achievement:view:self        | View your earned achievements.                                   |
 | channel:analytics:self       | View your channel analytics.                                     |
 | channel:clip:create:self     | Create new clips from videos on your channel.                    |
