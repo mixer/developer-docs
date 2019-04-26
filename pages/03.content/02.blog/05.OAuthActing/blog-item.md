@@ -13,7 +13,7 @@ With Mixer's OAuth flows it's easy for you as a developer to request and receive
 However, we've recently been made aware of an unintended side effect of our OAuth Systems. When receiving an OAuth Token, this token enabled you to act as the user who's owns the returned token on other resources that this user has access to. The most common cases of this are:
 
 - When the user is a channel editor on another channel than their own
-- When the user is a moderator in a channel other than their own.
+- When the user is a moderator in a channel other than their own
 
 To resolve this we need to make some changes to OAuth. We're going to start preventing this above use case unless a new OAuth Scope is requested on the OAuth Token. This new scope is `user:act_as` its listed on [our OAuth Scope Page](/reference/oauth/scopes).
 
