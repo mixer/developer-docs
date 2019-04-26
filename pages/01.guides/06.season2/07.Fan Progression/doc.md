@@ -68,10 +68,10 @@ You can replace it with any of the following terms to get variations of the imag
 
 | Variant | Image |
 |-|-|-|
-| cutout.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png) |
-| small.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png) |
-| large.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png) |
-| large.gif | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif) |
+| `cutout.png` | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png<br><span style="background-color:#fff;padding:6px">![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png)</span> |
+| `small.png` | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png<br>![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png) |
+| `large.png` | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png<br>![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png) |
+| `large.gif` | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif<br>![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif) |
 
 ## Constellation Events
 
