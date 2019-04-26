@@ -11,6 +11,9 @@ content:
     pagination: true
 tntsearch:
     index: false
+feed:
+    limit: 15
+    description: Mixer Developer Blog Feed
 ---
 
 Never shown, overridden by a template.
