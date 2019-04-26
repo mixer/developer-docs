@@ -18,7 +18,7 @@ You can check out the [full recording here](https://youtu.be/aHl2S4T1sHQ), and b
 [youtube autoplay=1 color=white]https://youtu.be/aHl2S4T1sHQ[/youtube]
 
 ## Sample: Player Agency in Unity Pt. 2
-This is a continuation from [last week's](/content/dev-show/ep2) usage of [Unity Tanks](https://unity3d.com/learn/tutorials/s/tanks-tutorial). This short segment showcases how to add player attribution to the game.
+This is a continuation from [last week's](/content/dev-show/e2) usage of [Unity Tanks](https://unity3d.com/learn/tutorials/s/tanks-tutorial). This short segment showcases how to add player attribution to the game.
 
 [youtube color=white]https://youtu.be/EtlTLgMSwpk[/youtube]
 
