@@ -1,3 +1,11 @@
+---
+title: ''
+media_order: ''
+body_classes: ''
+order_by: ''
+order_manual: ''
+---
+
 # Fan Progression
 
 In Fan Progression enabled channels each user will earn Hearts for interacting with channel. Hearts will be earnt for various types of interactions including:
@@ -50,11 +58,20 @@ You can GET `https://mixer.com/api/v1/ascension/levels` to look up a list of ran
 ```
 
 ### Asset Urls
-In the above example level object you'll see `{variant}`, you can replace variant with any of the following terms to get variations of the image for this rank:
-- `cuttout.png`
-- `small.png`
-- `large.png`
-- `large.gif`
+In the above example level object you'll see the string `{variant}`. For example, if the URL is given as:
+
+```
+https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/{variant}
+```
+
+You can replace it with any of the following terms to get variations of the image for that rank:
+
+| Variant | Image |
+|-|-|-|
+| cutout.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/cutout.png) |
+| small.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/small.png) |
+| large.png | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.png) |
+| large.gif | https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif ![](https://static.mixer.com/img/design/ui/fan-progression/v1_badges/silver/large.gif) |
 
 ## Constellation Events
 
