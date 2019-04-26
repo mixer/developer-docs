@@ -1,6 +1,6 @@
 ---
 title: Changes to OAuth and Resource Access
-date: 14:00 11/05/2018
+date: 18:00 04/26/2019
 author: rifox
 taxonomy:
     category: blog
