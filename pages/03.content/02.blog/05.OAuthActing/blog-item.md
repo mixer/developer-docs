@@ -6,7 +6,6 @@ taxonomy:
     category: blog
     tag: [blog, oauth, client, deprecations]
 ---
-# Changes to OAuth and Resource Access
 
 With Mixer's OAuth flows it's easy for you as a developer to request and receive permissions to carry out operations on a user's account or channel. We're always excited to see the tools and utilities that are being created by our Developer Community.
 
