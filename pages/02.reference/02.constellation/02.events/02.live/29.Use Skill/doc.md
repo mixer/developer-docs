@@ -1,20 +1,21 @@
-# user:{id}:skillUsed
+# channel:{id}:currencySpent
 
-Sent when a user uses an ember skill on a channel. This happens as the result of a Skill action that costs Embers. This event requires authentication.
+Sent when a user spends currency on a channel. This currently only gets triggered when Embers are spent on a channel, in the future other transactional items will cause events to be sent on this channel. This event does not require authentication.
 
-| Property                |  Type  | Description                                                                |
-| ----------------------- | ------ | -------------------------------------------------------------------------- |
-| triggeringuserid        | uint   | The ID of the user that executed the                                       |
-| currency                | string | Currently this value is only "embers"                                      |
-| amount                  | uint   | The amount of currency spent to execute the skill                          |
-| skillid                 | string | The ID of the skill executed                                               |
+| Property         | Type   | Description                                                                     |
+| ---------------- | ------ | ------------------------------------------------------------------------------- |
+| triggeringUserId | uint   | The ID of the user that executed this currency spend                            |
+| currencyType     | string | The currency type of this currency spend, currently this value is only "embers" |
+| price            | uint   | The amount of currency spent in this transaction                                |
+| itemId           | string | The ID of the item purchased                                                    |
 
 ## Examples
 
 ```json
 {
-	"triggeringuserid": 12345,
-	"currency": "embers",
-	"amount": 50,
-	"skillid": "3c8f4d71-1736-4e03-8e7b-13bca00cbf82"
+        "triggeringUserId": 12345,
+        "currency": "embers",
+        "amount": 50,
+        "itemId": "3c8f4d71-1736-4e03-8e7b-13bca00cbf82"
 }
+```
