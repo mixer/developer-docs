@@ -14,7 +14,7 @@ Sent when a user spends currency on a channel. This currently only gets triggere
 ```json
 {
         "triggeringUserId": 12345,
-        "currency": "embers",
+        "currencyType": "embers",
         "amount": 50,
         "itemId": "3c8f4d71-1736-4e03-8e7b-13bca00cbf82"
 }
