@@ -6,9 +6,9 @@ order_by: ''
 order_manual: ''
 ---
 
-# Fan Progression
+# Channel Progression
 
-In Fan Progression enabled channels each user will earn Hearts for interacting with channel. Hearts will be earnt for various types of interactions including:
+In Channel Progression enabled channels each user will earn Hearts for interacting with channel. Hearts will be earnt for various types of interactions including:
 - Chatting
 - Watching
 - Spending Embers
