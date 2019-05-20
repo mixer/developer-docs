@@ -1,12 +1,13 @@
 ---
 title: Spark Costing Change
+visible: false
 ---
 
 ## Introduction
 
 !!! If you are unfamiliar with the Spark system, please first read our [Sparks Guide](/guides/mixplay/sparks).
 
-! This change isn't currently live but we'll be rolling it out soon. Stand by for a confirmed date.
+!! This change is canceled and will **NOT** be taking place.
 
 Season 2 has brought with it [Spark Patronage](https://blog.mixer.com), which meant that our previous way of handling Spark costing for MixPlay needs to change.
 
@@ -39,7 +40,7 @@ This list will be updated as values are added or removed in the future.
 
 YES!
 
-Adding new values to this list is easy. We just had to start somewhere, these items are based on the most common spark costs we see on MixPlay today. If you'd like more added please [post/upvote this suggestion](https://watchmixer.uservoice.com/forums/382521-mixer-feedback-ideas/suggestions/35906746-new-spark-intervals-for-upcoming-spark-cost-change). 
+Adding new values to this list is easy. We just had to start somewhere, these items are based on the most common spark costs we see on MixPlay today. If you'd like more added please [post/upvote this suggestion](https://watchmixer.uservoice.com/forums/382521-mixer-feedback-ideas/suggestions/35906746-new-spark-intervals-for-upcoming-spark-cost-change).
 
 ## What do I need to do?
 
