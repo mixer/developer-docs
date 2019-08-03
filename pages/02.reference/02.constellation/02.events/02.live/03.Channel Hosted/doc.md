@@ -5,8 +5,8 @@ Sent when another user hosts the channel with the provided &#x60;id&#x60;. Note 
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|hosterId|[uint](/rest/index.html#/uint)|The channel ID who just hosted the channel.|
-|hoster|[Channel](/rest/index.html#/Channel)|The channel object who just hosted the channel.|
+|hosterId|[uint](/rest/index.html#uint)|The channel ID who just hosted the channel.|
+|hoster|[Channel](/rest/index.html#Channel)|The channel object who just hosted the channel.|
 
 ## Example
 ```json

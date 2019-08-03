@@ -5,7 +5,7 @@ Sent when a user is invited to a team.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[Team](/rest/index.html#/Team)|The team the user was invited to. This includes the team owner&#x27;s user object as &#x60;owner&#x60;.|
+|[Team](/rest/index.html#Team)|The team the user was invited to. This includes the team owner&#x27;s user object as &#x60;owner&#x60;.|
 
 ## Example
 ```json

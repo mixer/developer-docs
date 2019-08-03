@@ -5,7 +5,7 @@ Sent when an invitee accepts their team invitation.
 ## Payload
 |Type|Description|
 |----|-----------|
-|[User](/rest/index.html#/User)|The user who accepted their invitation.|
+|[User](/rest/index.html#User)|The user who accepted their invitation.|
 
 ## Example
 ```json
