@@ -30,7 +30,7 @@ const Mixer = require('@mixer/client-node');
 const client = new Mixer.Client(new Mixer.DefaultRequestRunner());
 ```
 
-To get the user's channel name we'll ask for it from the command line and use this to make a REST request that will provide a response with their channel details. We'll then print out how many viewers the have on their channel.
+To get the user's channel name we'll ask for it from the command line and use this to make a REST request that will provide a response with their channel details. We'll then print out how many viewers they have on their channel.
 
 ```js
 'use strict';
@@ -59,11 +59,11 @@ $ node rank.js connor4312
 You have 595 total views...
 ```
 
-Now it's time to dig up all that stuff you learned in your computer science course. We want to sort the channels on Mixer by the number of viewers they have, and loop through until we find the first channel that has less viewers than we do. To do this we'll have to make several calls to the API, and in Node this kind of chaining is often done through recursion.
+Now it's time to dig up all that stuff you learned in your computer science course. We want to sort the channels on Mixer by the number of viewers they have, and loop through until we find the first channel that has fewer viewers than we do. To do this we'll have to make several calls to the API, and in Node this kind of chaining is often done through recursion.
 
 We define a function simply called `run` that we initially call with page `0`. Each time it makes a request, it'll count up the channels it gets back and stop when it gets a channel less or as popular as we are.
 
-// ...
+```js
 let rank = 1;
 const run = (page) => {
     return getChannelsDescending(page).then(res => {
@@ -83,10 +83,11 @@ const run = (page) => {
 };
 
 return run(0);
-// ...
-Now we just need to fill in that mysterious `getChannelsDescending(page)` function with a call on the Mixer client. The client has several helpers here that are essentially light wrappers around the [request](https://github.com/request/request) package. So, we'll pass options in that we read from the [channel endpoint docs](LINK TO REST) to do what we need:
+```
 
-// ...
+Now we just need to fill in that mysterious `getChannelsDescending(page)` function with a call on the Mixer client. The client has several helpers here that are essentially light wrappers around the [request](https://github.com/request/request) package. So, we'll pass options in that we read from the [channel endpoint docs](rest/index.html#channels) to do what we need:
+
+```js
 const run = (page) => {
     return client.request('GET', '/channels', {
         qs: {
@@ -95,8 +96,10 @@ const run = (page) => {
             order: 'viewersTotal:DESC',
         },
     }).then(res => {
-// ...
+```
+
 All together now, you can put this together into a single script...
+
 ```js
 'use strict';
 
