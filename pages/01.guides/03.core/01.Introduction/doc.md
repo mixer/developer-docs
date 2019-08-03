@@ -40,7 +40,7 @@ You can find complete listings of Mixer's endpoints and resources [here](/rest/i
 
 ## Live Updates via Constellation
 
-Mixer is a dynamic and ever changing platform, as viewers and streamers interact with Mixer data changes on the Mixer Platform. As a Developer continually polling for this data isn't idea. You'd rapidly exceed the rate limits set out on our API.
+Mixer is a dynamic and ever changing platform, as viewers and streamers interact with Mixer data changes on the Mixer Platform. As a Developer continually polling for this data isn't ideal. You'd rapidly exceed the rate limits set out on our API.
 
 Instead Mixer offers an alternative through Live Updates over a service called Constellation. You can connect to constellation and receive updates about changes to something on Mixer. For example if you use REST to retrieve a channel's title then you only get the title once. If it changes you won't know. Constellation solves this by sending you an event that lets you know the title has changed. You can read more about this in our [Constellation tutorial](/guides/core/liveupdatestutorial).
 
