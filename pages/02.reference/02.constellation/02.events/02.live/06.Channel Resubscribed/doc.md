@@ -5,10 +5,10 @@ Sent when an automatic resubscription to a channel happens.
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|user|[User](/rest/index.html#/User)|The user who just subscribed to the channel.|
-|since|[IsoDate](/rest/index.html#/IsoDate)|The date for when the user first subscribed, from the start of the recurring billing period.|
-|until|[IsoDate](/rest/index.html#/IsoDate)|The date for when the subscription expires.|
-|totalMonths|[uint](/rest/index.html#/uint)|The number of months the user has been subscribed since the beginning of time.|
+|user|[User](/rest/index.html#User)|The user who just subscribed to the channel.|
+|since|[IsoDate](/rest/index.html#IsoDate)|The date for when the user first subscribed, from the start of the recurring billing period.|
+|until|[IsoDate](/rest/index.html#IsoDate)|The date for when the subscription expires.|
+|totalMonths|[uint](/rest/index.html#uint)|The number of months the user has been subscribed since the beginning of time.|
 
 ## Example
 ```json

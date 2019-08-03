@@ -5,8 +5,8 @@ Sent when another user finishes hosting the channel with the provided &#x60;id&#
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|hosterId|[uint](/rest/index.html#/uint)|The channel ID who just unhosted the channel.|
-|hoster|[Channel](/rest/index.html#/Channel)|The channel object who just unhosted the channel.|
+|hosterId|[uint](/rest/index.html#uint)|The channel ID who just unhosted the channel.|
+|hoster|[Channel](/rest/index.html#Channel)|The channel object who just unhosted the channel.|
 
 ## Example
 ```json

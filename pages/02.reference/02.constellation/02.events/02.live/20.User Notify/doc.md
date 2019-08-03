@@ -5,7 +5,7 @@ Sent when the user receives a new notification. Notifications of the same type w
 ## Payload
 |Type|Description|
 |----|-----------|
-|[Notification](/rest/index.html#/Notification)|The new notification.|
+|[Notification](/rest/index.html#Notification)|The new notification.|
 
 ## Example
 ```json

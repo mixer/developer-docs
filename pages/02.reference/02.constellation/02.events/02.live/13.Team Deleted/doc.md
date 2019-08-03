@@ -5,7 +5,7 @@ Sent when a team is deleted.
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
-|team|[Team](/rest/index.html#/Team)|The team&#x27;s record prior to deletion.|
+|team|[Team](/rest/index.html#Team)|The team&#x27;s record prior to deletion.|
 
 ## Example
 ```json
