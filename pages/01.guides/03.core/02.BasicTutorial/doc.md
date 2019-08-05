@@ -5,7 +5,7 @@ clientId: true
 
 # Basic Tutorial - Let's write a Ranker!
 
-This guide will walk you through the process of developing a bot which shows the tells the user their rank on Mixer, based on how many total viewers they have.
+This guide will walk you through the process of developing a bot which shows the user their rank on Mixer, based on how many total viewers they have.
 
 ## Writing the Code
 
