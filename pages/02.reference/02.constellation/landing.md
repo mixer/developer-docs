@@ -4,7 +4,7 @@ title: Constellation
 
 # Constellation
 
-Constellation is a service on Mixer used for many features. The most useful for Developers is liveloading.
+Constellation is a websocket based service on Mixer used for many features. The most useful for Developers is liveloading.
 
 ## Liveloading
 
@@ -25,6 +25,10 @@ A number of clients already support Constellation. Try them out for a jump start
 -   **JavaScript**: [Carina](https://github.com/mixer/carina)
 -   **Java**: [beam-client-java](https://github.com/mixer/beam-client-java)
 -   **Swift**: [beam-client-swift](https://github.com/mixer/beam-client-swift)
+
+## Connection
+
+You can connect to Constellation by opening a secure websocket connection(wss) to `constellation.mixer.com`.
 
 ## Session
 
