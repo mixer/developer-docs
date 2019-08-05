@@ -18,8 +18,6 @@ To request access to a users' account you need to use scopes. Scopes limit the a
 | channel:deleteBanner:self    | Delete your channel banner                                       |
 | channel:details:self         | View your channel details.                                       |
 | channel:follow:self          | Follow and unfollow other channels.                              |
-| channel:partnership          | Create and view partnership applications.                        |
-| channel:partnership:self     | Manage your partnership status.                                  |
 | channel:streamKey:self       | View your channel's stream key.                                  |
 | channel:teststream:view:self | Watch your test streams.                                         |
 | channel:update:self          | Update your channel settings                                     |
@@ -57,7 +55,6 @@ To request access to a users' account you need to use scopes. Scopes limit the a
 | subscription:create:self     | Create new subscriptions.                                        |
 | subscription:renew:self      | Renew your existing subscriptions.                               |
 | subscription:view:self       | View who you're subscribed to.                                   |
-| team:administer              | Administrate teams the user has rights in.                       |
 | team:manage:self             | Create, join, leave teams and set the users primary team.        |
 | transaction:cancel:self      | Cancel pending transactions.                                     |
 | transaction:view:self        | View your pending transactions.                                  |
