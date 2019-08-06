@@ -85,7 +85,7 @@ const run = (page) => {
 return run(0);
 ```
 
-Now we just need to fill in that mysterious `getChannelsDescending(page)` function with a call on the Mixer client. The client has several helpers here that are essentially light wrappers around the [request](https://github.com/request/request) package. So, we'll pass options in that we read from the [channel endpoint docs](rest/index.html#channels) to do what we need:
+Now we just need to fill in that mysterious `getChannelsDescending(page)` function with a call on the Mixer client. The client has several helpers here that are essentially light wrappers around the [request](https://github.com/request/request) package. So, we'll pass options in that we read from the [channel endpoint docs](/rest/index.html#channels) to do what we need:
 
 ```js
 const run = (page) => {
