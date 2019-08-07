@@ -1,3 +1,7 @@
+---
+title: 'Chat Chatters List'
+---
+
 # Chat Chatters List V2 Endpoints
 
 ## GET /api/v2/chats/{channelId}/users
