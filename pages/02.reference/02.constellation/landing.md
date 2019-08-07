@@ -32,7 +32,7 @@ You can connect to Constellation by opening a secure websocket connection(wss) t
 
 ## Session
 
-Users authenticate to Constellation by sending authentication details in socket headers. No external API are endpoints needed.
+Users authenticate to Constellation by sending authentication details in socket headers. No external API endpoints are needed.
 
 Users remain connected to Constellation throughout their session. During the session, they may subscribe to events happening on the site and get notifications when those events occur.
 
