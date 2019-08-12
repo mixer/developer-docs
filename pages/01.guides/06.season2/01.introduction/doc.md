@@ -11,7 +11,7 @@ Season 2 is the next evolution of the Mixer platform. It provides a great way to
 
 ## Leader Boards
 
-Check out our leaderboard guide here: [here](/guides/season2/leaderboards).
+Check out our leaderboard guide [here](/guides/season2/leaderboards).
 
 ## Embers
 
