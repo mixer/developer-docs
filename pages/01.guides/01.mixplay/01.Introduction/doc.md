@@ -103,29 +103,10 @@ The code step is to help you complete the code portion of your project. This is 
 
 You will need to write your own Game Client to connect to the Interactive service. For SDK downloads, documentation, and samples, go to [Choose a SDK](#choose-a-sdk).
 
-### Publish
+### Publishing your Project
 
-The final step in the studio is Publish. Publish allows you to share your project with everyone on Mixer.
+If you'd like to publish your project to allow other users to utilize it please [email us](mailto:mixerdevinfo@microsoft.com).
 
-To help you decide whether your Interactive project is ready for publishing, these are some questions to ask:
-
-
-- Is your project something that everyone would use?
-- Is your project ready for every Mixer broadcaster to have access to?
-- Have you filled in the Info tab with **detailed** installation and setup instructions?
-
-If you’ve answered no to any of the questions above, you should **not** publish your project yet. If you would like to have a small group of users to be able to access it, consider [sharing](/guides/mixplay/managing-project-access#sharing-an-interactive-project) your project instead.
-
-#### Understand the Publishing Flow
-
-![studio publish process](./studio/PublishProcess.svg)
-
-A Project starts off as a draft. In this state, you are free to edit, test, and share it with other users. Many projects don't leave the draft state. It's perfectly okay not to publish your project.
-
-When you've decided to publish your project, go to the Publish tab in the interactive studio. It will perform some checks on the project to ensure that it meets some basic requirements before allowing you to click on the Submit button.
-Once you've submitted your project, the Interactive review team at Mixer is notified, and we will begin the review process. While a project is in review, you won't be able to edit the project. A Mixer representative may also reach out to you with questions.
-After a review is conducted, you'll be notified whether your project is accepted for publishing or not. If your project is not accepted for publishing, it goes back to the draft state with feedback from the team, detailing what needs to change so that your project can be successfully published.
-Once your project is accepted for publishing, we can start discussing the actual launch date; when you would like to make your project available for all Mixer users in the Interactive Store.
 
 ## Where to get help
 
