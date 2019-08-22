@@ -63,7 +63,7 @@ Users added to this dialog will see your project in the project list of the stud
 - Use Share Codes when your audience grows larger.
 - Include your share code into your project's version control system. This way it'll be shared with anyone working on the project.
 - Avoid changing your share code after one is in use. This will potentially lock out other people on your team.
-- Before releasing your Game, [Publish your project](/guides/mixplay/introduction#publish).
+- Before releasing your Game, [Publish your project](/guides/mixplay/introduction#publishing-your-project).
 
 ### Project Editors
 - Create your project on an account for your Studio, for example: "Mixer". This will make it look more professional when published.
