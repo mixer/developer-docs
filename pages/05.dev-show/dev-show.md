@@ -1,5 +1,6 @@
 ---
 title: 'Dev Show'
+visible: false
 cache_enable: false
 episodes:
     -
