@@ -19,7 +19,7 @@ In endpoints where one would usually be included it will be omitted.
 
 If your application requests the `channel:streamKey:self` scope for a user that has not completed the Streamer Review flow then the OAuth Process will not be able to be completed. The user will be halted on the "Authorize" screen where a message will be displayed letting them know where to go to complete the flow. No tokens will be generated.
 
-# What about Existing Stream Keys I have saved or Cached?
+# What about existing Stream Keys I have saved or cached?
 
 These will be reset/invalidated and when your application tries to use them the standard "invalid streamkey" message will be returned.
 
