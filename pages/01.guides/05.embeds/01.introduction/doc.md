@@ -12,7 +12,6 @@ The parts included are:
 To get the embed URL for a channel simply add the Channel's name to the following URLS where it says `<channel name>`:
 - For the Video Player: https://mixer.com/embed/player/<channel name>
 - For Chat: https://mixer.com/embed/chat/<channel name>
-- For MixPlay: https://mixer.com/embed/controls/<channel name>
 
 ## Adding the Embed
 
