@@ -31,7 +31,7 @@ You can now move on to actually contributing.
 
 1. Find the page you want to change. You can read more about how the documentation is structured on our [Structure page](STRUCTURE.md)
 1. Make your changes:
-    1. You can do this by cloning the repository and editing locally. We reccomend VSCode for MarkDown Editing. Use `CTRL + K, V` to open a Markdown Preview.
+    1. You can do this by cloning the repository and editing locally. We recommend VSCode for MarkDown Editing. Use `CTRL + K, V` to open a Markdown Preview.
     1. [Or directly in github](https://help.github.com/articles/editing-files-in-your-repository/)
 1. Commit your changes, please use a descriptive commit message.
 
