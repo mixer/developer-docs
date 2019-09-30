@@ -34,6 +34,12 @@ You can also run actions on a particular user by chaining on "actions", such as 
 
 To get started with our REST API try out our [tutorial](/guides/core/basictutorial).
 
+## Authentication
+
+As a 3rd party Mixer Developer you can use OAuth 2.0 to authenticate with our APIs. We follow the [OAuth 2.0 Spec](https://tools.ietf.org/html/rfc6749) as closely as possible. So if you're familiar it should be easy to get up and running.
+
+For more information on Mixer OAuth checkout our [Reference Guide](/reference/oauth).
+
 ## Rest Reference
 
 You can find complete listings of Mixer's endpoints and resources [here](/rest/index.html?target=_blank)
