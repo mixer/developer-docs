@@ -5,7 +5,6 @@ Mixer provides a set of embeddable components so that you can bring parts of the
 The parts included are:
 - The Video Player
 - Chat
-- MixPlay Controls
 
 ## Getting an Embed URL
 
@@ -31,7 +30,6 @@ For the video player you can provide extra query parameters on the URL to contro
 - `t` - Provide a time here to skip to this time within the vod
 - `disableLinks` - Set this to true to prevent links within the Embed
 - `hideChannel` - Set this to true to hide the channel/"Watch on Mixer" link for this embed.
-- `mixplay` - Set this to true to show MixPlay controls in the embed. Defaults to false.
 
 
 # Chat Options
