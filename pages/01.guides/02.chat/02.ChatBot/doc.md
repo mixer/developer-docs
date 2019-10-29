@@ -263,43 +263,7 @@ Now that we have a chat connection with authentication working, we can add the r
   - Gradle
 
 ## Project Setup
-Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency.
-
-
-To set up `beam-client-java` with **Maven**, first add the Mixer repo to your `pom.xml` as a repository as follows:
-```
-<repositories>
-  <repository>
-    <id>beam-snapshots</id>
-    <url>https://maven.mixer.com/content/repositories/snapshots/</url>
-  </repository>
-</repositories>
-And secondly, add this project as a dependency in your pom.xml:
-
-<dependencies>
-  <dependency>
-    <groupId>com.mixer</groupId>
-    <artifactId>api</artifactId>
-    <version>6.0.0-SNAPSHOT</version>
-  </dependency>
-</dependencies>
-```
-
-To set up `beam-client-java` with **Gradle**, first add the Mixer repo to your `build.gradle` as a repository as follows:
-```
-repositories {
-    maven {
-        name = "beam"
-        url = "https://maven.mixer.com/content/repositories/snapshots"
-    }
-}
-```
-And secondly, add this project as a dependency in your build.gradle:
-```
-dependencies {
-    compile "com.mixer:api:6.0.0-SNAPSHOT"
-}
-```
+Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency. You can find information about how to include it in your project on the github page for the client.
 
 ## Writing the Code
 
