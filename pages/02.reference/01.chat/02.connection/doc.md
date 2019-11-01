@@ -62,7 +62,8 @@ When connecting to the chat socket, please pass your OAuth application's Client 
 
 Our official SDKs add this header for you; please refer to our Chat Tutorials for more information.
 
-
 ## Participating in Chat
 
-After connecting to a server if you want to participate in chat you must call the [auth](/reference/chat/methods/auth) method with the `authkey` retrieved above.
+After connecting to a server you must call the [auth](/reference/chat/methods/auth) method. You can call this with authentication details or anonymously its up to you.
+
+But to participate and send messages in chat you must provide an `authkey` from the request mentioned above.
