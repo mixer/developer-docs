@@ -7,7 +7,13 @@ taxonomy:
     tag: [blog]
 ---
 
-With continued, great feedback from the community and after careful consideration, we have decided to end support for  the following MixPlay Game SDKs: Unity, Unreal Engine 4, C++, Python. Low latency interactivity will always be a core part of Mixer and going forward we’ll focus our resources on other platform features  and streamer created MixPlay experiences.
+With continued, great feedback from the community and after careful consideration, we have decided to end support for  the following MixPlay Game SDKs:
+- Unity
+- Unreal Engine 4
+- C++
+- Python.
+
+Low latency interactivity will always be a core part of Mixer and going forward we’ll focus our resources on other platform features  and streamer created MixPlay experiences.
 
 ## What did you announce today?
 We’re ending support for  the following MixPlay SDKs:
