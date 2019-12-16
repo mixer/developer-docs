@@ -61,7 +61,7 @@ Not today, we're looking for ways to make this a possibility in the future thoug
 
 ### What do I do if I have more questions?
 
-If you have **developer** related questions please [drop us a line](mailto:mixerdevinfo@microsoft.com?subject=Developer Ember Query). For **all** other queries. [mixer.com/contact](https://mixer.com/contact).
+If you have **developer** related questions please [drop us a line](mailto:mixerdevinfo@microsoft.com). For **all** other queries. [mixer.com/contact](https://mixer.com/contact).
 
 
 
