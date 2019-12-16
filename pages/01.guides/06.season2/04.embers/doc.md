@@ -10,7 +10,7 @@ title: Embers
 
 Back in November 2018 we introduced the first phase of [Season 2](https://blog.mixer.com/2018/11/01/season-2/) and now we're launching the next phase with Embers.
 
-Embers are Mixer's new paid virtual currency. Users can purchase embers and then use them on Premium Skills on partnered channels on Mixer. As with the launch of Season 2, we understand that developers may have questions and we'll be answering them on this page. If you have further questions please [drop us a line](mailto:mixerdevinfo@microsoft.com).
+Embers are Mixer's new paid virtual currency. Users can purchase embers and then use them on Premium Skills on partnered channels on Mixer. As with the launch of Season 2, we understand that **developers** may have questions and we'll be answering them on this page.
 
 ## Skills
 
@@ -61,7 +61,7 @@ Not today, we're looking for ways to make this a possibility in the future thoug
 
 ### What do I do if I have more questions?
 
-If you have developer related questions please [drop us a line](mailto:mixerdevinfo@microsoft.com). For other queries. [mixer.com/contact](https://mixer.com/contact).
+If you have **developer** related questions please [drop us a line](mailto:mixerdevinfo@microsoft.com?subject=Developer Ember Query). For **all** other queries. [mixer.com/contact](https://mixer.com/contact).
 
 
 
