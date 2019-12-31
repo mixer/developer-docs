@@ -1,7 +1,7 @@
 ---
 title: Deprecations coming to Chat Chatters List
 date: 14:00 11/05/2018
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog, sdk, client, deprecations]
@@ -31,7 +31,7 @@ With V2 available, we plan to deprecate the V1 Chatters List API on March 25, 20
 
 ## What do I need to do?
 
-Before March 25, 2019, if you use the V1 Chat Chatters List API, please move to V2. On this date the V1 endpoint will be removed. 
+Before March 25, 2019, if you use the V1 Chat Chatters List API, please move to V2. On this date the V1 endpoint will be removed.
 
 ## What do I do if I have questions?
 

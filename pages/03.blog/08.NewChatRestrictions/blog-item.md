@@ -1,7 +1,7 @@
 ---
 title: New Chat Restrictions Now Available
 date: 13:00 06/26/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog, chat]

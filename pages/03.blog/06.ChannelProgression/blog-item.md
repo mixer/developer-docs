@@ -1,7 +1,7 @@
 ---
 title: Channel Progression launching 05/01
 date: 18:00 04/30/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog, features, channel, progression]

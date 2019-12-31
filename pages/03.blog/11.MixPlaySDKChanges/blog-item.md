@@ -1,7 +1,7 @@
 ---
 title: MixPlay SDK Changes
 date: 16:00 10/29/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog]

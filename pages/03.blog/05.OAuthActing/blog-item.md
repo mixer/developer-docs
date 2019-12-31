@@ -1,7 +1,7 @@
 ---
 title: Changes to OAuth and Resource Access
 date: 18:00 04/26/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog, oauth, client, deprecations]

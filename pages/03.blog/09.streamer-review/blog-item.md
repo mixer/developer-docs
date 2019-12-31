@@ -1,7 +1,7 @@
 ---
 title: Streamer Review API & Developer Information
 date: 16:00 08/29/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog]

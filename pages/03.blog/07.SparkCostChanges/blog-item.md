@@ -1,7 +1,7 @@
 ---
 title: Canceling Spark Cost Changes
 date: 13:00 05/20/2019
-author: rifox
+author: probableprime
 taxonomy:
     category: blog
     tag: [blog, mixplay]
