@@ -14,7 +14,7 @@ Resources are the basis of Interactive. Currently there are four resource types:
 
 Event emitters are often used on resources so that consumers can listen to updates and deletions on specific resource instances.
 
-Various languages necessitate different approaches to dynamic, user-defined properties, and these can often be challenging to implement. In loosely or dynamically typed languages like the Python SDK, properties can each be attached and detached from resource instances on the fly. In statically typed object-oriented languages like the Java SDK, it usually makes sense to provide a generic base Resource that consumers can inherit from, along with a mechanism for the consumer to pass that class to some kind of registry.
+Various languages necessitate different approaches to dynamic, user-defined properties, and these can often be challenging to implement. In loosely or dynamically typed languages like Python, properties can each be attached and detached from resource instances on the fly. In statically typed object-oriented languages like the Java SDK, it usually makes sense to provide a generic base Resource that consumers can inherit from, along with a mechanism for the consumer to pass that class to some kind of registry.
 
 ## Talking to Interactive
 
@@ -30,7 +30,7 @@ It's important to remember that input you get from the service should be treated
 
 1. Messages that are too large are rejected
 1. Messages that don't adhere to its variant of JSON (yes, there are variations) are rejected
-1. Inputs that dont have certain properties on it, like the [`controlID`](https://seriot.ch/parsing_json.php), are thrown away
+1. Inputs that don't have certain properties on it, like the [`controlID`](https://seriot.ch/parsing_json.php), are thrown away
 
 However, the service is loose by necessity. It cannot predict and validate every possible input that a custom control might give, and these inputs are given from untrusted user machines. Therefore, as tempting as it may seem, don't create magic wrappers that allow custom controls to call or set any property on any game object, and dont' assume that a certain ID will fit into your 64-byte `char *`. Validate!
 
