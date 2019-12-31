@@ -20,7 +20,7 @@ links:
     Legal:
         Attributions: '/legal/attributions'
         'Developer Agreement': 'legal/developer-agreement'
-        'Privacy Policy': 'https://mixer.com/about/privacy'
+        'Privacy and Cookies': 'https://mixer.com/about/privacy'
         'Terms of Service': 'https://mixer.com/about/tos'
         DMCA/Abuse: 'https://mixer.com/about/dmca'
 ---
