@@ -26,11 +26,11 @@ The hosts parameter is an important one; it tells us what domains your applicati
 
 ## Using OAuth
 
-Mixer follows the [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749). Most popular languages will have a library to easily interface with an OAuth server. A partial list of suggested clients can be found on [this website](http://oauth.net/code/).
+Mixer follows the [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749). Most popular languages will have a library to easily interface with an OAuth server. A partial list of suggested clients can be found on [this website](https://oauth.net/code/).
 
 If you're interested in reading an in depth explanation of how OAuth works head [here](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified).
 
-! We **strongly** advise you to use an existing [OAuth client library](http://oauth.net/code/) whenever possible, instead of writing your own implementation. OAuth is hard to securely implement, and the time you spend trying to do so would be better spent building something awesome.
+! We **strongly** advise you to use an existing [OAuth client library](https://oauth.net/code/) whenever possible, instead of writing your own implementation. OAuth is hard to securely implement, and the time you spend trying to do so would be better spent building something awesome.
 
 > To be clear, OAuth 2.0 at the hand of a developer with deep understanding of web security will likely result is a secure implementation. However, at the hands of most developers – as has been the experience from the past two years – 2.0 is likely to produce insecure implementations.
 > Eran Hammer - Creator of [Hapi](https://hapijs.com/)

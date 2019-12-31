@@ -1,6 +1,8 @@
 # channel:{id}:skill
 
-Sent when a skill is executed on a channel. The payload varies depending on the Skill being executed. As we add new Skills check back here for updated payloads.
+Sent when a skill is executed on a channel. **Stickers are unfortunately not included in this event**.
+
+The payload varies depending on the Skill being executed. As we add new Skills check back here for updated payloads.
 
 | Property         | Type   | Description                                                                                                                      |
 | ---------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |

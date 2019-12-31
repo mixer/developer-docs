@@ -242,7 +242,7 @@ public class Tutorial {
 }
 ```
 
-Next let's fetch the user's channel we'll grab their username off the command line. The Java Client uses a service orientated approach which means all channel related functions are on the `ChannelService`. So we need to `use` that service to get the channel data. Most methods that talk to the API return a [Java Future](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html). These are a form of asyncronous operation in Java. For this tutorial however we'll use the get method of a future to wait for the Future to complete. It returns a `MixerChannel` object. On the channel we can find the `viewersTotal` property which we can then print.
+Next let's fetch the user's channel we'll grab their username off the command line. The Java Client uses a service orientated approach which means all channel related functions are on the `ChannelService`. So we need to `use` that service to get the channel data. Most methods that talk to the API return a [Java Future](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html). These are a form of asyncronous operation in Java. For this tutorial however we'll use the get method of a future to wait for the Future to complete. It returns a `MixerChannel` object. On the channel we can find the `viewersTotal` property which we can then print.
 
 ```java
 //...

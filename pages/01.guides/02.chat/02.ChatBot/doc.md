@@ -20,7 +20,7 @@ We'll be using OAuth for authentication. In the Node tutorial code below, click 
 1. Run `npm install --save @mixer/client-node ws`
 
 ## Writing the Code
-Our Node implementation uses Bluebird promises; you can find out more about them [here](http://bluebirdjs.com/docs/api-reference.html).
+Our Node implementation uses Bluebird promises; you can find out more about them [here](https://bluebirdjs.com/docs/api-reference.html).
 
 Before we can connect to the chat servers, we must authenticate ourselves with the backend. In our example we are going to use an implicit OAuth token for authentication. The required scopes are `chat:connect chat:chat`.
 

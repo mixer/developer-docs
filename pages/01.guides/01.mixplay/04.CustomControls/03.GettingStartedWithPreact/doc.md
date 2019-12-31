@@ -163,7 +163,7 @@ CSS can be written in plain stylesheets which are included in your control bundl
 
 If you haven't used CSS before, check out Mozilla's [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS).
 
-If you know your way around already, you'll notice that the stylesheets are written in [Sass](http://sass-lang.com/). Sass is a preprocessor that adds useful new features on top of CSS, which you can take advantage of if you'd like to.
+If you know your way around already, you'll notice that the stylesheets are written in [Sass](https://sass-lang.com/). Sass is a preprocessor that adds useful new features on top of CSS, which you can take advantage of if you'd like to.
 
 ### Styles in JavaScript
 
@@ -328,7 +328,7 @@ class MyButton extends PreactControl {
 
 ### Writing Translations
 
-In the default custom control template, you'll find a folder called `locales`. In this folder is a bunch of JSON documents. The names of these documents, like `en-us.json`, correspond to a language. The general form for what a locale string "is" is formally defined in [BCP47](http://www.ietf.org/rfc/bcp/bcp47.txt) but, for the most part, they take the form of `language-dialect`.
+In the default custom control template, you'll find a folder called `locales`. In this folder is a bunch of JSON documents. The names of these documents, like `en-us.json`, correspond to a language. The general form for what a locale string "is" is formally defined in [BCP47](https://www.ietf.org/rfc/bcp/bcp47.txt) but, for the most part, they take the form of `language-dialect`.
 
 ```
 $ ls locales

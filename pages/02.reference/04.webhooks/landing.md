@@ -132,9 +132,18 @@ If your server does not return a `2xx` response code, Mixer will try to send the
 
 These conditions are subject to change, but for the most part, if your service has a least one "9" of availability, you don't need to worry. You can always check the status of a webhook, given its ID, by hitting `GET /hooks/{hookId}`.
 
-## Limits and Renewals
-We have a per-account limit on the number of webhooks you may register. Right now, the limit is 1450000. Because webhooks are a new system for Mixer, we're ramping up the limits gradually over time. Starting at `00:00:00 2018-02-17 UTC,` all developers were given a base limit of `100,000 webhooks. This limit is increased by 50,000 every seven days afterwards, to a maximum of 3,000,000.
+## Limits
+We have a per-account limit on the number of webhook events you may register. The limit is 3,000,000. The limit is based on the number of events that you register, so a webhook with:
+```
+[
+    "event1",
+    "event2",
+    "event3",
+]
+```
+Would contribute 3 to your account's limit count.
 
+## Renewals
 By default, webhooks expire after 90 days unless they're renewed using `POST /hooks/{hookId}/renew`. The exact renewal date is returned in the webhook after it's created, for example:
 ```json
 {

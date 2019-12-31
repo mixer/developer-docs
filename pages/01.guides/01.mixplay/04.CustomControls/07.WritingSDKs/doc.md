@@ -28,9 +28,9 @@ The Interactive protocol provides compression algorithms you can use in the Inte
 
 It's important to remember that input you get from the service should be treated as untrusted. The service does some minimal validation on it:
 
-1. Messages that are too large are rejected 
-1. Messages that don't adhere to its variant of JSON (yes, there are variations) are rejected 
-1. Inputs that dont have certain properties on it, like the [`controlID`](http://seriot.ch/parsing_json.php), are thrown away
+1. Messages that are too large are rejected
+1. Messages that don't adhere to its variant of JSON (yes, there are variations) are rejected
+1. Inputs that dont have certain properties on it, like the [`controlID`](https://seriot.ch/parsing_json.php), are thrown away
 
 However, the service is loose by necessity. It cannot predict and validate every possible input that a custom control might give, and these inputs are given from untrusted user machines. Therefore, as tempting as it may seem, don't create magic wrappers that allow custom controls to call or set any property on any game object, and dont' assume that a certain ID will fit into your 64-byte `char *`. Validate!
 

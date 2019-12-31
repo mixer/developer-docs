@@ -239,7 +239,7 @@ An alternative flow is available to interactive applications to avoid
 the need for opening, embedding browsers, or requiring keyboard input on
 the client device:
 
-1.  Register an OAuth application on the [Mixer Lab](http://mixer.com/lab). If you’re developing an integration which will run on users’ computers, you should not request a client secret.
+1.  Register an OAuth application on the [Mixer Lab](https://mixer.com/lab). If you’re developing an integration which will run on users’ computers, you should not request a client secret.
 1.  Call [POST /oauth/shortcode](/rest/index.html#oauth_shortcode_post) with your `client_id`, `client_secret` (if any) and space-delimited `scope` you want in the request body. This will typically look something like this:
 
     ```http
@@ -2590,8 +2590,8 @@ File Storage
 ------------
 
 With the advent of Custom Controls, the Interactive service provides
-secure session-bound storage for files. Total file size is limited, set 
-at 50 MB per implementation, and is subject to change. The storage is 
+secure session-bound storage for files. Total file size is limited, set
+at 50 MB per implementation, and is subject to change. The storage is
 cleared immediately when the game client disconnects.
 
 ### uploadFile <span class="mixplay-method server"></span>
