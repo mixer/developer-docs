@@ -181,43 +181,7 @@ Your rank on Mixer is 761!
   - Gradle
 
 ## Project Setup
-Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency.
-
-
-To set up `beam-client-java` with **Maven**, first add the Mixer repo to your `pom.xml` as a repository as follows:
-```
-<repositories>
-  <repository>
-    <id>beam-snapshots</id>
-    <url>https://maven.mixer.com/content/repositories/snapshots/</url>
-  </repository>
-</repositories>
-And secondly, add this project as a dependency in your pom.xml:
-
-<dependencies>
-  <dependency>
-    <groupId>com.mixer</groupId>
-    <artifactId>api</artifactId>
-    <version>6.0.0-SNAPSHOT</version>
-  </dependency>
-</dependencies>
-```
-
-To set up `beam-client-java` with **Gradle**, first add the Mixer repo to your `build.gradle` as a repository as follows:
-```
-repositories {
-    maven {
-        name = "beam"
-        url = "https://maven.mixer.com/content/repositories/snapshots"
-    }
-}
-```
-And secondly, add this project as a dependency in your build.gradle:
-```
-dependencies {
-    compile "com.mixer:api:6.0.0-SNAPSHOT"
-}
-```
+Set up a standard project for your environment and include [beam-client-java](https://github.com/mixer/beam-client-java) as a dependency by following the directions on its GitHub Page.
 
 ## Usage
 Let's start by creating a Main class for the Java application and importing all of the required packages. We'll also initialize an instance of the MixerAPI.
