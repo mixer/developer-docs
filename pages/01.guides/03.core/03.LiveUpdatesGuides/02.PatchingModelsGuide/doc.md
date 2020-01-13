@@ -1,4 +1,7 @@
-# Patching Models from LiveUpdates
+---
+title: Patching Models from Live Updates
+---
+# Patching Models from Live Updates
 
 With LiveUpdate events via Constellation it is common for the event payload to not contain the entire resource/model's properties.
 
