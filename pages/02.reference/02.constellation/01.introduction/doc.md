@@ -10,7 +10,7 @@ Constellation is a websocket based service on Mixer used for many features. The 
 
 Liveloading is an event system on Mixer. When models update, users follow channels, or anything else happens that clients might want to be aware of an event is sent. Users must subscribe to Events to receive them.
 
-!!! Pro tip: you can view liveloading in-action by viewing your [websocket](https://blittle.github.io/chrome-dev-tools/network/websockets.html) log on mixer.com.
+!!! Tip: you can view liveloading in-action by viewing your [websocket](https://blittle.github.io/chrome-dev-tools/network/websockets.html) log on mixer.com.
 
 Want us to call you instead? Check out our [Webhooks](/reference/webhooks) system!
 
