@@ -52,7 +52,7 @@ A regular channel message seen by all users
         },
         {
           "type": "link",
-          "url": "http://mixer.com/mixer",
+          "url": "https://mixer.com/mixer",
           "text": "mixer.com/mixer"
         },
         {
