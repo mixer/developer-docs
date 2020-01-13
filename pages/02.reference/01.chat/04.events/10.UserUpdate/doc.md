@@ -17,8 +17,6 @@ Sent when a user is updated, usually on status change. E.g. Modding, Subscribing
       "Pro",
       "User"
     ],
-    "permissions": [],
-    "username": "username"
   }
 }
 ```
