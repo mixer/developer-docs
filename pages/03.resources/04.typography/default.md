@@ -27,6 +27,14 @@ The **mixer-dev** theme is the new default theme for Grav built with [Spectre.cs
 <span class="h1">H1 Heading</span>
 ```
 
+### Buttons
+<button class="btn">default button</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-error">Error</button>
+<button class="btn disabled" tabindex="-1">disabled button</button>
+
 ### Paragraphs
 
 Lorem ipsum dolor sit amet, consectetur [adipiscing elit. Praesent risus leo, dictum in vehicula sit amet](#), feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
@@ -438,4 +446,4 @@ function isRequestValid($secret) {
 [/mixer-tabs]
 ---
 
-MALM MALM MALM 
+MALM MALM MALM
