@@ -9,16 +9,12 @@ Its very simple you just need to include some form of Identification with your r
 
 Below you'll find guidance on how to do this for each area of Mixer's developer platform.
 
-## REST + Chat
+## REST, Chat & Constellation
 
 For REST and Chat you can identify your application in a number of ways:
 1. Include a standard `User-Agent` header with a value that matches your Application / Company name. For example Mixer might use "Mixer Mobile App / 1.2.3" for version 1.2.3 of its mobile application. You can read more about User-Agent headers [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent?target=_blank)
 1. Specify a `Client-ID` header with a value that matches your OAuth Application's Client ID
 
-## Constellation
-
-When connecting to constellation you can:
-1. Include a standard `User-Agent` header with a value that matches your Application / Company name. For example Mixer might use "Mixer Mobile App / 1.2.3" for version 1.2.3 of its mobile application. You can read more about User-Agent headers [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent?target=_blank)
 
 ## MixPlay
 Due to the nature of how MixPlay works there is no need to carry out any additional steps to identify a MixPlay Application.
