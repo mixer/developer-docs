@@ -74,7 +74,7 @@ To render an emote based on the above payload information please carry out the f
 
 Mixer's Emote packs use the top left of the image as X:0, Y:0.
 
-## Warnings
+## DON'Ts
 - Do **NOT** hard code width, height, x or y.
 - Do **NOT** assume all emotes are the same size.
 - Do **NOT** assume each channel/pack has the same number of emotes.
