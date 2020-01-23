@@ -12,7 +12,7 @@ On Mixer there are 3 types of Emotes:
 
 Each emote has a picture and a name.
 
-![Picture of an example emote](./exampleEmote.png?classes=caption "Picture of an example emote")
+![An example Emote, a Smiley face.](./exampleEmote.png?classes=caption "An example Emote, a Smiley face.")
 
 
 ## Using Emotes as a User
@@ -60,7 +60,7 @@ Emotes are sent via Chat in the standard ["ChatMessage"](/reference/chat/events/
 
 If you would like to render emotes in your own UI, then you will need to carry out some processing as emotes are arranged in Sprite sheets. For example here is the `memes` emote pack's sheet:
 
-![Picture of the standard memes emote pack](https://mixer.com/_latest/emoticons/memes.png?classes=caption "Picture of the standard memes emote pack")
+![The standard memes emote pack spritesheet.](https://mixer.com/_latest/emoticons/memes.png?classes=caption "The standard memes emote pack spritesheet.")
 
 To render an emote based on the above payload information please carry out the following steps:
 1. If the `source` property is `builtin`, ensure you have the emote pack's sheet loaded you can find builtin packs at: `https://mixer.com/_latest/emoticons/<pack name>.png`
