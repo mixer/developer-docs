@@ -68,14 +68,16 @@ To render an emote based on the above payload information please carry out the f
 3. Read the `coords` property in the emote payload
    1. Start a rectangle on the sheet that you loaded from step 1 or 2 that starts at the x and y positioned in the payload.
    2. Resize the rectangle the width and height of the value of the width and height in the payload.
-   3. Render the image
+   3. Use this rectangle to render the emote.
+
+You can render then render this emote at any size provided it uses the above rectangle. This can be useful to resize the visual rendering of an emote to match your screen's display density etc.
 
 ### Coordinate System
 
 Mixer's Emote packs use the top left of the image as X:0, Y:0.
 
 ## DON'Ts
-- Do **NOT** hard code width, height, x or y.
+- Do **NOT** hard code the width, height, x or y when cutting an emote out of the sheet.
 - Do **NOT** assume all emotes are the same size.
 - Do **NOT** assume each channel/pack has the same number of emotes.
 
