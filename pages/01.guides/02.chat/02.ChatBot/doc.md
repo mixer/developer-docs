@@ -287,7 +287,7 @@ import java.util.concurrent.ExecutionException;
 
 public class Chat {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        MixerAPI mixer = new MixerAPI("Click here to get your Token!", "Click here to get your Client ID!");
+        MixerAPI mixer = new MixerAPI("Click here to get your Client ID!","Click here to get your Token!");
     }
 }
 ```
@@ -361,7 +361,7 @@ import java.util.concurrent.ExecutionException;
 
 public class Chat {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        MixerAPI mixer = new MixerAPI("Click here to get your Token!", "Click here to get your Client ID!");
+        MixerAPI mixer = new MixerAPI("Click here to get your Client ID!","Click here to get your Token!");
 
         MixerUser user = mixer.use(UsersService.class).getCurrent().get();
         MixerChat chat = mixer.use(ChatService.class).findOne(user.channel.id).get();
