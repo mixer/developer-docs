@@ -9,6 +9,7 @@ This error means that the chat server you're connecting to can't find a record o
 
 - That you're not confusing channelIds and userIds. These are two different numbers.
 - That the channel you're trying to connect to is valid and has not been suspended or banned.
+- That the **userId** you're passing in to the first argument of `auth` is the user that you have an OAuth token for and that it is **NOT** the User ID of the Channel you are trying to connect to.
 - That you've retrieved an authentication key from the `GET /chats/{channelId}` endpoint recently. Authentication keys expire after a short period.
 - That you're calling the auth method with 3 arguments that are not null in the following order:
   - The **channel** id of the channel you wish to chat in encoded as a **Number**.
