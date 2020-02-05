@@ -1,12 +1,13 @@
 # channel:{id}:hosted
 
-Sent when another user hosts the channel with the provided &#x60;id&#x60;. Note that this event is not subject to the spam prevention that the chat message is.
+Sent when another user hosts or auto-hosts the channel with the provided &#x60;id&#x60;. Note that this event is not subject to the spam prevention that the chat message is.
 
 ## Payload
 |Name|Type|Description|
 |----|----|-----------|
 |hosterId|[uint](/rest/index.html#uint)|The channel ID who just hosted the channel.|
 |hoster|[Channel](/rest/index.html#Channel)|The channel object who just hosted the channel.|
+|auto|[boolean](/rest/index.html#boolean)|Whether it was an auto-host or normal host.|
 
 ## Example
 ```json
@@ -45,6 +46,7 @@ Sent when another user hosts the channel with the provided &#x60;id&#x60;. Note 
     "createdAt": "2015-04-09T07:37:51.000Z",
     "updatedAt": "2017-07-11T19:49:26.000Z",
     "deletedAt": null
-  }
+  },
+  "auto": true
 }
 ```
