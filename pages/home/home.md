@@ -20,7 +20,7 @@ hero:
             -
                 text: Get Live Updates
                 icon: icon-MixerRingerSolid
-                url: /guides/core/liveupdatestutorial
+                url: /guides/core/liveupdatesguides
             -
                 text: Query our API
                 icon: icon-MixerPollSolid
