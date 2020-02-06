@@ -33,10 +33,10 @@ Before we can connect to the chat servers, we must authenticate with Mixer. In o
     const client = new Mixer.Client(new Mixer.DefaultRequestRunner());
 
     /* With OAuth we don't need to log in. The OAuth Provider will attach
-    * the required information to all of our requests after this call.
-    * They'll also be authenticated with the user information of the user
-    * who owns the token provided.
-    */
+     * the required information to all of our requests after this call.
+     * They'll also be authenticated with the user information of the user
+     * who owns the token provided.
+     */
     client.use(new Mixer.OAuthProvider(client, {
         tokens: {
             access: 'Click here to get your Token!',
@@ -47,14 +47,16 @@ Before we can connect to the chat servers, we must authenticate with Mixer. In o
 ```
 All this code does is get everything setup, after this point we have a file which has an authenticated Mixer user ready to go but we don't actually know who they are. An OAuth token doesn't tell us who owns it. Let's find out who they are, You can add the following code to the bottom of the code from our first section.
 ```js
-    /**
-     * Gets our Currently Authenticated Mixer user's information. This returns an object
-     * full of useful information about the user whose OAuth Token we provided above.
+    /*
+     * Gets our Currently Authenticated Mixer user's information.
+     * This returns an object full of useful information about
+     * the user whose OAuth Token we provided above.
      */
     async function getUserInfo() {
         // Users Current will return information about the user who owns the OAuth
         // token registered above.
-        return client.request('GET', 'users/current').then(response => response.body);
+        return client.request('GET', 'users/current')
+        .then(response => response.body);
     }
     getUserInfo().then(userInfo => {
         console.log(`Hi, ${userInfo.username}!`);
@@ -77,7 +79,7 @@ Now, we'll write functions for both of these steps and link them together in the
         return new Mixer.ChatService(client).join(channelId).then(response => response.body);
     }
 ```
-We don't need to call this function just yet but for reference, when called this function will ask Mixer's servers for some connection information. The response should look something like this:
+We don't need to call this function yet but for reference, when called this function will ask Mixer's servers for some connection information. The response should look something like this:
 ```json
     {
         "endpoints":[
@@ -129,13 +131,15 @@ async function joinChat(userId, channelId) {
 }
 ```
 
-The last step is to edit our original code, so that it uses these two new functions. We just need to change the bit that starts with `getUserInfo().then(`. Replace it all with:
+The last step is to edit our original code, so that it uses these two new functions. We need to change the section of code that starts with `getUserInfo().then(`. Replace it all with:
 ```js
     // Get our Bot's User Information, Who are they?
     getUserInfo().then(async userInfo => {
 
-        /* Join our target Chat Channel, in this case we'll just join our Bot's channel.
-         * But you can replace the second argument of this function with ANY Channel ID.
+        /* Join our target Chat Channel, in this case we'll join
+         * our Bot's channel.
+         * But you can replace the second argument of this function
+         * with ANY Channel ID.
          */
         const socket = await joinChat(userInfo.id, userInfo.channel.id);
 
@@ -238,7 +242,8 @@ Final Code:
     // Get our Bot's User Information, Who are they?
     getUserInfo().then(async userInfo => {
 
-        /* Join our target Chat Channel, in this case we'll just join our Bot's channel.
+        /* Join our target Chat Channel, in this case we'll join 
+         * our Bot's channel.
          * But you can replace the second argument of this function with ANY Channel ID.
          */
         const socket = await joinChat(userInfo.id, userInfo.channel.id);
@@ -337,7 +342,7 @@ if (chatConnectable.connect()) {
 }
 ```
 
-With authentication and connection out of the way, we just need to hook up the greet event and the `!ping` command. The greet event is set up by registering an `EventHandler` for the `UserJoinEvent`.
+With authentication and connection out of the way, we need to hook up the greet event and the `!ping` command. The greet event is set up by registering an `EventHandler` for the `UserJoinEvent`.
 
 ```java
 //...
