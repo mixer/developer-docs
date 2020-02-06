@@ -10,7 +10,7 @@ For this tutorial, we will show you how to create a 'ping-pong' chat bot using e
 We'll be using OAuth for authentication. In the Node tutorial code below, click "Click here to get your token" to grab a token for the tutorial. You can read more about how OAuth works on our [OAuth page](/reference/oauth)
 
 
-[mixer-tabs active=1]
+[mixer-tabs active=0]
 
 [mixer-tab title="Node"]
 
