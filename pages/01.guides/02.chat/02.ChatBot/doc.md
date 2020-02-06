@@ -15,221 +15,252 @@ We'll be using OAuth for authentication. In the Node tutorial code below, click 
 [mixer-tab title="Node"]
 
 ## Prerequisites
-1. Get [NodeJS and NPM](https://nodejs.org/en/) for your platform.
+1. Get [NodeJS and NPM](https://nodejs.org/en/) for your platform, we suggest the latest version.
 1. [Create a new project with npm.](https://docs.npmjs.com/cli/init)
-1. Run `npm install --save @mixer/client-node ws`
+1. Run `npm install --save @mixer/client-node ws`, this installs the dependencies required for this example to run.
 
 ## Writing the Code
-Our Node implementation uses Bluebird promises; you can find out more about them [here](https://bluebirdjs.com/docs/api-reference.html).
+Our Node implementation uses promises and async/await. There's a great guide on these concepts [here](https://javascript.info/async).
 
-Before we can connect to the chat servers, we must authenticate ourselves with the backend. In our example we are going to use an implicit OAuth token for authentication. The required scopes are `chat:connect chat:chat`.
+Before we can connect to the chat servers, we must authenticate with Mixer. In our example we are going to use an implicit OAuth token for authentication. The required OAuth scopes are `chat:connect chat:chat`. If you'd like more information on authentication please read [our page on OAuth](https://dev.mixer.com/reference/oauth).
 
 ```js
+    // Load in some dependencies
     const Mixer = require('@mixer/client-node');
     const ws = require('ws');
 
-    let userInfo;
-
+    // Instantiate a new Mixer Client
     const client = new Mixer.Client(new Mixer.DefaultRequestRunner());
 
-    // With OAuth we don't need to log in. The OAuth Provider will attach
-    // the required information to all of our requests after this call.
+    /* With OAuth we don't need to log in. The OAuth Provider will attach
+     * the required information to all of our requests after this call.
+     * They'll also be authenticated with the user information of the user
+     * who owns the token provided.
+     */
     client.use(new Mixer.OAuthProvider(client, {
         tokens: {
             access: 'Click here to get your Token!',
+            // Tokens retrieved via this page last for 1 year.
             expires: Date.now() + (365 * 24 * 60 * 60 * 1000)
         },
     }));
-
-    // Gets the user that the Access Token we provided above belongs to.
-    client.request('GET', 'users/current')
-    .then(response => {
-        console.log(response.body);
-
-        // Store the logged in user's details for later reference
-        userInfo = response.body;
-
-        // Returns a promise that resolves with our chat connection details.
-        return new Mixer.ChatService(client).join(response.body.channel.id);
-    })
-    .then(response => {
-        const body = response.body;
-        console.log(body);
-        // TODO: Connect to chat, we'll do this in the next tutorial step :)!
-    })
-    .catch(error => {
-        console.error('Something went wrong.');
-        console.error(error);
-    });
 ```
-The result will look something like this. You can see an array of chat servers that we can connect to within the endpoints array:
-```json
-    { endpoints:
-    [ 'wss://chat1-dal.mixer.com:443',
-        'wss://chat2-dal.mixer.com:443' ],
-    authkey: '1c0e251998ac7112f42c71a23d4b67b3',
-    permissions:
-    [ 'change_ban',
-        'edit_options',
-        'change_role',
-        'bypass_links',
-        'bypass_slowchat',
-        'remove_message',
-        'clear_messages',
-        'timeout',
-        'giveaway_start',
-        'poll_vote',
-        'poll_start',
-        'connect',
-        'chat' ] }
-```
-Next we will use this response to connect to the chat server. Let's write a `createChatSocket()` function and connect to chat.
-
+All this code does is get everything setup, after this point we have a file which has an authenticated Mixer user ready to go but we don't actually know who they are. An OAuth token doesn't tell us who owns it. Let's find out who they are, You can add the following code to the bottom of the code from our first section.
 ```js
-    const Mixer = require('@mixer/client-node');
-    const ws = require('ws');
-
-    let userInfo;
-
-    const client = new Mixer.Client(new Mixer.DefaultRequestRunner());
-
-    // With OAuth we don't need to log in. The OAuth Provider will attach
-    // the required information to all of our requests after this call.
-    client.use(new Mixer.OAuthProvider(client, {
-        tokens: {
-            access: 'Click here to get your Token!',
-            expires: Date.now() + (365 * 24 * 60 * 60 * 1000)
-        },
-    }));
-
-    // Gets the user that the Access Token we provided above belongs to.
-    client.request('GET', 'users/current')
-    .then(response => {
-        console.log(response.body);
-
-        // Store the logged in user's details for later reference
-        userInfo = response.body;
-
-        // Returns a promise that resolves with our chat connection details.
-        return new Mixer.ChatService(client).join(response.body.channel.id);
-    })
-    .then(response => {
-        const body = response.body;
-        console.log(body);
-        return createChatSocket(userInfo.id, userInfo.channel.id, body.endpoints, body.authkey);
-    })
-    .catch(error => {
-        console.error('Something went wrong.');
-        console.error(error);
+    /*
+     * Gets our Currently Authenticated Mixer user's information.
+     * This returns an object full of useful information about
+     * the user whose OAuth Token we provided above.
+     */
+    async function getUserInfo() {
+        // Users Current will return information about the user who owns the OAuth
+        // token registered above.
+        return client.request('GET', 'users/current')
+        .then(response => response.body);
+    }
+    getUserInfo().then(userInfo => {
+        console.log(`Hi, ${userInfo.username}!`);
     });
+```
+If you run this now you should see the username of the user account who owns the token you supplied. If you don't double check you're supplying the correct token.
 
+If the correct username appears then you can continue. Connecting to chat has several parts:
+1. Getting connection information
+2. Creating a chat socket and connecting it to a Channel.
+
+Now, we'll write functions for both of these steps and link them together in the code you've written above shortly. Let's start with getting the connection information(step 1):
+```js
     /**
-    * Creates a Mixer chat socket and sets up listeners to various chat events.
-    * @param {number} userId The user to authenticate as
-    * @param {number} channelId The channel id to join
-    * @param {string[]} endpoints An array of endpoints to connect to
-    * @param {string} authkey An authentication key to connect with
-    * @returns {Promise.<>}
-    */
-    function createChatSocket (userId, channelId, endpoints, authkey) {
-        const socket = new Mixer.Socket(ws, endpoints).boot();
-
-        // You don't need to wait for the socket to connect before calling
-        // methods. We spool them and run them when connected automatically.
-        socket.auth(channelId, userId, authkey)
-        .then(() => {
-            console.log('You are now authenticated!');
-            // Send a chat message
-            return socket.call('msg', ['Hello world!']);
-        })
-        .catch(error => {
-            console.error('Oh no! An error occurred.');
-            console.error(error);
-        });
-
-        // Listen for chat messages. Note you will also receive your own!
-        socket.on('ChatMessage', data => {
-            console.log('We got a ChatMessage packet!');
-            console.log(data);
-            console.log(data.message); // Let's take a closer look
-        });
-
-        // Listen for socket errors. You will need to handle these here.
-        socket.on('error', error => {
-            console.error('Socket error');
-            console.error(error);
-        });
+     * Gets connection information from Mixer's chat servers
+     * @param {Number} channelId The channelId of the channel you'd like to get connection information for.
+     * @returns {Promise.<>}
+     */
+    async function getConnectionInformation(channelId) {
+        return new Mixer.ChatService(client).join(channelId).then(response => response.body);
     }
 ```
-Running this code will now connect you to chat and you'll see something like this in the console. The JSON object on the 3rd line is the chat message packet your bot sent to the server when it connected.
-
+We don't need to call this function yet but for reference, when called this function will ask Mixer's servers for some connection information. The response should look something like this:
+```json
+    {
+        "endpoints":[
+            "wss://chat1-dal.mixer.com:443",
+            "wss://chat2-dal.mixer.com:443"
+        ],
+        "authkey": "1c0e251998ac7112f42c71a23d4b67b3",
+        "permissions":[
+            "change_ban",
+            "edit_options",
+            "change_role",
+            "bypass_links",
+            "bypass_slowchat",
+            "remove_message",
+            "clear_messages",
+            "timeout",
+            "giveaway_start",
+            "poll_vote",
+            "poll_start",
+            "connect",
+            "chat"
+        ]
+    }
 ```
-You are now authenticated!
-We got a ChatMessage packet!
-{ channel: 131630,
-  id: '9bc8a940-326a-11e6-9af9-8d8f189ce625',
-  user_name: 'your_username',
-  user_id: <your_userid>,
-  user_roles: [ 'Owner' ],
-  message: { message: [ [Object] ], meta: {} } }
-{ message: [ { type: 'text', data: 'Hello world!', text: 'Hello world!' } ],
-  meta: {} }
-```
+Of particular importance here is the authentication key(`authkey`), this is needed to authenticate with chat. It is transient and as such only lasts for a few minutes. Don't save or record these, they should be used immediately upon receipt.
 
-Now that we have a chat connection with authentication working, we can add the rest of the bot code. When a user joins the channel, it will greet them. If a user types `!ping` into chat, it will response with their name and "PONG!". To do this, we'll re-write parts of the `createChatSocket()` function. The final code is below; check it out!
+Once we have this information we need to create a Chat Socket, this is step 2 from our list above. It creates a chat socket and instructs that socket to start. It also calls the socket's `auth` method to authenticate with the Chat server so that you can Chat.
 
+It uses our previous function `getConnectionInformation` to get the authkey but you do need to supply it with a userId and a channelId. Don't worry about running this yet, we'll piece stuff together after this is done:
 ```js
+/**
+* Creates a Mixer chat socket and authenticates
+* @param {number} userId The user to authenticate as
+* @param {number} channelId The channel id of the channel you want to join
+* @returns {Promise.<>}
+*/
+async function joinChat(userId, channelId) {
+    const joinInformation = await getConnectionInformation(channelId);
+    // Create a chat socket and "boot" it(start it up and connect it)
+    const socket = new Mixer.Socket(ws, joinInformation.endpoints).boot();
+
+    /* Authenticates with the Chat Server, this requires 3 arguments:
+     * - The Channel Id of the channel you are connection to.
+     * - The user id of the user you are wanting to chat as.
+     * - The authentication key received from the server.
+     * The order of these arguments is VERY important.
+     */
+    return socket.auth(channelId, userId, joinInformation.authkey).then(() => socket);
+}
+```
+
+The last step is to edit our original code, so that it uses these two new functions. We need to change the section of code that starts with `getUserInfo().then(`. Replace it all with:
+```js
+    // Get our Bot's User Information, Who are they?
+    getUserInfo().then(async userInfo => {
+
+        /* Join our target Chat Channel, in this case we'll join
+         * our Bot's channel.
+         * But you can replace the second argument of this function
+         * with ANY Channel ID.
+         */
+        const socket = await joinChat(userInfo.id, userInfo.channel.id);
+
+        //Send a message once connected to chat.
+        socket.call('msg', [`Hi! I'm connected!`]);
+        // Add more socket stuff here:
+    }):
+```
+
+If you run this you should now see your bot in **its own channel**, where it should have sent "Hi! I'm Connected!". If not double check everything over or refer to the bottom of this tutorial where the final code sample is. It'll show you how everything should look.
+
+If this is working correctly then we can move on to making it respond to some commands. We're going to:
+1. Make it send a message to anyone who joins greeting them.
+2. Make it respond to the command !ping.
+
+In both of these cases place these new sections of code underneath the comment `Add more socket stuff here:` line:
+
+Greeting a user who joins:
+```js
+    // Greet a joined user
+    socket.on('UserJoin', data => {
+        socket.call('msg', [`Hi ${data.username}! I'm pingbot! Write !ping and I will pong back!`]);
+    });
+```
+
+Reacting to the !ping command:
+```js
+    // React to our !ping command
+    // When there's a new chat message.
+    socket.on('ChatMessage', data => {
+        // Does the message start with !ping
+        if (data.message.message[0].data.toLowerCase().startsWith('!ping')) {
+            // Respond with pong
+            socket.call('msg', [`@${data.user_name} PONG!`]);
+            console.log(`Ponged ${data.user_name}`);
+        }
+    });
+```
+
+Run the bot again and you should now see it greeting users who join and responding to the !ping command. You can find our finished code below if you're having trouble piecing things together.
+
+Once you've got it working try:
+- Adding more commands
+- Sending a whisper
+
+Final Code:
+```js
+    // Load in some dependencies
     const Mixer = require('@mixer/client-node');
     const ws = require('ws');
 
-    let userInfo;
-
+    // Instantiate a new Mixer Client
     const client = new Mixer.Client(new Mixer.DefaultRequestRunner());
 
-    // With OAuth we don't need to log in. The OAuth Provider will attach
-    // the required information to all of our requests after this call.
+    /* With OAuth we don't need to log in. The OAuth Provider will attach
+     * the required information to all of our requests after this call.
+     * They'll also be authenticated with the user information of the user
+     * who owns the token provided.
+     */
     client.use(new Mixer.OAuthProvider(client, {
         tokens: {
             access: 'Click here to get your Token!',
+            // Tokens retrieved via this page last for 1 year.
             expires: Date.now() + (365 * 24 * 60 * 60 * 1000)
         },
     }));
 
-    // Gets the user that the Access Token we provided above belongs to.
-    client.request('GET', 'users/current')
-    .then(response => {
-        userInfo = response.body;
-        return new Mixer.ChatService(client).join(response.body.channel.id);
-    })
-    .then(response => {
-        const body = response.body;
-        return createChatSocket(userInfo.id, userInfo.channel.id, body.endpoints, body.authkey);
-    })
-    .catch(error => {
-        console.error('Something went wrong.');
-        console.error(error);
-    });
+    /* Gets our Currently Authenticated Mixer user's information. This returns an object
+     * full of useful information about the user whose OAuth Token we provided above.
+     */
+    async function getUserInfo() {
+        // Users Current will return information about the user who owns the OAuth
+        // token registered above.
+        return client.request('GET', 'users/current').then(response => response.body);
+    }
 
     /**
-    * Creates a Mixer chat socket and sets up listeners to various chat events.
+     * Gets connection information from Mixer's chat servers
+     * @param {Number} channelId The channelId of the channel you'd like to get connection information for.
+     * @returns {Promise.<>}
+     */
+    async function getConnectionInformation(channelId) {
+        return new Mixer.ChatService(client).join(channelId).then(response => response.body);
+    }
+
+    /**
+    * Creates a Mixer chat socket and authenticates
     * @param {number} userId The user to authenticate as
-    * @param {number} channelId The channel id to join
-    * @param {string[]} endpoints An array of endpoints to connect to
-    * @param {string} authkey An authentication key to connect with
+    * @param {number} channelId The channel id of the channel you want to join
     * @returns {Promise.<>}
     */
-    function createChatSocket (userId, channelId, endpoints, authkey) {
+    async function joinChat(userId, channelId) {
+        const joinInformation = await getConnectionInformation(channelId);
         // Chat connection
-        const socket = new Mixer.Socket(ws, endpoints).boot();
+        const socket = new Mixer.Socket(ws, joinInformation.endpoints).boot();
+
+        return socket.auth(channelId, userId, joinInformation.authkey).then(() => socket);
+    }
+
+    // Get our Bot's User Information, Who are they?
+    getUserInfo().then(async userInfo => {
+
+        /* Join our target Chat Channel, in this case we'll join 
+         * our Bot's channel.
+         * But you can replace the second argument of this function with ANY Channel ID.
+         */
+        const socket = await joinChat(userInfo.id, userInfo.channel.id);
+
+        // Send a message once connected to chat.
+        socket.call('msg', [`Hi! I'm connected!`]);
 
         // Greet a joined user
         socket.on('UserJoin', data => {
             socket.call('msg', [`Hi ${data.username}! I'm pingbot! Write !ping and I will pong back!`]);
         });
 
-        // React to our !pong command
+        // React to our !ping command
+        // When there's a new chat message.
         socket.on('ChatMessage', data => {
             if (data.message.message[0].data.toLowerCase().startsWith('!ping')) {
+                // Respond with pong
                 socket.call('msg', [`@${data.user_name} PONG!`]);
                 console.log(`Ponged ${data.user_name}`);
             }
@@ -240,13 +271,7 @@ Now that we have a chat connection with authentication working, we can add the r
             console.error('Socket error');
             console.error(error);
         });
-
-        return socket.auth(channelId, userId, authkey)
-        .then(() => {
-            console.log('Login successful');
-            return socket.call('msg', ['Hi! I\'m pingbot! Write !ping and I will pong back!']);
-        });
-    }
+    });
 ```
 
 [/mixer-tab]
@@ -317,7 +342,7 @@ if (chatConnectable.connect()) {
 }
 ```
 
-With authentication and connection out of the way, we just need to hook up the greet event and the `!ping` command. The greet event is set up by registering an `EventHandler` for the `UserJoinEvent`.
+With authentication and connection out of the way, we need to hook up the greet event and the `!ping` command. The greet event is set up by registering an `EventHandler` for the `UserJoinEvent`.
 
 ```java
 //...
