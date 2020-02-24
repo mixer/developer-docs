@@ -20,7 +20,7 @@ We’re ending support for  the following MixPlay SDKs:
  - Unity
  - Unreal Engine 4
  - C++
-- Python
+ - Python
 
 These SDKs will continue to be available on our GitHub but we won’t ship further updates or changes to them.
 
