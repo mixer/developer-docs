@@ -62,15 +62,21 @@ If you would like to render emotes in your own UI, then you will need to carry o
 
 ![The standard memes emote pack spritesheet.](https://mixer.com/_latest/emoticons/memes.png?classes=caption "The standard memes emote pack spritesheet.")
 
-To render an emote based on the above payload information please carry out the following steps:
+### Cutting Out the Emote
+The first step is to cut out the emote from our SpriteSheets. Here is how it's reccomended to do this:
 1. If the `source` property is `builtin`, ensure you have the emote pack's sheet loaded you can find builtin packs at: `https://mixer.com/_latest/emoticons/<pack name>.png`
 2. If the `source` property is `external`, use the pack property to load the emote pack as `pack` will be a URL.
 3. Read the `coords` property in the emote payload
    1. Start a rectangle on the sheet that you loaded from step 1 or 2 that starts at the x and y positioned in the payload.
    2. Resize the rectangle the width and height of the value of the width and height in the payload.
    3. Use this rectangle to render the emote.
+   
+### Rendering Emote on Screen
 
-You can render then render this emote at any size provided it uses the above rectangle. This can be useful to resize the visual rendering of an emote to match your screen's display density etc.
+Once you have cut out the Emote, you then need to decide what size to display it at in. This is largely up to you and the design of your application. Provided you use the above rectangle in your rendering you can render this at any size. This can be useful to support differing screen pixel densities within your application environment and userbase.
+
+For example, On Mixer we render emotes at 24x24px, but we support any image size.
+
 
 ### Coordinate System
 
