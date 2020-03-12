@@ -23,23 +23,23 @@ Would embed the Mixer Channel's Video Player.
 ## Video Options
 
 For the video player you can provide extra query parameters on the URL to control various settings of the embed:
-- `disableCostream` - Set this to true to prevent the Embed from display CoStreams.
-- `disableLowLatency` - Set this to true to disable FTL Playback. This will make the video HLS instead.
+- `disableCostream` - Set this to true to prevent the Embed from displaying CoStreams.
+- `disableLowLatency` - Set this to true to disable FTL Playback. This will make the video playback in HLS instead.
 - `muted` - Set this to true to mute the video player on load.
 - `vod` - Provide a VOD Id here to Embed a VOD.
-- `t` - Provide a time here to skip to this time within the vod
-- `disableLinks` - Set this to true to prevent links within the Embed
+- `t` - Provide a time here to skip to this time within the vod.
+- `disableLinks` - Set this to true to prevent links within the Embed.
 - `hideChannel` - Set this to true to hide the channel/"Watch on Mixer" link for this embed.
 
 
 # Chat Options
 
-For the Chat Embed you can provide extra query parameters on the URL to control various settings:
+For the Chat Embed you can provide extra query parameters on the URL to control various settings of the embed:
 - `composer` - Set this to false to hide the composition/text entry part of chat. This also hides the viewer count.
 
 
 # Embed Styling & Sizing
-As our embeds are just iframes you can style them using CSS. Give them a HTML class or ID and then write rules for them. If you set the IFrame's size the embed will automatically adjust to reflect the new size. A good set of standard styling is:
+As our embeds are just iframes you can style them using CSS. Give them an HTML class or ID and then write rules for them. If you set the IFrame's size the embed will automatically adjust to reflect the new size. A good set of standard styling is:
 
 ```css
 iframe {
