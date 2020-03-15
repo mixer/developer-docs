@@ -9,6 +9,7 @@ Sent when a user who has recently resubscribed to the channel chooses to &#x27;s
 |since|[IsoDate](/rest/index.html#IsoDate)|The date for when the user first subscribed, from the start of the recurring billing period.|
 |until|[IsoDate](/rest/index.html#IsoDate)|The date for when the subscription expires.|
 |totalMonths|[uint](/rest/index.html#uint)|The number of months the user has been subscribed since the beginning of time.|
+|currentStreak|[uint](/rest/index.html#uint)|The number of consecutive months the user has been subscribed.|
 
 ## Example
 ```json
@@ -30,6 +31,7 @@ Sent when a user who has recently resubscribed to the channel chooses to &#x27;s
   },
   "since": "2017-09-25T11:00:00.000Z",
   "until": "2017-12-25T11:00:00.000Z",
-  "totalMonths": 3
+  "totalMonths": 3,
+  "currentStreak": 2
 }
 ```
