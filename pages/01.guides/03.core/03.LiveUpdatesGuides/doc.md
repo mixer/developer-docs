@@ -21,4 +21,4 @@ Below please find our Live Updates Guides and Tutorials:
 
 ## More Information
 
-If you're looking for more information check out our [reference material](reference/constellation/introduction).
+If you're looking for more information check out our [reference material](/reference/constellation/introduction).

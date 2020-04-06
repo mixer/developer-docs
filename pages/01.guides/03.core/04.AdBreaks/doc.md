@@ -1,8 +1,6 @@
-# Ad-Break Trigger API (Coming Soon)
+# Ad-Break Trigger API (Beta)
 
-## This Feature is coming Soon!
-
-**Trigger an ad-break on a channel.** Ad-break includes a single ad up to 30s long. Ad-break can be triggered up to 2 times every 15 minutes (see error below). Ad-Break can only be run on an online channel. Ad-Break is not supported during co-streams or while hosting a channel.
+**Trigger an ad-break on a channel.** Ad-break includes a single ad up to 30s long. Ad-break can be triggered up to 2 times every 15 minutes (see errors below). Ad-Break can only be run on an online channel. Ad-Break is not supported during co-streams or while hosting a channel.
 
 ## Endpoint
 
@@ -14,8 +12,6 @@ OAuth required for scope `chat:ad_break`
 
 ### Request Body
 
-**Request Body:**
-
 ```json
 {
     "requestId": "00000000-0000-0000-0000-000000000000"
@@ -26,7 +22,6 @@ OAuth required for scope `chat:ad_break`
 
 ### Response
 
-**Response Breakdown**
 | Response | Description | Example |
 | ----------- | ----------- | ----------- |
 | 200 | Success | `{ "id": {ChannelID}}` |
@@ -36,7 +31,8 @@ OAuth required for scope `chat:ad_break`
 | 404 | Empty Response Body | N/A |
 | 429 | Throttled due to ad limit (2 every 15 minutes) | N/A |
 
-**400s Error Code Breakdown:**
+#### 400s Error Code Breakdown
+
 | Error Code | Description | String |
 | ----------- | ----------- | ----------- |
 | 42020 | Channel offline | "[Debug] Oops! You can't run ads while offline." |
