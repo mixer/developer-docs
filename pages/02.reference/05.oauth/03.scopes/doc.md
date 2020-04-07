@@ -26,6 +26,7 @@ To request access to a users' account you need to use scopes. Scopes limit the a
 | chat:bypass_links            | Bypass links being disallowed in chat.                           |
 | chat:bypass_slowchat         | Bypass slowchat settings on channels.                            |
 | chat:cancel_skill            | Cancel a skill.                                                  |
+| chat:ad_break                | Trigger an add break on your channel                             |
 | chat:change_ban              | Manage bans in chats.                                            |
 | chat:change_role             | Manage roles in chats.                                           |
 | chat:chat                    | Interact with chats on your behalf.                              |
