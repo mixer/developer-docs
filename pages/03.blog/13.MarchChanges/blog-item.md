@@ -21,7 +21,7 @@ Due to some changes in subscriptions, we've added a new property to the `channel
 
 ## Moderation Events
 
-Within Chat several events can cause a Purge of all of a user's chat messages. In some cases it wasn't clear why a purge had been initiated. We've added properties to the `PurgeMessage` event type which inform you of what the cause of the Purge. You can read about these on the [event's reference page](/reference/chat/events/purgemessage).
+Within Chat several events can cause a Purge of all of a user's chat messages. In some cases it wasn't clear why a purge had been initiated. We've added properties to the `PurgeMessage` event type which inform you of what the cause of the Purge was. You can read about these on the [event's reference page](/reference/chat/events/purgemessage).
 
 ## Ad Breaks
 
