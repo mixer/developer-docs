@@ -3,7 +3,7 @@ title: 'PurgeMessage'
 ---
 # PurgeMessage
 
-Sent when a user's messages are purged. Note: The moderator object is only set when a user is purged from in chat. The ban event triggers a purge but the object is not defined.
+Sent when a user's messages are purged. Note: `cause.type` can either be `ban`, `timeout`, or `globaltimeout`. If `cause.type` is `timeout` or `globaltimeout` then `cause.durationString` will exist, and is the raw value that was passed from the moderator.
 
 ## Examples
 ```json
@@ -20,7 +20,11 @@ Sent when a user's messages are purged. Note: The moderator object is only set w
       ],
       "user_level": 12
     },
-    "user_id": 12345
+    "user_id": 12345,
+    "cause": {
+        "type": "timeout",
+        "durationString": "5m"
+    }
   }
 }
 ```
