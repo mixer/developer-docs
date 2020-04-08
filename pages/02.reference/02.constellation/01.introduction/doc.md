@@ -57,8 +57,8 @@ There are three packet types, you can read more about them by clicking them in t
 
 | Type                   | Description                                                           |
 | ---------------------- | --------------------------------------------------------------------- |
-| [Method](methods)      | Used by clients to instruct the server to do something.               |
-| [Reply](methods#reply) | Sent from the server in response to a method                          |
-| [Event](events)        | Sent from the Server to notify the client that an event has occurred. |
+| [Method](/reference/constellation/methods)      | Used by clients to instruct the server to do something.               |
+| [Reply](/reference/constellation/methods#reply) | Sent from the server in response to a method                          |
+| [Event](/reference/constellation/events)        | Sent from the Server to notify the client that an event has occurred. |
 
 These packets are sent over the websocket as JSON encoded messages. Messages to the client may be gzipped if `x-supports-gzip` was passed in the headers, messages sent to Constellation from a client may also be gzipped.
