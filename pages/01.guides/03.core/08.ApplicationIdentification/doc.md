@@ -3,18 +3,21 @@ title: 'Application Identification'
 ---
 # Application Identification
 
-With many applications and developers consuming Mixer's APIs and SDKs it can be difficult for the Mixer team to diagnose and help you when there's an issue. But did you know there's a way to help Mixer in this regard?
+Many applications and developers consume Mixer's APIs daily. To assist us in locating information about potential issues you may have we advise that you identify your application or platform to us through Application Identification.
 
-Its very simple you just need to include some form of Identification with your requests / connections. In some cases these are required by the service or endpoint that you're connecting to but it also doesn't hurt to include them with all requests. In the future we **MAY** require this but right now this is an **optional** enhancement that you can make to your requests.
+To do this you need to include some form of Identification with your requests / connections. In some cases these are required by the service or endpoint due to the scenario you are using, for example OAuth Authentication, but in other cases this is an **optional** enhancement which will enable us to help you better.
 
-Below you'll find guidance on how to do this for each area of Mixer's developer platform.
+In the future Mixer's APIs may change and require you to include these and as such it is our recommendation that you add these identifiers wherever possible whenever you can. Should these become required in the future we will notify you before this happens.
+
+
+For each area of Mixer there is a slightly different recommendation, please see the items below for guidance on each area:
 
 ## REST, Chat & Constellation
 
-For REST and Chat you can identify your application in a number of ways:
-1. Include a standard `User-Agent` header with a value that matches your Application / Company name. For example Mixer might use "Mixer Mobile App / 1.2.3" for version 1.2.3 of its mobile application. You can read more about User-Agent headers [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent?target=_blank)
-1. Specify a `Client-ID` header with a value that matches your OAuth Application's Client ID
+For REST, Chat and Constellation the identification method is the same:
+1. Include a standard `User-Agent` header with a value that matches your Application / Company name. For example Mixer might use "Mixer Mobile App / 1.2.3" for version 1.2.3 of its mobile application. You can read more about User-Agent headers [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent?target=_blank). This can be used for us to help you identify what area of your products or services are experiencing issues.
+1. If you're using OAuth you can specify a `Client-ID` header with a value that matches your OAuth Application's Client ID. This will identify to us who you are as we can lookup your OAuth Application information from your Client ID.
 
 
 ## MixPlay
-Due to the nature of how MixPlay works there is no need to carry out any additional steps to identify a MixPlay Application.
+Due to the nature of how MixPlay works there is no need to carry out any additional steps to identify a MixPlay Application. A standard connection will provide us with all of the information about your application that we require.
