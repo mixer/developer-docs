@@ -3,16 +3,32 @@ title: Introduction
 ---
 
 # Test Streams
-Test streams allow you to broadcast your content in private. This means if you are working on an unannounced game or just want to try out some new streaming settings then you can use test streams to broadcast without anyone being able to see your content or broadcast.
+Test streams allow you to broadcast your content without sharing it with the Mixer Community. Test Streaming is only suitable for a limited number of use cases and is only available for select audiences.
 
-## Test Stream Qualifications
+## Test Streams Suitable Use Cases
+Test Streams is suitable for the following use cases:
+1. Testing out Broadcasting settings such as Bit Rate or Resolution before a public broadcast.
+2. Testing a Mixer Integration such as:
+   1. Chat Bots
+   2. MixPlay
+
+## Test Streams Unsuitable Use Cases
+Test Streams is **Not** suitable for the following use cases:
+1. Private Broadcasting
+2. Ticketed Broadcasting
+3. Private Meetings
+4. Reviews and Tech Demos
+5. Private Events
+6. Showcases of Private or Unreleased Intellectual Property or Projects
+
+## Test Stream Audience Qualifications
 Test Streams are currently available to a limited audience. To qualify for Test Streams, you must be a part of at least one of these groups:
-1. Mixer Partner
+1. A Mixer Partner
 2. Verifiable Mixer Developer (Integration, Chat Bots, etc.)
 3. Microsoft/Xbox Partner
 
 ## Applying for Test Stream Access
-If you're an Xbox, Microsoft, or Mixer Partner, please reach out to your Mixer contact so they can enable test streaming for you. Otherwise please follow these steps:
+Please follow these steps:
 1. Visit the Mixer Developer Lab
 1. Click the Test Streams tab
 1. Fill out the displayed form and click Send Request
