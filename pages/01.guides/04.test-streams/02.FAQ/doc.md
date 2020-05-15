@@ -4,6 +4,12 @@ title: 'FAQ'
 
 # Frequently Asked Questions
 
+### What does Mixer's Test Streaming protect?
+
+Whilst enabled, Test Streaming will protect the following items whilst it is enabled:
+- Your Channel's Video Broadcast
+- Your Channel's Chat Activity
+
 ### Which platforms support Test Streams?
 
 Test Streams are currently supported on:
@@ -55,4 +61,4 @@ Yes, read [this article for more information](https://watchbeam.zendesk.com/hc/e
 
 ### Can the link to access the test stream be generated before I go Live?
 
-No, this is unfourtunately not possible.
+No, this is unfortunately not possible.

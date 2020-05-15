@@ -3,7 +3,9 @@ title: Introduction
 ---
 
 # Test Streams
-Test streams allow you to broadcast your content without sharing it with the Mixer Community. Test Streaming is only suitable for a limited number of use cases and is only available for select audiences.
+Test streams allow you to broadcast your content without sharing it with the Mixer Community. Test streams will hide your broadcast's video and chat from your regular viewers. Test Streams will not show up on our browse page, recommendations or featuring systems. Users visiting your channel page won't see your stream unless they have access.
+
+Test Streaming is only suitable for a limited number of use cases and is only available for select audiences.
 
 ## Test Streams Suitable Use Cases
 Test Streams is suitable for the following use cases:
@@ -21,10 +23,10 @@ Test Streams is **Not** suitable for the following use cases:
 5. Private Events
 6. Showcases of Private or Unreleased Intellectual Property or Projects
 
-## Test Stream Audience Qualifications
-Test Streams are currently available to a limited audience. To qualify for Test Streams, you must be a part of at least one of these groups:
-1. A Mixer Partner
-2. Verifiable Mixer Developer (Integration, Chat Bots, etc.)
+## Test Stream User Qualifications
+Test Streams are currently available to a limited set of our user base. To qualify for Test Streams, you must be a part of at least one of these groups:
+1. Mixer Partners
+2. A Verifiable Mixer Developer (Integration, Chat Bots, etc.)
 3. Microsoft/Xbox Partner
 
 ## Applying for Test Stream Access
@@ -56,7 +58,7 @@ Whilst in test stream mode there are two ways to grant viewers access to view yo
 
 ## Example Access Key Link
 
-Here's an example of a test stream access link. You can see the channel name in the same way a regular channel shows up. The new section is the query paramter on the end which contains an access key: `?accessKey=key`.
+Here's an example of a test stream access link. You can see the channel name in the same way a regular channel shows up. The new section is the query parameter on the end which contains an access key: `?accessKey=key`.
 
 `https://mixer.com/TestStream123?accessKey=123456-5765ca8894b1c011e0aca1786158032e`
 
