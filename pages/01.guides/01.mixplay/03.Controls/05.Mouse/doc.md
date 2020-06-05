@@ -26,7 +26,7 @@ The mouse control is unique in that you cannot place the mouse control on a grid
 
 Regardless of device or screen size, screen controls operates on a coordinate system where the bottom left of the video is X: 0, Y: 0 and the top right is X: 1, X: 1. The middle of the video is 0.5 in both axises.
 
-![sdf](./coordinates.svg)
+![Image showing coordinate system for MixPlay Joysticks](./coordinates.svg)
 
 ## Translating Coordinates to your Application / Game
 
