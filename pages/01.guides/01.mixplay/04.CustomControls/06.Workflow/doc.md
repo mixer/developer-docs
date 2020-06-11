@@ -43,5 +43,3 @@ Head back to the CDK and re-vist the run menu. This time select "Run on my Compu
 ## Final Touches &amp; Publishing
 
 Once you're happy with your controls and integration into your Application or Game, you should upload the control bundle once more. You can do this using the Run menu again, or you can select the "Build and upload controls" option in the drop down menu shown when you click your project's name in the top right. This will ensure that your controls are all up to date and on Mixer.
-
-Once you're done you should [publish your Interactive Project](/guides/mixplay/introduction#publishing-your-project) and let the world experience your unique and fully customized Interactive Experience!

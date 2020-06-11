@@ -100,11 +100,6 @@ The code step is to help you complete the code portion of your project. This is 
 
 You will need to write your own Game Client to connect to the Interactive service. For SDK downloads, documentation, and samples, go to [Choose a SDK](#choose-a-sdk).
 
-### Publishing your Project
-
-If you'd like to publish your project to allow other users to utilize it please [email us](mailto:mixerdevinfo@microsoft.com).
-
-
 ## Where to get help
 
 Have questions? Stuck? We're here to help! Please feel free to reach out at any time.
